@@ -1,0 +1,172 @@
+{
+  "brand": "Hermes",
+  "collection_name": "AI Seasonal Opportunity Collection",
+  "collection_summary": {
+    "categories": 5,
+    "concepts_evaluated": 15,
+    "final_products": 5,
+    "method": "Trend opportunity analysis \u2192 concept generation \u2192 weighted concept ranking \u2192 demand forecast \u2192 inventory recommendation"
+  },
+  "products": [
+    {
+      "category": "Ready-to-Wear",
+      "product": {
+        "name": "Splitline Coat",
+        "description": "A long narrow coat divided vertically into two subtly different constructions, one structured and one fluid.",
+        "materials": "cashmere blend, silk lining, leather trim",
+        "colors": "camel, dark brown, electric blue lining",
+        "design_innovation": "Dual construction in one continuous silhouette.",
+        "whitespace_reason": "Introduces conceptual asymmetry without becoming costume-like."
+      },
+      "trend_intelligence": {
+        "primary_trend": "Deconstructed Tailoring",
+        "secondary_trend": "Narrow Silhouettes",
+        "trend_score": 88,
+        "why_ai_thinks_this_matters": "Strong momentum combined with high brand fit and clear room for new tailoring concepts.",
+        "why_product_matches_trend": "Directly translates deconstructed tailoring into a commercially familiar outerwear format."
+      },
+      "concept_scores": {
+        "overall_score": 90.45,
+        "commercial_potential": 90,
+        "originality": 88,
+        "brand_fit": 92,
+        "trend_alignment": 93
+      },
+      "forecast": {
+        "predicted_demand_units": 918,
+        "safety_stock_units": 105,
+        "recommended_inventory_units": 1023,
+        "confidence": "HIGH"
+      },
+      "image_prompt": "\nCreate a highly original luxury fashion concept image.\n\nIMPORTANT:\nThis is a speculative concept study.\nDo NOT copy or closely resemble any existing Hermes product.\nDo NOT create a simple recolor, standard seasonal variation,\nor obvious version of a product already common in luxury fashion.\n\nCATEGORY:\nReady-to-Wear\n\nPRODUCT NAME:\nSplitline Coat\n\nCORE PRODUCT IDEA:\nA long narrow coat divided vertically into two subtly different constructions, one structured and one fluid.\n\nDESIGN INNOVATION:\nDual construction in one continuous silhouette.\n\nWHY THIS IS WHITESPACE:\nIntroduces conceptual asymmetry without becoming costume-like.\n\nKEY MATERIALS:\ncashmere blend, silk lining, leather trim\n\nCOLOR DIRECTION:\ncamel, dark brown, electric blue lining\n\nPRIMARY TREND:\nDeconstructed Tailoring\n\nSECONDARY TREND:\nNarrow Silhouettes\n\nCREATIVE REQUIREMENTS:\n- invent a distinctive new silhouette\n- create an unexpected but functional construction\n- make the product recognizable from its shape alone\n- explore unusual proportion, folding, suspension, transformation,\n  asymmetry, modularity, or spatial structure where appropriate\n- preserve sophisticated luxury craftsmanship\n- remain physically plausible and manufacturable\n- avoid gimmicks\n- avoid generic minimalist luxury design\n- avoid common Zara-style or mass-market silhouettes\n- avoid recognizable iconic luxury-product shapes\n- no logos\n- no monograms\n- no text\n\nVISUAL PRESENTATION:\n- fashion concept editorial\n- photorealistic\n- premium studio photography\n- strong three-dimensional form\n- clearly show the innovative construction\n- subtle shadows\n- minimal neutral background\n- extremely detailed materials and craftsmanship\n\nThe final object should feel like something a major luxury creative\ndirector could plausibly propose for a future runway collection,\nwhile still looking genuinely new.\n"
+    },
+    {
+      "category": "Handbag",
+      "product": {
+        "name": "Arc Volume",
+        "description": "A sculptural leather handbag with a compressed base and expandable curved upper body.",
+        "materials": "calfskin, suede interior, polished metal hardware",
+        "colors": "electric blue, black, natural tan",
+        "design_innovation": "Controlled expansion changes both capacity and silhouette.",
+        "whitespace_reason": "Creates a new volume language rather than reworking a known bag shape."
+      },
+      "trend_intelligence": {
+        "primary_trend": "Electric Blue",
+        "secondary_trend": "Selective Volume",
+        "trend_score": 82,
+        "why_ai_thinks_this_matters": "High visual impact and strong momentum, best used as a directional accent rather than a core heritage color.",
+        "why_product_matches_trend": "Selective volume supports sculptural expansion while electric blue gives directional impact."
+      },
+      "concept_scores": {
+        "overall_score": 91.4,
+        "commercial_potential": 92,
+        "originality": 94,
+        "brand_fit": 88,
+        "trend_alignment": 92
+      },
+      "forecast": {
+        "predicted_demand_units": 900,
+        "safety_stock_units": 105,
+        "recommended_inventory_units": 1005,
+        "confidence": "HIGH"
+      },
+      "image_prompt": "\nCreate a highly original luxury fashion concept image.\n\nIMPORTANT:\nThis is a speculative concept study.\nDo NOT copy or closely resemble any existing Hermes product.\nDo NOT create a simple recolor, standard seasonal variation,\nor obvious version of a product already common in luxury fashion.\n\nCATEGORY:\nHandbag\n\nPRODUCT NAME:\nArc Volume\n\nCORE PRODUCT IDEA:\nA sculptural leather handbag with a compressed base and expandable curved upper body.\n\nDESIGN INNOVATION:\nControlled expansion changes both capacity and silhouette.\n\nWHY THIS IS WHITESPACE:\nCreates a new volume language rather than reworking a known bag shape.\n\nKEY MATERIALS:\ncalfskin, suede interior, polished metal hardware\n\nCOLOR DIRECTION:\nelectric blue, black, natural tan\n\nPRIMARY TREND:\nElectric Blue\n\nSECONDARY TREND:\nSelective Volume\n\nCREATIVE REQUIREMENTS:\n- invent a distinctive new silhouette\n- create an unexpected but functional construction\n- make the product recognizable from its shape alone\n- explore unusual proportion, folding, suspension, transformation,\n  asymmetry, modularity, or spatial structure where appropriate\n- preserve sophisticated luxury craftsmanship\n- remain physically plausible and manufacturable\n- avoid gimmicks\n- avoid generic minimalist luxury design\n- avoid common Zara-style or mass-market silhouettes\n- avoid recognizable iconic luxury-product shapes\n- no logos\n- no monograms\n- no text\n\nVISUAL PRESENTATION:\n- fashion concept editorial\n- photorealistic\n- premium studio photography\n- strong three-dimensional form\n- clearly show the innovative construction\n- subtle shadows\n- minimal neutral background\n- extremely detailed materials and craftsmanship\n\nThe final object should feel like something a major luxury creative\ndirector could plausibly propose for a future runway collection,\nwhile still looking genuinely new.\n"
+    },
+    {
+      "category": "Small Leather Good",
+      "product": {
+        "name": "Layer Wallet",
+        "description": "A slim wallet composed of overlapping leather planes that open in different directions.",
+        "materials": "calfskin, goatskin lining",
+        "colors": "electric blue, tan, black",
+        "design_innovation": "Multi-directional access without adding bulk.",
+        "whitespace_reason": "Transforms wallet architecture instead of changing only color or hardware."
+      },
+      "trend_intelligence": {
+        "primary_trend": "Electric Blue",
+        "secondary_trend": "Deconstructed Tailoring",
+        "trend_score": 80,
+        "why_ai_thinks_this_matters": "Small leather goods allow experimentation with emerging color and structural ideas at lower commercial risk.",
+        "why_product_matches_trend": "Deconstruction translates naturally into separated functional layers."
+      },
+      "concept_scores": {
+        "overall_score": 89.5,
+        "commercial_potential": 91,
+        "originality": 88,
+        "brand_fit": 91,
+        "trend_alignment": 87
+      },
+      "forecast": {
+        "predicted_demand_units": 893,
+        "safety_stock_units": 105,
+        "recommended_inventory_units": 998,
+        "confidence": "LOW"
+      },
+      "image_prompt": "\nCreate a highly original luxury fashion concept image.\n\nIMPORTANT:\nThis is a speculative concept study.\nDo NOT copy or closely resemble any existing Hermes product.\nDo NOT create a simple recolor, standard seasonal variation,\nor obvious version of a product already common in luxury fashion.\n\nCATEGORY:\nSmall Leather Good\n\nPRODUCT NAME:\nLayer Wallet\n\nCORE PRODUCT IDEA:\nA slim wallet composed of overlapping leather planes that open in different directions.\n\nDESIGN INNOVATION:\nMulti-directional access without adding bulk.\n\nWHY THIS IS WHITESPACE:\nTransforms wallet architecture instead of changing only color or hardware.\n\nKEY MATERIALS:\ncalfskin, goatskin lining\n\nCOLOR DIRECTION:\nelectric blue, tan, black\n\nPRIMARY TREND:\nElectric Blue\n\nSECONDARY TREND:\nDeconstructed Tailoring\n\nCREATIVE REQUIREMENTS:\n- invent a distinctive new silhouette\n- create an unexpected but functional construction\n- make the product recognizable from its shape alone\n- explore unusual proportion, folding, suspension, transformation,\n  asymmetry, modularity, or spatial structure where appropriate\n- preserve sophisticated luxury craftsmanship\n- remain physically plausible and manufacturable\n- avoid gimmicks\n- avoid generic minimalist luxury design\n- avoid common Zara-style or mass-market silhouettes\n- avoid recognizable iconic luxury-product shapes\n- no logos\n- no monograms\n- no text\n\nVISUAL PRESENTATION:\n- fashion concept editorial\n- photorealistic\n- premium studio photography\n- strong three-dimensional form\n- clearly show the innovative construction\n- subtle shadows\n- minimal neutral background\n- extremely detailed materials and craftsmanship\n\nThe final object should feel like something a major luxury creative\ndirector could plausibly propose for a future runway collection,\nwhile still looking genuinely new.\n"
+    },
+    {
+      "category": "Footwear",
+      "product": {
+        "name": "Needle Line Boot",
+        "description": "A narrow-profile ankle boot with a sharply elongated upper and a broken seam structure.",
+        "materials": "calfskin, stretch leather, leather sole",
+        "colors": "black, dark brown, muted blue",
+        "design_innovation": "Elongated narrow architecture with displaced seam construction.",
+        "whitespace_reason": "Feels modern through proportion rather than excessive ornamentation."
+      },
+      "trend_intelligence": {
+        "primary_trend": "Narrow Silhouettes",
+        "secondary_trend": "Deconstructed Tailoring",
+        "trend_score": 81,
+        "why_ai_thinks_this_matters": "Refined narrow proportions align well with a luxury design language while leaving room for new construction.",
+        "why_product_matches_trend": "Narrow silhouettes and deconstructed tailoring directly support the shape and seam logic."
+      },
+      "concept_scores": {
+        "overall_score": 91.2,
+        "commercial_potential": 90,
+        "originality": 89,
+        "brand_fit": 93,
+        "trend_alignment": 94
+      },
+      "forecast": {
+        "predicted_demand_units": 891,
+        "safety_stock_units": 105,
+        "recommended_inventory_units": 997,
+        "confidence": "HIGH"
+      },
+      "image_prompt": "\nCreate a highly original luxury fashion concept image.\n\nIMPORTANT:\nThis is a speculative concept study.\nDo NOT copy or closely resemble any existing Hermes product.\nDo NOT create a simple recolor, standard seasonal variation,\nor obvious version of a product already common in luxury fashion.\n\nCATEGORY:\nFootwear\n\nPRODUCT NAME:\nNeedle Line Boot\n\nCORE PRODUCT IDEA:\nA narrow-profile ankle boot with a sharply elongated upper and a broken seam structure.\n\nDESIGN INNOVATION:\nElongated narrow architecture with displaced seam construction.\n\nWHY THIS IS WHITESPACE:\nFeels modern through proportion rather than excessive ornamentation.\n\nKEY MATERIALS:\ncalfskin, stretch leather, leather sole\n\nCOLOR DIRECTION:\nblack, dark brown, muted blue\n\nPRIMARY TREND:\nNarrow Silhouettes\n\nSECONDARY TREND:\nDeconstructed Tailoring\n\nCREATIVE REQUIREMENTS:\n- invent a distinctive new silhouette\n- create an unexpected but functional construction\n- make the product recognizable from its shape alone\n- explore unusual proportion, folding, suspension, transformation,\n  asymmetry, modularity, or spatial structure where appropriate\n- preserve sophisticated luxury craftsmanship\n- remain physically plausible and manufacturable\n- avoid gimmicks\n- avoid generic minimalist luxury design\n- avoid common Zara-style or mass-market silhouettes\n- avoid recognizable iconic luxury-product shapes\n- no logos\n- no monograms\n- no text\n\nVISUAL PRESENTATION:\n- fashion concept editorial\n- photorealistic\n- premium studio photography\n- strong three-dimensional form\n- clearly show the innovative construction\n- subtle shadows\n- minimal neutral background\n- extremely detailed materials and craftsmanship\n\nThe final object should feel like something a major luxury creative\ndirector could plausibly propose for a future runway collection,\nwhile still looking genuinely new.\n"
+    },
+    {
+      "category": "Accessory",
+      "product": {
+        "name": "Soft Form Belt",
+        "description": "A belt with a softly inflated leather section that creates controlled volume around the waist.",
+        "materials": "soft calfskin, hidden closure",
+        "colors": "cream, butter yellow, dark brown",
+        "design_innovation": "Combines belt function with subtle sculptural body shaping.",
+        "whitespace_reason": "Reimagines the belt as part of silhouette construction."
+      },
+      "trend_intelligence": {
+        "primary_trend": "Selective Volume",
+        "secondary_trend": "Butter Yellow",
+        "trend_score": 75,
+        "why_ai_thinks_this_matters": "Accessories are a good space to test newer proportions and softer seasonal color signals.",
+        "why_product_matches_trend": "Selective volume and soft seasonal color support a directional but wearable accessory."
+      },
+      "concept_scores": {
+        "overall_score": 89.55,
+        "commercial_potential": 87,
+        "originality": 92,
+        "brand_fit": 89,
+        "trend_alignment": 90
+      },
+      "forecast": {
+        "predicted_demand_units": 864,
+        "safety_stock_units": 105,
+        "recommended_inventory_units": 969,
+        "confidence": "LOW"
+      },
+      "image_prompt": "\nCreate a highly original luxury fashion concept image.\n\nIMPORTANT:\nThis is a speculative concept study.\nDo NOT copy or closely resemble any existing Hermes product.\nDo NOT create a simple recolor, standard seasonal variation,\nor obvious version of a product already common in luxury fashion.\n\nCATEGORY:\nAccessory\n\nPRODUCT NAME:\nSoft Form Belt\n\nCORE PRODUCT IDEA:\nA belt with a softly inflated leather section that creates controlled volume around the waist.\n\nDESIGN INNOVATION:\nCombines belt function with subtle sculptural body shaping.\n\nWHY THIS IS WHITESPACE:\nReimagines the belt as part of silhouette construction.\n\nKEY MATERIALS:\nsoft calfskin, hidden closure\n\nCOLOR DIRECTION:\ncream, butter yellow, dark brown\n\nPRIMARY TREND:\nSelective Volume\n\nSECONDARY TREND:\nButter Yellow\n\nCREATIVE REQUIREMENTS:\n- invent a distinctive new silhouette\n- create an unexpected but functional construction\n- make the product recognizable from its shape alone\n- explore unusual proportion, folding, suspension, transformation,\n  asymmetry, modularity, or spatial structure where appropriate\n- preserve sophisticated luxury craftsmanship\n- remain physically plausible and manufacturable\n- avoid gimmicks\n- avoid generic minimalist luxury design\n- avoid common Zara-style or mass-market silhouettes\n- avoid recognizable iconic luxury-product shapes\n- no logos\n- no monograms\n- no text\n\nVISUAL PRESENTATION:\n- fashion concept editorial\n- photorealistic\n- premium studio photography\n- strong three-dimensional form\n- clearly show the innovative construction\n- subtle shadows\n- minimal neutral background\n- extremely detailed materials and craftsmanship\n\nThe final object should feel like something a major luxury creative\ndirector could plausibly propose for a future runway collection,\nwhile still looking genuinely new.\n"
+    }
+  ]
+}
