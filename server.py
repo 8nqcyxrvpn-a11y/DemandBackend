@@ -1,15 +1,24 @@
 from fastapi import FastAPI
-from pydantic import BaseModel
-import math
+from fastapi.middleware.cors import CORSMiddleware
+import json
+from pathlib import Path
 
 app = FastAPI()
 
+# Allow Lovable to read this backend
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=False,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
-class DemandInput(BaseModel):
-    price_usd: float
-    trend_mentions: float
-    trend_growth_pct: float
-    inventory_units: float
+# Load the collection JSON stored beside this server file
+COLLECTION_FILE = Path(__file__).with_name("final_ai_collection.json")
+
+with open(COLLECTION_FILE, "r", encoding="utf-8") as f:
+    collection_data = json.load(f)
 
 
 @app.get("/")
@@ -25,3 +34,8 @@ def health():
     return {
         "status": "healthy"
     }
+
+
+@app.get("/collection")
+def get_collection():
+    return collection_data
