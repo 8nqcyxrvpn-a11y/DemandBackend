@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: ai-fashion-intelligence
+    runtime: python
+    buildCommand: pip install -r requirements.txt && python scripts/train_demand_model.py && python scripts/validate_artifacts.py
+    startCommand: uvicorn server:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+

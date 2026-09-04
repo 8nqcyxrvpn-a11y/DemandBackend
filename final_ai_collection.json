@@ -1,0 +1,66 @@
+{
+  "brand": "Hermes",
+  "collection_name": "AI Seasonal Opportunity Collection",
+  "concept_study": "Hermès — fictional concept study",
+  "affiliation_disclaimer": "Not affiliated with Hermès",
+  "data_disclaimer": "Every figure on this dashboard is synthetic demo data.",
+  "data_source": "synthetic_demo",
+  "products": [
+    {
+      "category": "Ready-to-Wear",
+      "product": "Splitline Coat",
+      "predicted_demand_units": 918,
+      "recommended_inventory_units": 1023,
+      "primary_trend": "Deconstructed Tailoring",
+      "trend_score": 88,
+      "concept_score": 90.45,
+      "image_prompt": "Distinctive splitline coat with deconstructed tailoring, sculptural yet manufacturable construction, premium studio presentation, no logos, monograms, or text."
+    },
+    {
+      "category": "Handbag",
+      "product": "Arc Volume",
+      "predicted_demand_units": 900,
+      "recommended_inventory_units": 1005,
+      "primary_trend": "Electric Blue",
+      "trend_score": 82,
+      "concept_score": 91.4,
+      "core_idea": "A sculptural leather handbag with a compressed base and expandable curved upper body.",
+      "innovation": "Controlled expansion changes both capacity and silhouette.",
+      "whitespace": "Creates a new volume language rather than reworking a known bag shape.",
+      "materials": ["calfskin", "suede interior", "polished metal hardware"],
+      "colors": ["electric blue", "black", "natural tan"],
+      "image_prompt": "Sculptural leather handbag with a compressed base and expandable curved upper body, electric blue calfskin, suede interior and polished hardware, physically plausible luxury craftsmanship, no logos, monograms, or text."
+    },
+    {
+      "category": "Small Leather Good",
+      "product": "Layer Wallet",
+      "predicted_demand_units": 893,
+      "recommended_inventory_units": 998,
+      "primary_trend": "Electric Blue",
+      "trend_score": 80,
+      "concept_score": 89.5,
+      "image_prompt": "Layered electric-blue leather wallet with an unexpected functional folding structure, refined craftsmanship, no logos, monograms, or text."
+    },
+    {
+      "category": "Footwear",
+      "product": "Needle Line Boot",
+      "predicted_demand_units": 891,
+      "recommended_inventory_units": 997,
+      "primary_trend": "Narrow Silhouettes",
+      "trend_score": 81,
+      "concept_score": 91.2,
+      "image_prompt": "Needle Line Boot with a narrow sculptural silhouette and precise leather construction, editorial luxury product study, no logos, monograms, or text."
+    },
+    {
+      "category": "Accessory",
+      "product": "Soft Form Belt",
+      "predicted_demand_units": 864,
+      "recommended_inventory_units": 969,
+      "primary_trend": "Selective Volume",
+      "trend_score": 75,
+      "concept_score": 89.55,
+      "image_prompt": "Soft Form Belt using selective volume, asymmetrical dimensional leather construction and subtle hardware, no logos, monograms, or text."
+    }
+  ]
+}
+
