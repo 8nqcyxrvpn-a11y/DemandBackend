@@ -35,7 +35,7 @@ No external ingestion or factual Hermès brand intelligence is fabricated here. 
 
 ## Install and run locally
 
-Python 3.9 through 3.12 is supported; Python 3.11 or 3.12 is recommended.
+The deployed runtime is pinned to Python 3.13.7 in `.python-version`.
 
 ```bash
 python -m venv .venv
@@ -46,7 +46,7 @@ python scripts/validate_artifacts.py
 uvicorn server:app --reload
 ```
 
-The model file is generated rather than committed because serialized scikit-learn models are version-sensitive. Train it with the pinned dependencies before starting the API.
+The existing model artifact is deployed with the application and loaded using the pinned scikit-learn version. To rebuild it intentionally from the synthetic training data, run `python scripts/train_demand_model.py`; the Render build does not retrain or overwrite it.
 
 Test a dynamic prediction:
 
@@ -94,7 +94,7 @@ Invalid or missing input receives FastAPI's normal `422` response. Missing runti
 
 ## Render deployment
 
-The included `render.yaml` installs dependencies, trains the model, validates artifacts, and starts the service. The exact start command is:
+The included `render.yaml` installs binary dependency wheels, validates the existing model and data artifacts, and starts the service. The exact start command is:
 
 ```bash
 uvicorn server:app --host 0.0.0.0 --port $PORT
