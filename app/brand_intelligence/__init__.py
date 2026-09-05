@@ -20,6 +20,14 @@ from app.brand_intelligence.models import (
     SilhouetteForm,
     SourceRecord,
 )
+from app.brand_intelligence.fit_models import (
+    BrandFitEvaluation,
+    FitDecision,
+    NormalizedTrendObservation,
+    TrendEvaluationInput,
+    TrendEvidenceRecord,
+)
+from app.brand_intelligence.fit_service import evaluate_brand_fit
 
 __all__ = [
     "AssortmentItem",
@@ -40,4 +48,10 @@ __all__ = [
     "Season",
     "SilhouetteForm",
     "SourceRecord",
+    "BrandFitEvaluation",
+    "FitDecision",
+    "NormalizedTrendObservation",
+    "TrendEvaluationInput",
+    "TrendEvidenceRecord",
+    "evaluate_brand_fit",
 ]

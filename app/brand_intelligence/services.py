@@ -12,6 +12,8 @@ from app.brand_intelligence.models import (
     EvidenceRecord,
     SourceRecord,
 )
+from app.brand_intelligence.fit_models import BrandFitEvaluation, TrendEvaluationInput
+from app.brand_intelligence.models import BrandEvidenceDataset
 
 
 class SourceCaptureService(Protocol):
@@ -37,3 +39,8 @@ class BrandDNAReviewService(Protocol):
 class TerritoryIndexService(Protocol):
     def build(self, brand_id: str, calculation_version: str) -> list[BrandTerritoryFeature]: ...
 
+
+class BrandFitService(Protocol):
+    def evaluate(
+        self, trend: TrendEvaluationInput, dataset: BrandEvidenceDataset
+    ) -> BrandFitEvaluation: ...
