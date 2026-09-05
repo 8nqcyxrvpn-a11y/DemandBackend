@@ -1,0 +1,41 @@
+"""Brand-agnostic evidence models and interfaces."""
+
+from app.brand_intelligence.models import (
+    AssortmentItem,
+    Brand,
+    BrandDNATrait,
+    BrandTerritoryFeature,
+    Category,
+    Collection,
+    Color,
+    Confidence,
+    CraftsmanshipConstruction,
+    DerivedInterpretation,
+    EvidenceRecord,
+    Material,
+    PriceObservation,
+    Product,
+    Season,
+    SilhouetteForm,
+    SourceRecord,
+)
+
+__all__ = [
+    "AssortmentItem",
+    "Brand",
+    "BrandDNATrait",
+    "BrandTerritoryFeature",
+    "Category",
+    "Collection",
+    "Color",
+    "Confidence",
+    "CraftsmanshipConstruction",
+    "DerivedInterpretation",
+    "EvidenceRecord",
+    "Material",
+    "PriceObservation",
+    "Product",
+    "Season",
+    "SilhouetteForm",
+    "SourceRecord",
+]
