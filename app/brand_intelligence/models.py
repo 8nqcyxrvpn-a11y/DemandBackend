@@ -297,3 +297,103 @@ class BrandTerritoryFeature(DomainModel):
     calculated_at: datetime
 
     _calculated_at_aware = field_validator("calculated_at")(_require_aware)
+
+
+class BrandEvidenceDataset(DomainModel):
+    """Portable, provenance-checked snapshot for a brand evidence sample."""
+
+    dataset_id: str = Field(min_length=1)
+    dataset_version: str = Field(min_length=1)
+    created_at: datetime
+    brand: Brand
+    sources: list[SourceRecord] = Field(min_length=1)
+    evidence: list[EvidenceRecord] = Field(min_length=1)
+    categories: list[Category] = Field(default_factory=list)
+    colors: list[Color] = Field(default_factory=list)
+    materials: list[Material] = Field(default_factory=list)
+    silhouettes: list[SilhouetteForm] = Field(default_factory=list)
+    craftsmanship: list[CraftsmanshipConstruction] = Field(default_factory=list)
+    seasons: list[Season] = Field(default_factory=list)
+    collections: list[Collection] = Field(default_factory=list)
+    assortment: list[AssortmentItem] = Field(default_factory=list)
+    prices: list[PriceObservation] = Field(default_factory=list)
+    interpretations: list[DerivedInterpretation] = Field(default_factory=list)
+    dna_traits: list[BrandDNATrait] = Field(default_factory=list)
+    territory: list[BrandTerritoryFeature] = Field(default_factory=list)
+
+    _created_at_aware = field_validator("created_at")(_require_aware)
+
+    @model_validator(mode="after")
+    def validate_provenance_graph(self) -> "BrandEvidenceDataset":
+        def unique(values: list[str], label: str) -> set[str]:
+            found = set(values)
+            if len(found) != len(values):
+                raise ValueError(f"duplicate {label} IDs")
+            return found
+
+        source_ids = unique([x.source_id for x in self.sources], "source")
+        evidence_ids = unique([x.evidence_id for x in self.evidence], "evidence")
+        product_ids = unique([x.product_id for x in self.assortment], "product")
+        interpretation_ids = unique(
+            [x.interpretation_id for x in self.interpretations], "interpretation"
+        )
+        source_by_id = {x.source_id: x for x in self.sources}
+        category_codes = unique([x.code for x in self.categories], "category taxonomy")
+        taxonomy_codes = {
+            AttributeType.COLOR: unique([x.code for x in self.colors], "color taxonomy"),
+            AttributeType.MATERIAL: unique([x.code for x in self.materials], "material taxonomy"),
+            AttributeType.SILHOUETTE_FORM: unique([x.code for x in self.silhouettes], "silhouette taxonomy"),
+            AttributeType.CRAFTSMANSHIP_CONSTRUCTION: unique(
+                [x.code for x in self.craftsmanship], "craftsmanship taxonomy"
+            ),
+        }
+        season_ids = unique([x.season_id for x in self.seasons], "season")
+        collection_ids = unique([x.collection_id for x in self.collections], "collection")
+
+        for source in self.sources:
+            if source.brand_id != self.brand.brand_id:
+                raise ValueError("source brand_id does not match dataset brand")
+        for fact in self.evidence:
+            if fact.source_id not in source_ids:
+                raise ValueError(f"unknown source_id: {fact.source_id}")
+            if str(fact.source_url) != str(source_by_id[fact.source_id].source_url):
+                raise ValueError(f"source URL mismatch for evidence: {fact.evidence_id}")
+            if fact.brand_id != self.brand.brand_id:
+                raise ValueError("evidence brand_id does not match dataset brand")
+        for collection in self.collections:
+            if not set(collection.supporting_evidence_ids).issubset(evidence_ids):
+                raise ValueError(f"collection has unknown evidence ID: {collection.collection_id}")
+            if collection.season_id and collection.season_id not in season_ids:
+                raise ValueError(f"collection has unknown season ID: {collection.collection_id}")
+        for item in self.assortment:
+            refs = item.supporting_evidence_ids + [
+                ref
+                for attr in item.attributes
+                for ref in attr.supporting_evidence_ids
+            ] + [x.evidence_id for x in item.availability_observations]
+            if not set(refs).issubset(evidence_ids):
+                raise ValueError(f"product has unknown evidence ID: {item.product_id}")
+            if item.category_code not in category_codes:
+                raise ValueError(f"product has unknown category code: {item.product_id}")
+            if item.collection_id and item.collection_id not in collection_ids:
+                raise ValueError(f"product has unknown collection ID: {item.product_id}")
+            if item.season_id and item.season_id not in season_ids:
+                raise ValueError(f"product has unknown season ID: {item.product_id}")
+            for attribute in item.attributes:
+                if attribute.canonical_code not in taxonomy_codes[attribute.attribute_type]:
+                    raise ValueError(f"product has unknown taxonomy code: {item.product_id}")
+        for price in self.prices:
+            if price.product_id not in product_ids or price.evidence_id not in evidence_ids:
+                raise ValueError(f"price provenance is incomplete: {price.price_id}")
+        for interpretation in self.interpretations:
+            refs = interpretation.supporting_evidence_ids + interpretation.contradicting_evidence_ids
+            if not set(refs).issubset(evidence_ids):
+                raise ValueError(
+                    f"interpretation has unknown evidence ID: {interpretation.interpretation_id}"
+                )
+        for trait in self.dna_traits:
+            if not set(trait.supporting_evidence_ids).issubset(evidence_ids):
+                raise ValueError(f"trait has unknown evidence ID: {trait.trait_id}")
+            if trait.interpretation_id and trait.interpretation_id not in interpretation_ids:
+                raise ValueError(f"trait has unknown interpretation ID: {trait.trait_id}")
+        return self
