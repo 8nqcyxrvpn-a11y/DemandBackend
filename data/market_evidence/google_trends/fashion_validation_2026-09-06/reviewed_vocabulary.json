@@ -1,0 +1,14 @@
+{
+  "review_status": "human-defined query vocabulary; not a taxonomy mapping",
+  "categories": {
+    "product_categories": ["dress", "dresses", "skirt", "skirts", "blazer", "blazers", "trench coat", "jeans", "barrel jeans", "wide leg jeans", "cargo pants", "cardigan", "vest", "coat", "jacket"],
+    "materials": ["silk", "cashmere", "linen", "suede", "leather", "denim", "velvet", "satin", "lace"],
+    "colors": ["burgundy", "chocolate brown", "butter yellow", "olive green", "navy blue", "powder pink"],
+    "silhouettes_forms": ["maxi dress", "midi skirt", "bubble skirt", "drop waist dress", "wide leg pants", "straight leg jeans", "oversized blazer"],
+    "footwear": ["loafers", "ballet flats", "mary janes", "knee high boots", "sneakers", "mules"],
+    "bags": ["tote bag", "crossbody bag", "shoulder bag", "bucket bag", "clutch", "handbag"],
+    "ready_to_wear": ["ready to wear", "womens clothing", "womens fashion", "fashion trends"],
+    "ambiguity_probes": ["coach", "camel", "tan", "platform", "slip"]
+  },
+  "automatic_promotion_to_taxonomy": false
+}

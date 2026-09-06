@@ -1,0 +1,24 @@
+{
+  "job_id": "phase4_fashion_raw_sample_20260906",
+  "sampling_rule": "first three DMA IDs for each matched term in three representative weeks",
+  "rows": [
+    {"source_table":"top_rising_terms","refresh_date":"2026-09-03","week":"2026-06-07","dma_id":500,"dma_name":"Portland-Auburn ME","term":"white sox vs astros","score":null,"rank":18,"percent_gain":400},
+    {"source_table":"top_rising_terms","refresh_date":"2026-09-03","week":"2026-06-07","dma_id":501,"dma_name":"New York NY","term":"white sox vs astros","score":null,"rank":18,"percent_gain":400},
+    {"source_table":"top_rising_terms","refresh_date":"2026-09-03","week":"2026-06-07","dma_id":502,"dma_name":"Binghamton NY","term":"white sox vs astros","score":null,"rank":18,"percent_gain":400},
+    {"source_table":"top_rising_terms","refresh_date":"2026-09-03","week":"2026-07-19","dma_id":500,"dma_name":"Portland-Auburn ME","term":"white sox vs astros","score":null,"rank":18,"percent_gain":400},
+    {"source_table":"top_rising_terms","refresh_date":"2026-09-03","week":"2026-07-19","dma_id":501,"dma_name":"New York NY","term":"white sox vs astros","score":null,"rank":18,"percent_gain":400},
+    {"source_table":"top_rising_terms","refresh_date":"2026-09-03","week":"2026-07-19","dma_id":502,"dma_name":"Binghamton NY","term":"white sox vs astros","score":null,"rank":18,"percent_gain":400},
+    {"source_table":"top_rising_terms","refresh_date":"2026-09-03","week":"2026-08-30","dma_id":500,"dma_name":"Portland-Auburn ME","term":"white sox vs astros","score":87,"rank":18,"percent_gain":400},
+    {"source_table":"top_rising_terms","refresh_date":"2026-09-03","week":"2026-08-30","dma_id":501,"dma_name":"New York NY","term":"white sox vs astros","score":100,"rank":18,"percent_gain":400},
+    {"source_table":"top_rising_terms","refresh_date":"2026-09-03","week":"2026-08-30","dma_id":502,"dma_name":"Binghamton NY","term":"white sox vs astros","score":null,"rank":18,"percent_gain":400},
+    {"source_table":"top_terms","refresh_date":"2026-09-03","week":"2026-06-07","dma_id":500,"dma_name":"Portland-Auburn ME","term":"leon black","score":null,"rank":25,"percent_gain":null},
+    {"source_table":"top_terms","refresh_date":"2026-09-03","week":"2026-06-07","dma_id":501,"dma_name":"New York NY","term":"leon black","score":5,"rank":25,"percent_gain":null},
+    {"source_table":"top_terms","refresh_date":"2026-09-03","week":"2026-06-07","dma_id":502,"dma_name":"Binghamton NY","term":"leon black","score":null,"rank":25,"percent_gain":null},
+    {"source_table":"top_terms","refresh_date":"2026-09-03","week":"2026-07-19","dma_id":500,"dma_name":"Portland-Auburn ME","term":"leon black","score":null,"rank":25,"percent_gain":null},
+    {"source_table":"top_terms","refresh_date":"2026-09-03","week":"2026-07-19","dma_id":501,"dma_name":"New York NY","term":"leon black","score":6,"rank":25,"percent_gain":null},
+    {"source_table":"top_terms","refresh_date":"2026-09-03","week":"2026-07-19","dma_id":502,"dma_name":"Binghamton NY","term":"leon black","score":null,"rank":25,"percent_gain":null},
+    {"source_table":"top_terms","refresh_date":"2026-09-03","week":"2026-08-30","dma_id":500,"dma_name":"Portland-Auburn ME","term":"leon black","score":100,"rank":25,"percent_gain":null},
+    {"source_table":"top_terms","refresh_date":"2026-09-03","week":"2026-08-30","dma_id":501,"dma_name":"New York NY","term":"leon black","score":36,"rank":25,"percent_gain":null},
+    {"source_table":"top_terms","refresh_date":"2026-09-03","week":"2026-08-30","dma_id":502,"dma_name":"Binghamton NY","term":"leon black","score":null,"rank":25,"percent_gain":null}
+  ]
+}

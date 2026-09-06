@@ -1,0 +1,17 @@
+{
+  "retrieved_at": "2026-09-05T22:38:21Z",
+  "execution_project": "firm-protocol-437913-f6",
+  "dataset_identifier": "bigquery-public-data.google_trends.top_rising_terms",
+  "job_id": "phase4_google_trends_validation_20260906_v2",
+  "refresh_partition": "2026-09-03",
+  "total_bytes_processed": 108329774,
+  "total_bytes_billed": 109051904,
+  "cache_hit": false,
+  "rows": [
+    {"refresh_date":"2026-09-03","week":"2026-08-30","dma_id":500,"dma_name":"Portland-Auburn ME","term":"spaghetto","score":100,"rank":1,"percent_gain":3950},
+    {"refresh_date":"2026-09-03","week":"2026-08-30","dma_id":501,"dma_name":"New York NY","term":"spaghetto","score":100,"rank":1,"percent_gain":3950},
+    {"refresh_date":"2026-09-03","week":"2026-08-30","dma_id":502,"dma_name":"Binghamton NY","term":"spaghetto","score":100,"rank":1,"percent_gain":3950},
+    {"refresh_date":"2026-09-03","week":"2026-08-30","dma_id":503,"dma_name":"Macon GA","term":"spaghetto","score":100,"rank":1,"percent_gain":3950},
+    {"refresh_date":"2026-09-03","week":"2026-08-30","dma_id":504,"dma_name":"Philadelphia PA","term":"spaghetto","score":100,"rank":1,"percent_gain":3950}
+  ]
+}

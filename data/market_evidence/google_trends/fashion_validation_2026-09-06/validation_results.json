@@ -1,0 +1,79 @@
+{
+  "retrieved_at": "2026-09-06T00:00:00Z",
+  "execution_project": "firm-protocol-437913-f6",
+  "refresh_partition": "2026-09-03",
+  "week_start_inclusive": "2026-06-07",
+  "week_end_inclusive": "2026-08-30",
+  "weekly_period_count": 13,
+  "geographic_scope": "United States Nielsen DMAs present in the public tables",
+  "tables": [
+    "bigquery-public-data.google_trends.top_rising_terms",
+    "bigquery-public-data.google_trends.top_terms"
+  ],
+  "jobs": {
+    "exact_vocabulary": {
+      "job_id": "phase4_fashion_vocab_counts_20260906",
+      "bytes_processed": 154813848,
+      "bytes_billed": 155189248,
+      "cache_hit": false,
+      "raw_rows": 0,
+      "deduplicated_observations": 0
+    },
+    "token_summary": {
+      "job_id": "phase4_fashion_token_summary_20260906",
+      "bytes_processed": 154813848,
+      "bytes_billed": 155189248,
+      "cache_hit": false,
+      "raw_rows": 5460,
+      "deduplicated_observations": 26
+    },
+    "deduplicated_with_provenance": {
+      "job_id": "phase4_fashion_deduplicated_20260906",
+      "bytes_processed": 210763948,
+      "bytes_billed": 211812352,
+      "cache_hit": false,
+      "records_written": 26
+    },
+    "raw_sample": {
+      "job_id": "phase4_fashion_raw_sample_20260906",
+      "bytes_processed": 210763948,
+      "records_written": 18,
+      "cache_hit": false
+    },
+    "existing_adapter": {
+      "job_id": "d00c877c-d930-44ee-8348-893a318a3003",
+      "bytes_processed": 108329774,
+      "bytes_billed": 109051904,
+      "row_count": 5,
+      "raw_terms": ["spaghetto", "spaghetto", "spaghetto", "spaghetto", "spaghetto"],
+      "taxonomy_mappings_created": 0
+    }
+  },
+  "token_matches": [
+    {
+      "table": "top_rising_terms",
+      "term": "white sox vs astros",
+      "classification": "rejected",
+      "reason": "sports matchup; matched only the color token 'white'",
+      "raw_dma_rows": 2730,
+      "distinct_dmas": 210,
+      "weeks": 13,
+      "deduplicated_term_weeks": 13
+    },
+    {
+      "table": "top_terms",
+      "term": "leon black",
+      "classification": "rejected",
+      "reason": "proper-name query; matched only the color token 'black'",
+      "raw_dma_rows": 2730,
+      "distinct_dmas": 210,
+      "weeks": 13,
+      "deduplicated_term_weeks": 13
+    }
+  ],
+  "clearly_fashion_specific_terms": [],
+  "ambiguous_observed_terms": [],
+  "rejected_observed_terms": ["white sox vs astros", "leon black"],
+  "taxonomy_mappings_created": 0,
+  "verdict": "C"
+}
