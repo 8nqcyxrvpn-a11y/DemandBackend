@@ -9,6 +9,7 @@ from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 
 from app.collection_service import load_collection
+from app.concept_drafts_preview_service import load_concept_drafts_preview
 from app.config import COLLECTION_PATH, DATASET_PATH, MODEL_PATH, cors_origins
 from app.demand_service import FEATURE_NAMES, predict_demand
 from app.model_loader import ArtifactError, load_model
@@ -73,6 +74,15 @@ def collection() -> dict:
         raise HTTPException(status_code=503, detail=str(exc)) from exc
 
 
+@app.get("/concept-drafts-preview")
+def concept_drafts_preview() -> dict:
+    try:
+        return load_concept_drafts_preview()
+    except ArtifactError as exc:
+        logger.exception("Concept draft preview request failed")
+        raise HTTPException(status_code=503, detail=str(exc)) from exc
+
+
 @app.post("/predict-demand")
 def demand(payload: DemandInput) -> dict:
     try:
@@ -104,4 +114,3 @@ def model_info() -> dict:
         "training_data": "synthetic_demo",
         "prototype_warning": "Not validated for real-world commercial forecasting.",
     }
-

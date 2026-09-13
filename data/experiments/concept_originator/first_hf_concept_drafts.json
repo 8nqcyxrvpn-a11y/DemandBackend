@@ -1,0 +1,2596 @@
+{
+  "artifact_kind": "ai_generated_concept_drafts_experimental",
+  "experimental": true,
+  "eligible_for_public_api": false,
+  "is_synthetic_input": true,
+  "fictional_study_label": "Hermès — fictional concept study",
+  "non_affiliation_disclaimer": "Independent fictional concept study; not affiliated with or endorsed by Hermès.",
+  "created_at": "2026-09-09T22:20:15.336920Z",
+  "batches": [
+    {
+      "drafts": [
+        {
+          "product_name": "Toroidal Sheath Coat",
+          "category": "Outerwear",
+          "core_structural_idea": "A single piece of heavy gauge wool felt is wound into a closed torus (doughnut) shape, then unrolled into a standing column envelope. The 'hole' of the torus becomes a high side-entry slit that wraps the torso, allowing the garment to fall in two distinct vertical panels that reconnect only at the shoulder and crotch via a concealed elasticated channel running along the back seam. This eliminates the front dart and back princess seam found in traditional coats, replacing them with a continuous load path that tightens or loosens based on the wearer's torsion.",
+          "silhouette_form": "Narrow cylinder with a high-wrap side drape",
+          "construction_mechanism": "Spiral spiral-winding felt-torus unrolled to column; back-seam tension channel redistributes panel volume without standard pleats or flaps",
+          "materials_and_behavior": [
+            "Virgin Wool Felt",
+            "Elasticated Suture Thread"
+          ],
+          "colors": [
+            "Electric Blue"
+          ],
+          "product_behavior": "The winding creates inherent tension in the fabric; as the wearer twists, the coating tightens around the waist, while relaxing creates a loose, draped fall at the hips. The side entry allows the coat to open fully without revealing a traditional center opening.",
+          "whitespace_rationale": "Eliminates the visible center seam and front closure entirely, using the geometry of the fabric's initial state as the primary fastening logic.",
+          "trend_signal_ids": [
+            "demo-deconstruction",
+            "demo-narrow",
+            "demo-volume"
+          ],
+          "brand_evidence_ids": [
+            "ev-fw26-runway",
+            "ev-about",
+            "ev-artisans"
+          ],
+          "manufacturability_explanation": "The concept relies on spiral-pattern cutting of wool felt, a technique used in traditional basketry and felt-work, rather than woven garment pattern making. The 'torus' shape is cut on the bias of the felt's compression grain. The back channel is a simple tubular insert of elasticated silk, a standard luxury lining technique, sewn into the seam allowance.",
+          "image_prompt": "High-resolution 3D render of a luxury wool coat in Electric Blue. The garment has a unique toroidal origin: the hem is in two panels meeting at the side, connected at the shoulder and crotch. The side opening is wide and wraps around the body. No logos. No text. No brand names. Clean studio lighting on a neutral background. Photorealistic fabric texture.",
+          "uncertainty_limitations": [
+            "Felt requires specific environmental humidity to maintain structure; may shift if stored dry.",
+            "The internal elastic channel could add bulk if high-tension is required."
+          ]
+        },
+        {
+          "product_name": "Cantilevered Capeblazer",
+          "category": "Outerwear",
+          "core_structural_idea": "A double-breasted blazer silhouette where the entire front closure and lapels are replaced by a rigid, architectural yoke that acts as a cantilever. The yoke is constructed from a semi-rigid matelassé cotton, allowing it to be reshaped by hand. The shoulders of the rest of the coat are fully exposed and do not connect to the front yoke, creating a hollow space between the torso and the front apron. The wearer steps through the back; the front yoke is fastened separately around the neck, resting entirely on the shoulders.",
+          "silhouette_form": "Draped yoke over exposed shoulders",
+          "construction_mechanism": "Cantilevered front yoke detached from shoulder seams; neck-ring closure creates a suspended torso envelope beneath the yoke",
+          "materials_and_behavior": [
+            "Matelassé Cotton",
+            "Hidden Ring Fasteners"
+          ],
+          "colors": [
+            "Butter Yellow"
+          ],
+          "product_behavior": "The front yoke can be shaped aggressively (sharp or soft) without affecting the drape of the underlying garment. The detachability allows the coat to be worn as a standalone jacket or as a cape when the front yoke is removed completely.",
+          "whitespace_rationale": "Reinterprets the lapel not as a trim but as a structural armature that holds the weight of the front panels, freeing the shoulder seam from closure tension.",
+          "trend_signal_ids": [
+            "demo-deconstruction",
+            "demo-narrow"
+          ],
+          "brand_evidence_ids": [
+            "ev-p06",
+            "ev-artisans"
+          ],
+          "manufacturability_explanation": "The yoke is cut from extra-width fabric and stiffened with foam core or interlining, common in aviation or architectural leather goods. The neck ring is a simple closure, similar to a scarf tie but rigidified with stitching. The isolation of the front yoke from the shoulder seams is a standard pattern-making adjustment for cape-like garments.",
+          "image_prompt": "High-resolution 3D render of a luxury cotton coat in Butter Yellow. The garment features a detached, rigid front yoke wrapped around the neck, while the shoulders and sleeves are completely exposed and connected only at the back. No logos. No text. No brand names. Clean studio lighting on a white background. Photorealistic fabric texture.",
+          "uncertainty_limitations": [
+            "The detached yoke may shift independently of the torso during active movement.",
+            "The underlying garment must maintain its shape independently to look intentional."
+          ]
+        },
+        {
+          "product_name": "Interlocked Shell Anorak",
+          "category": "Outerwear",
+          "core_structural_idea": "A coat composed of two identical, opposing shells made of technical-silk leather that can be fastened together or worn separately. The 'interlocked' state creates a single garment with a high collar and rear vent, while the 'separate' state creates two open-ended sleeves/capes that can be draped around the body. The closure mechanism relies on a groove-snap system where the edges of the shells lock into one another, creating a smooth, continuous seam without zippers or buttons.",
+          "silhouette_form": "Dual-shell convertible drape",
+          "construction_mechanism": "Opposing shells with groove-snap locking edges; allows separation into two wearable panels or locking into a single form",
+          "materials_and_behavior": [
+            "Suede Leather",
+            "Groove-Snap Hardware"
+          ],
+          "colors": [
+            "Electric Blue",
+            "Butter Yellow"
+          ],
+          "product_behavior": "The wearer can slip the two halves together to create a full coat with a hood, or pull them apart to create an asymmetrical, layered outerwear ensemble. The snap closure creates a flat profile on the outside when locked.",
+          "whitespace_rationale": "Uses the layering concept to create transformation, where the seams are hidden within the locking groove rather than being zippers or buttons.",
+          "trend_signal_ids": [
+            "demo-deconstruction",
+            "demo-volume"
+          ],
+          "brand_evidence_ids": [
+            "ev-p04",
+            "ev-about"
+          ],
+          "manufacturability_explanation": "Cutting two mirror-image patterns and adding a groove channel to the edge of each piece is a technique used in bookbinding. The snap inserts are small, industrial standard components, sewn into the channel. The leather is soft enough to fold without creasing permanently.",
+          "image_prompt": "High-resolution 3D render of two luxury leather coat halves in Electric Blue. The edges are sharp and structured, designed to interlock. One half is partially fastened to the other, showing the groove-snap mechanism. No logos. No text. No brand names. Clean studio lighting on a dark background. Photorealistic leather texture.",
+          "uncertainty_limitations": [
+            "The snaps may wear out over time if used frequently in high-stress areas.",
+            "The leather may be too stiff for the intended drape in warmer climates."
+          ]
+        },
+        {
+          "product_name": "Fluid-Skirt Trench",
+          "category": "Outerwear",
+          "core_structural_idea": "A long trench coat where the back panel is entirely replaced by a fluid, gathered skirt panel made of sheer silk. The skirt is attached to the waistline and flows to the hem, obscuring the rear view. The front panels are narrow and constructed from a heavy cotton gabardine, creating a stark contrast between the front and back. The skirt panel includes internal weights or magnets at the hem to keep it full and structured even when the coat is closed.",
+          "silhouette_form": "Front narrow, back voluminous skirt",
+          "construction_mechanism": "Back panel replaced by weighted gathered silk skirt; internal weight distribution stabilizes volume without external panels",
+          "materials_and_behavior": [
+            "Silk Satin",
+            "Heavy Cotton Gabardine"
+          ],
+          "colors": [
+            "Electric Blue"
+          ],
+          "product_behavior": "The coat closes neatly at the front, but the back fans out into a dramatic, moving skirt. The skirt can be lifted to reveal the legs, or left down for a theatrical silhouette. The internal weights ensure the skirt maintains its shape regardless of movement.",
+          "whitespace_rationale": "Uses the volume of the skirt to create a new silhouette rather than adding external pockets or flaps, utilizing the fabric's inherent properties.",
+          "trend_signal_ids": [
+            "demo-deconstruction",
+            "demo-volume"
+          ],
+          "brand_evidence_ids": [
+            "ev-p03",
+            "ev-about"
+          ],
+          "manufacturability_explanation": "The skirt panel is cut from sheer silk with internal catch-stitching to hold the gathers. Small lead weights or similar are sewn into the hem, a common technique in evening wear. The front panels are standard trench construction, utilizing the same pattern pieces but replacing the back.",
+          "image_prompt": "High-resolution 3D render of a luxury trench coat in Electric Blue. The front is narrow and structured, while the back fans out into a voluminous, sheer silk skirt. No logos. No text. No brand names. Clean studio lighting on a light background. Photorealistic fabric texture.",
+          "uncertainty_limitations": [
+            "The sheer panel may be too transparent for office environments without additional layers.",
+            "The internal weights may create a clinking sound or discomfort in certain movements."
+          ]
+        },
+        {
+          "product_name": "Kinetic Collar Cape",
+          "category": "Outerwear",
+          "core_structural_idea": "A minimalist hoodless jacket where the collar is the primary functional element. The collar is constructed from three interlocking, articulated segments of leather that can be extended to form a cape, or collapsed to form a high neck. The segments are connected by a series of small, low-profile hinges that allow them to rotate independently. When extended, the cape wraps around the wearer's back, providing coverage without the bulk of a traditional hood or cape.",
+          "silhouette_form": "Modular collar-cape drape",
+          "construction_mechanism": "Three-segment articulated collar; low-profile hinge system allows independent rotation to form a cape",
+          "materials_and_behavior": [
+            "Vegetable-Tanned Leather",
+            "Flexible Polymer Hinges"
+          ],
+          "colors": [
+            "Butter Yellow"
+          ],
+          "product_behavior": "The user can adjust the collar height, open it into a half-cape, or fully extend it to cover the back. The segments move in harmony with the wearer's head and shoulders, creating a dynamic, responsive silhouette.",
+          "whitespace_rationale": "Replaces the static collar with a modular system thatresponds to the wearer's need for coverage, using the collar itself as the source of volume.",
+          "trend_signal_ids": [
+            "demo-deconstruction",
+            "demo-narrow"
+          ],
+          "brand_evidence_ids": [
+            "ev-p04",
+            "ev-p05"
+          ],
+          "manufacturability_explanation": "The segments are cut from leather and joined with flexible polymer hinges, similar to those used in high-end watch straps or jewelry. The connection points are reinforced with stitching, and the system is designed to move smoothly without binding.",
+          "image_prompt": "High-resolution 3D render of a luxury leather jacket in Butter Yellow. The collar is composed of three articulated segments that can be extended into a cape. No logos. No text. No brand names. Clean studio lighting on a gray background. Photorealistic leather texture.",
+          "uncertainty_limitations": [
+            "The hinges may require regular cleaning to prevent grit accumulation.",
+            "The leather may be too stiff for the intended fluid movement in colder climates."
+          ]
+        },
+        {
+          "product_name": "Magnetic-Flap Trench",
+          "category": "Outerwear",
+          "core_structural_idea": "A traditional trench coat silhouette where the front closure and side pockets are replaced by magnetic flaps that can be reconfigured. The coat features large, flat panels at the front that can be flipped inside out or layered over each other, changing the coat's volume and warmth. The side pockets are integrated into the flaps, allowing for variable storage capacity. The entire coat is held together by a series of powerful magnets embedded in the seams, eliminating the need for buttons or zippers.",
+          "silhouette_form": "Variable-volume panel drape",
+          "construction_mechanism": "Large magnetic flap panels; seams embedded with magnets allow reconfiguration of panel layers",
+          "materials_and_behavior": [
+            "Virgin Wool Felt",
+            "Neodymium Magnets",
+            "Silicone Coating"
+          ],
+          "colors": [
+            "Electric Blue"
+          ],
+          "product_behavior": "The wearer can adjust the coat's length, width, and even the number of layers by flipping or resewing the panels. The magnetic closure ensures a secure fit without visible hardware.",
+          "whitespace_rationale": "Uses magnetic force to create a seamless, transformable coat, eliminating the need for traditional closures or pockets.",
+          "trend_signal_ids": [
+            "demo-deconstruction",
+            "demo-volume"
+          ],
+          "brand_evidence_ids": [
+            "ev-p01",
+            "ev-about"
+          ],
+          "manufacturability_explanation": "Magnets are small, industrial standard components, sewn into the seams of the panels. The silicone coating prevents rust and keeps the magnets secure. The panels are cut from extra-heavy wool felt, which is stable enough to hold the shape of the coat.",
+          "image_prompt": "High-resolution 3D render of a luxury wool coat in Electric Blue. The coat features large, flat panels that can be flipped or layered, held together by hidden magnets. No logos. No text. No brand names. Clean studio lighting on a black background. Photorealistic fabric texture.",
+          "uncertainty_limitations": [
+            "The magnets may interfere with electronic devices in the wearer's pocket.",
+            "The wool felt may be too heavy for the intended layered construction."
+          ]
+        }
+      ],
+      "provenance": {
+        "provider": "huggingface_inference_providers",
+        "model_identifier": "Qwen/Qwen3.5-9B",
+        "prompt_version": "concept-originator-1.0",
+        "generated_at": "2026-09-09T22:20:53.806429Z",
+        "input_trend_ids": [
+          "demo-deconstruction",
+          "demo-blue",
+          "demo-narrow",
+          "demo-volume",
+          "demo-yellow"
+        ],
+        "input_evidence_ids": [
+          "ev-about",
+          "ev-artisans",
+          "ev-fw26-runway",
+          "ev-fw26-category",
+          "ev-p01",
+          "ev-p02",
+          "ev-p03",
+          "ev-p04",
+          "ev-p05",
+          "ev-p06",
+          "ev-p07",
+          "ev-p08",
+          "ev-p09",
+          "ev-p10",
+          "ev-p11",
+          "ev-p12"
+        ],
+        "category": "Outerwear",
+        "requested_draft_count": 6,
+        "provider_response_id": "oze8mM4-fdNmn-a3899454abbf35b0"
+      }
+    },
+    {
+      "drafts": [
+        {
+          "product_name": "Interlaced Wale Satchel",
+          "category": "Bag",
+          "core_structural_idea": "A woven saddlebag constructed where two distinct layers of woven leather are braided together with stiffened cords visible on the exterior spine, creating a dual-inner-box structure where the outer weave expands independently of the inner chamber.",
+          "silhouette_form": "Boxy, flat-top trapezoid with a visible horizontal dividing line running front-to-back.",
+          "construction_mechanism": "Two separate rectangular looms of woven leather (weft leather provides stiffness) are stitched together along a central 'zip-wave' joint. Opening the bag splits the weave horizontally rather than unzipping a perimeter, allowing the two woven shells to fan open like a book.",
+          "materials_and_behavior": [
+            "Rigid, stiffened raw-edge Calfskin (thickness 2.4mm)"
+          ],
+          "colors": [
+            "Sap Green woven with Copper",
+            "Indigo woven with Sand"
+          ],
+          "product_behavior": "Dual-layer expansion; the inner weave holds cards, while the outer woven layer holds documents, protected by the outer weave's inherent thickness.",
+          "whitespace_rationale": "No zippers or flaps; the bag is defined entirely by the tension of the interlaced weaving.",
+          "trend_signal_ids": [
+            "demo-deconstruction",
+            "demo-volume"
+          ],
+          "brand_evidence_ids": [
+            "ev-artisans",
+            "ev-about"
+          ],
+          "manufacturability_explanation": "Constructed using industrial loom weaving techniques followed by hand-stitching at the split-line using heavy waxed thread. The weave density provides structural rigidity without internal frames.",
+          "image_prompt": "Isometric product shot of a boxy woven leather bag, raw-edge calfskin, stiffened texture visible, split front-center vertical, split weave revealing two separate interior chambers, no zippers, no handles, no logos, electric blue and sap green or indigo and sand colorways, neutral grey background, soft studio lighting.",
+          "uncertainty_limitations": [
+            "Relies on high-cost weaving machinery for mass production of the looms."
+          ]
+        },
+        {
+          "product_name": "Pivot-Base Traveler",
+          "category": "Bag",
+          "core_structural_idea": "A cylindrical trunk where the base panel is a rotating disc on a silent bearing, allowing the entire lower third of the bag to pivot 90 degrees to stand upright or lay flat for packing.",
+          "silhouette_form": "Tall cylinder with a distinct, slightly protruding base.",
+          "construction_mechanism": "The body and base are one piece of stiffened leather, but the bottom seam is grafted to a separate motorized-free rotation disk. The seam acts as a pivot point rather than a closure.",
+          "materials_and_behavior": [
+            "Soft, heavy-weight Vachetta (thickness 2.0mm)"
+          ],
+          "colors": [
+            "Butter Yellow",
+            "Deep Navy"
+          ],
+          "product_behavior": "Pivoting base allows the bag to sit securely on a suitcase handle or lay flat against a wall; the upper section swings freely.",
+          "whitespace_rationale": "The motion of the base is the primary visual flaw in the silhouette, emphasizing function over geometry.",
+          "trend_signal_ids": [
+            "demo-deconstruction",
+            "demo-narrow"
+          ],
+          "brand_evidence_ids": [
+            "ev-artisans",
+            "ev-about"
+          ],
+          "manufacturability_explanation": "Uses industrial dovetail joints reinforced with metal eyelets and silicone-coated washers hidden inside the seam to allow smooth rotation without hardware.",
+          "image_prompt": "Side profile of a tall cylindrical leather trunk, vachetta material, distinct base panel rotating slightly inward to show hinge mechanism, standing on a wooden floor, soft photorealistic render, butter yellow and deep navy colorways, no logos, no text, neutral background.",
+          "uncertainty_limitations": [
+            "Rotation mechanism may degrade over time if not precisely engineered."
+          ]
+        },
+        {
+          "product_name": "Hollow-Column Brief",
+          "category": "Bag",
+          "core_structural_idea": "A briefcase constructed as a hollow square tube where the four sides are removable panels tensioned by a central elastic core, allowing the sides to be extracted for a flat folder mode.",
+          "silhouette_form": "Slim, tall rectangular prism with sharp square corners.",
+          "construction_mechanism": "A central tube of steel-cored zipper or elastic cord runs vertically. Four rectangular pockets of leather slide onto this core. When the core is released, the panels pull apart; when engaged, they form a rigid box.",
+          "materials_and_behavior": [
+            "Stiffened Goatskin (thickness 1.8mm)"
+          ],
+          "colors": [
+            "Electric Blue with White trim",
+            "Black with Gold trim"
+          ],
+          "product_behavior": "Collapsible from a rigid brief into a thin, roll-like folder; the central tube provides structural support.",
+          "whitespace_rationale": "The visible connection points of the sliding panels create a ladder-like aesthetic on the exterior.",
+          "trend_signal_ids": [
+            "demo-narrow",
+            "demo-volume"
+          ],
+          "brand_evidence_ids": [
+            "ev-about",
+            "ev-p05"
+          ],
+          "manufacturability_explanation": "Sliding pockets are guided by leather channels lined with smooth Teflon fabric. The core tube is lightweight and flexible but strong enough to hold the form.",
+          "image_prompt": "Front view of a slim rectangular leather briefcase, goatskin, sharp corners, four side panels visibly connected by a central vertical seam, panels slightly pulled apart showing flexibility, electric blue and white or black and gold, studio lighting, neutral background.",
+          "uncertainty_limitations": [
+            "Core tube must be strong enough to prevent collapse when panels are fully extended."
+          ]
+        },
+        {
+          "product_name": "Strap-Integrated Sack",
+          "category": "Bag",
+          "core_structural_idea": "A soft sack where the load-bearing strap is not attached to the bag but is an integral part of the bag's top rim, formed by folding the leather inward to create a collar that carries the weight.",
+          "silhouette_form": "Irregular, amorphous top-down circle, flattened bottom.",
+          "construction_mechanism": "The top edge of the bag is folded under 180 degrees to form a stiffened cuff. The strap is glued or stitched into this cuff, so the cuff becomes the handle. The body hangs directly from the strap.",
+          "materials_and_behavior": [
+            "Soft, supple Box Calf (thickness 1.2mm)"
+          ],
+          "colors": [
+            "Butter Yellow",
+            "Saffron Orange"
+          ],
+          "product_behavior": "The bag's body sways freely from the strap; the strap provides all structural support, creating a dynamic silhouette.",
+          "whitespace_rationale": "No traditional top-seaming; the bag is one continuous piece of leather folded into a loop.",
+          "trend_signal_ids": [
+            "demo-volume",
+            "demo-narrow"
+          ],
+          "brand_evidence_ids": [
+            "ev-about",
+            "ev-p01"
+          ],
+          "manufacturability_explanation": "Constructed using blind-stitching along the folded edge to prevent fraying. The stiffness comes from the leather weight and the fold angle, not from rigid backing.",
+          "image_prompt": "Perspective shot of a soft leather sack, box calf, irregular top opening, single thick strap attached to the top rim acting as a handle, hanging freely, butter yellow and saffron orange, soft studio lighting, neutral background, no logos.",
+          "uncertainty_limitations": [
+            "Weight capacity must be carefully calculated to ensure the fold does not tear under heavy loads."
+          ]
+        },
+        {
+          "product_name": "Segmented Cylinder",
+          "category": "Bag",
+          "core_structural_idea": "A cylindrical bag constructed from vertical segments that can be slid up and down relative to each other, changing the bag's circumference and height.",
+          "silhouette_form": "Tall cylinder with horizontal grooves separating segments.",
+          "construction_mechanism": "Three vertical channels are created by stitching grooves into the leather cylinder. Two separate ring-shaped panels of leather slide over these channels like beads on a string. Moving the rings changes the bag's volume and shape.",
+          "materials_and_behavior": [
+            "Rigid, stiffened Horse Skin (thickness 2.0mm)"
+          ],
+          "colors": [
+            "Electric Blue with White",
+            "Sage Green with Black"
+          ],
+          "product_behavior": "The rings can be separated to widen the bag or brought together to narrow it, creating a variable silhouette.",
+          "whitespace_rationale": "The horizontal grooves are the primary visual feature, indicating modularity.",
+          "trend_signal_ids": [
+            "demo-deconstruction",
+            "demo-narrow"
+          ],
+          "brand_evidence_ids": [
+            "ev-artisans",
+            "ev-about"
+          ],
+          "manufacturability_explanation": "Uses a system of leather beads sliding over a fixed leather core. The stiffness of the horse skin prevents the core from collapsing when beads are moved.",
+          "image_prompt": "Front view of a cylindrical leather bag, horse skin, distinct horizontal grooves sliding, two ring sections slightly offset, electric blue with white or sage green with black, studio lighting, neutral background, no logos.",
+          "uncertainty_limitations": [
+            "Sliding mechanism may become sluggish over time without precise lubrication."
+          ]
+        },
+        {
+          "product_name": "Floating Lattice",
+          "category": "Bag",
+          "core_structural_idea": "A bag where the exterior is a grid of intersecting leather struts that form a cage, while the interior is a separate fabric pouch suspended within the grid.",
+          "silhouette_form": "Geometric, open-frame cube or sphere depending on the model.",
+          "construction_mechanism": "A rigid internal scaffold of leather struts is stitched together to form a hollow shape. A separate pouch is suspended from the termini of these struts using short loops of the same leather. The pouch hangs freely inside the cage.",
+          "materials_and_behavior": [
+            "Stiffened Cuoio (thickness 2.5mm) for struts",
+            "Soft cotton canvas for pouch"
+          ],
+          "colors": [
+            "Black with White canvas",
+            "Navy with Gold struts"
+          ],
+          "product_behavior": "The pouch moves independently within the cage, allowing for airflow and preventing snagging.",
+          "whitespace_rationale": "The open lattice structure creates a visual illusion of lightness despite the heavy leather struts.",
+          "trend_signal_ids": [
+            "demo-deconstruction",
+            "demo-narrow"
+          ],
+          "brand_evidence_ids": [
+            "ev-artisans",
+            "ev-about"
+          ],
+          "manufacturability_explanation": "Struts are laser-cut leather strips assembled into a frame. The pouch is sewn separately and attached with brass eyelets for durability.",
+          "image_prompt": "Isometric view of a geometric leather cage, stiffened leather struts forming a cube, soft cotton fabric pouch hanging inside, floating elements, black with white or navy with gold, studio lighting, neutral background, no logos.",
+          "uncertainty_limitations": [
+            "Structural integrity depends on the precise alignment of the struts and the stiffness of the leather."
+          ]
+        }
+      ],
+      "provenance": {
+        "provider": "huggingface_inference_providers",
+        "model_identifier": "Qwen/Qwen3.5-9B",
+        "prompt_version": "concept-originator-1.0",
+        "generated_at": "2026-09-09T22:21:19.479307Z",
+        "input_trend_ids": [
+          "demo-deconstruction",
+          "demo-blue",
+          "demo-narrow",
+          "demo-volume",
+          "demo-yellow"
+        ],
+        "input_evidence_ids": [
+          "ev-about",
+          "ev-artisans",
+          "ev-fw26-runway",
+          "ev-fw26-category",
+          "ev-p01",
+          "ev-p02",
+          "ev-p03",
+          "ev-p04",
+          "ev-p05",
+          "ev-p06",
+          "ev-p07",
+          "ev-p08",
+          "ev-p09",
+          "ev-p10",
+          "ev-p11",
+          "ev-p12"
+        ],
+        "category": "Bag",
+        "requested_draft_count": 6,
+        "provider_response_id": "oze8xDy-3pDw3Z-a38995392bf318b8"
+      }
+    },
+    {
+      "drafts": [
+        {
+          "product_name": "Collapsed Dimple Satchel",
+          "category": "Small Leather Good",
+          "core_structural_idea": "A minimalist satchel where the bottom panel is segmented into flexible vertical blades rather than a single rigid sheet. When light is applied or pressure is distributed, the blades spring outward to create a wider, stable base and a deeper compartment. When unloaded, the blades settle back against each other, creating a narrow, profile-dim operating size. The tension is managed by a hidden internal suspension matrix of horizontal straps that lock the blades in place without external visible hardware.",
+          "silhouette_form": "Electric Blue, Selective Volume",
+          "construction_mechanism": "The silhouette shifts from narrow to wide based on internal blade tension. The 'demolition' of the rigid bag bottom into articulated segments creates the final form. The weight of the contents determines the footprint; an empty bag is a shadow, a full bag is a platform. No external zippers or clasps define the opening; the base tension naturally pulls the top flaps taut.",
+          "materials_and_behavior": [
+            "Butter Yellow grained calfskin for the flexible bottom blades, allowing organic spring-back.",
+            "Electric Blue smooth leather for the upper shell and top apron, providing contrast and structural definition.",
+            "Internal beige calf/mat-lining taffeta to prevent blade friction."
+          ],
+          "colors": [
+            "Electric Blue",
+            "Butter Yellow"
+          ],
+          "product_behavior": "The bag stands upright only when loaded; when empty, it collapses into a compact, flat profile to fit in a pocket. The transition is silent and haptic, driven entirely by the tension of the internal strap matrix acting on the segmented base.",
+          "whitespace_rationale": "A rejection of the static, geometric container. The form is a direct result of mass and tension interaction, prioritizing utility in transit (collapse) and utility at rest (support).",
+          "trend_signal_ids": [
+            "demo-blue",
+            "demo-yellow",
+            "demo-volume"
+          ],
+          "brand_evidence_ids": [
+            "ev-artisans"
+          ],
+          "manufacturability_explanation": "Crafted using traditional saddle-stitching techniques. The vertical blades are pre-stretched on frames before attachment. Horizontal retention straps are sewn into the seams, hidden from view, providing the necessary tension. The skin is selected for specific tensile memory to ensure consistent spring-back action.",
+          "image_prompt": "A minimalist luxury leather satchel in electric blue and butter yellow. The bag is empty and collapsed flat on a neutral surface, showing vertical pleats or folds at the bottom. The concept relies on material tension and structure rather than logos or hardware. No text, no brand names, no monograms. Physical, realistic lighting, photorealistic, 8k. Focus on the interlocking leather geometry.",
+          "uncertainty_limitations": [
+            "Tension consistency depends on leather hydration and temperature.",
+            "Long-term wear may flatten blades over time.",
+            "Durability of fraying on blade tips requires reinforced seam work."
+          ]
+        },
+        {
+          "product_name": "Threaded Loop Briefcase",
+          "category": "Small Leather Good",
+          "core_structural_idea": "A briefcase constructed not from panels sewn together, but from a continuous loop of wide leather strap that weaves through itself. The body comprises a singular strand that wraps, twists, and locks around its own circumference.closure is achieved by threading a leather toggle through a reinforced loop in the strand itself. The structure relies on the braided or lox-style weave of a single continuous piece of material rather than stitched gussets.",
+          "silhouette_form": "Narrow Silhouettes, Deconstructed Tailoring",
+          "construction_mechanism": "The loop travels through itself to form rigid boxes, transforming a flexible cylinder into a structured rectangular prism. The tension of the loop maintains the shape without internal padding. The exterior is a series of interlocking loops, creating a lattice-like texture that breathes and flexes. No side seams exist; the 'seam' is the path of the thread weaving through the body. The closure mechanism is a 'self-threading' action where the strap passes through a dedicated anchor point.",
+          "materials_and_behavior": [
+            "Electric Blue vegetable-tanned leather for the main structural strand, chosen for high tensile strength and color depth.",
+            "Butter Yellow full-grain leather for the interior lining, providing a soft contrast to the structural exterior.",
+            "Silk twist wire for internal reinforcement if needed, hidden within the weave."
+          ],
+          "colors": [
+            "Electric Blue",
+            "Butter Yellow"
+          ],
+          "product_behavior": "The bag has a unique flex; squeezing the sides compresses the weave temporarily, allowing it to slide under a chair, but it instantly rebounds to a rigid, narrow shape when released. This mimics the idea of a knitted garment or a bracelet transformed into a container. The narrow silhouette is maintained by the tension of the single loop woven tightly around itself.",
+          "whitespace_rationale": "A reimagining of the 'seam' as the 'body'. Instead of cutting leather into shapes and sewing them, the shape is created purely through the manipulation of a single continuous line. The aesthetic is of raw, industrial construction refined to luxury.",
+          "trend_signal_ids": [
+            "demo-blue",
+            "demo-yellow",
+            "demo-deconstruction"
+          ],
+          "brand_evidence_ids": [
+            "ev-artisans"
+          ],
+          "manufacturability_explanation": "Constructed using specialized 'piping' jigs where a single long strap is wound and stitched to itself in precise geometric loops. The weaving process requires high precision to ensure the bag does not unravel. The leather thickness must be uniform to maintain the weave integrity.",
+          "image_prompt": "A luxury leather briefcase made from a single continuous strand of electric blue leather. The strands weave and lock together to form a rectangular container structure. No logos, no brand text. The concept relies on the geometric interlocking of the material. Wireframe style but photorealistic ends. Neutral background, soft lighting. Focus on the texture of the weave and the color contrast.",
+          "uncertainty_limitations": [
+            "Risk of unraveling if the weave is overstretched.",
+            "Weight distribution may be uneven if the weave is not perfectly symmetric.",
+            "Wear on the outer loops may be faster than traditional stitched seams."
+          ]
+        },
+        {
+          "product_name": "Clustered Knot Wallet",
+          "category": "Small Leather Good",
+          "core_structural_idea": "A wallet that uses the physics of knotting to create its structure, rather than sewing. It consists of multiple pre-formed leather loops tied around a central spine. When the wallet is closed, the knots are pulled tight, cinching the side compartments shut and creating a compact, cylindrical form. When opened or un-tied, the loops expand, allowing cards and cash to tuck into the expanded space. The 'closure' is a series of friction knots tied and untied by hand via the fingers or a specific lever.",
+          "silhouette_form": "Selective Volume, Narrow Silhouettes",
+          "construction_mechanism": "The wallet is assembled by tying a continuous length of leather through fixed eyelets in a central band. Each card slot is formed by a loop of leather that is knotted at the front. The tension of the knot dictates the width of the slot. The wallet is not a flat rectangle; it is a series of volumetric knots. The interaction is tactile; the user feels the tightness of the knot, which signals capacity.",
+          "materials_and_behavior": [
+            "Electric Blue vegetable-tanned leather for the main knots and loops, chosen for its ability to hold shape under tension.",
+            "Butter Yellow suede-lined interior to prevent cards from sliding.",
+            "Raw-edge un-finished leather for the central spine, emphasizing the hand-made knotting process."
+          ],
+          "colors": [
+            "Electric Blue",
+            "Butter Yellow"
+          ],
+          "product_behavior": "The wallet changes its volume dynamically. A 'full' wallet is a series of large, puffed-out knots. An 'empty' wallet is a tight, thin cylinder. The user can adjust the tightness of individual knots to expand or contract specific card slots, offering a modular capacity without flipping flaps.",
+          "whitespace_rationale": "This concept challenges the 'flat, stitched rectangle' paradigm of wallets. It introduces a dynamic, tactile interface where the function of holding cards is communicated through the tension and geometry of knots. It is a utilitarian object that looks like a sculptural study of binding.",
+          "trend_signal_ids": [
+            "demo-blue",
+            "demo-yellow",
+            "demo-deconstruction"
+          ],
+          "brand_evidence_ids": [
+            "ev-artisans"
+          ],
+          "manufacturability_explanation": "Constructed using specialized knotting jigs that ensure each loop is uniform. The central spine is pre-woven, and the loops are tied by hand or machine using a 'cable' technique. Reinforced knots at stress points prevent slippage. The leather must be treated to prevent swelling when wet.",
+          "image_prompt": "A luxury leather wallet made entirely of tied knots and loops in electric blue and butter yellow. The structure looks like a series of interlocking knots forming a wallet shape. No logos, no brand text. The focus is on the handcrafted knotting technique and the organic geometry. Neutral background, soft lighting. Photorealistic, 8k.",
+          "uncertainty_limitations": [
+            "Knots can loosen over time with heavy use.",
+            "Access speed may be slower than zippered wallets.",
+            "Water resistance is limited unless the leather is heavily treated."
+          ]
+        },
+        {
+          "product_name": "Interlinked Ring Purse",
+          "category": "Small Leather Good",
+          "core_structural_idea": "A small hand-held purse constructed from a continuous thread of leather that weaves through a series of rigid, thin leather rings. The rings form the skeleton, while the thread forms the skin. The bag is carried by a single ring that acts as the handle and the base. The rings can be opened and re-closed, changing the bag from a closed cylinder to an open basket, or from a wide tote to a narrow clutch. The 'closure' is a simple friction fit of one ring inside another.",
+          "silhouette_form": "Narrow Silhouettes, Deconstructed Tailoring",
+          "construction_mechanism": "The bag is built as a chainmail, but instead of metal, it uses interlocking leather rings and a continuous leather strap. The strap runs through every ring, binding them together. The rings provide the rigid structure, while the strap provides the flexibility and aesthetic. The silhouette is defined by the number of rings engaged - more rings, wider body; fewer rings, narrow profile. The interaction is purely mechanical: threading the strap through or unthreading the rings changes the form.",
+          "materials_and_behavior": [
+            "Electric Blue polished leather for the rings, cut to precise dimensions for interlocking.",
+            "Butter Yellow soft leather for the continuous strap, allowing fluid movement.",
+            "Gold-plated metal hooks to hide the connection points at the top and bottom."
+          ],
+          "colors": [
+            "Electric Blue",
+            "Butter Yellow"
+          ],
+          "product_behavior": "The bag transforms from a structured, rigid cylinder to a soft, flexible hoop. The user can collapse the bag by passing the strap through fewer rings, making it pocket-sized. The expansion is controlled by pulling the strap taut, which forces the rings into a larger circumference. The closure is achieved by the natural friction of the rings when the strap is tightened.",
+          "whitespace_rationale": "A rejection of the 'bag is a box' mentality. This bag is a subtractive process; it starts as a wall of rings and is molded into shape by tension. It highlights the material strength of leather and the geometry of interlocking loops.",
+          "trend_signal_ids": [
+            "demo-blue",
+            "demo-yellow",
+            "demo-deconstruction"
+          ],
+          "brand_evidence_ids": [
+            "ev-artisans"
+          ],
+          "manufacturability_explanation": "Requires high-precision cutting of rings to ensure perfect interlocking. The continuous strap must be sewn or glued to the rings in a specific pattern. The metal hooks are embedded invisibly to allow the rings to pivot without sagging. The rings are pre-assembled in a tube before the final strap attachment.",
+          "image_prompt": "A luxury handbag made of interlocking blue and yellow leather rings. The structure looks like a chainmail or jewelry piece. The strap winds through the rings, holding them together. No logos, no brand text. The concept relies on the geometric precision of the rings. Neutral background, soft lighting. Photorealistic, 8k.",
+          "uncertainty_limitations": [
+            "Rings may eventually show signs of wear or deformation.",
+            "Interlocking mechanism may be prone to jamming if dirt accumulates.",
+            "Skin may stretch or tear if the rings become too loose."
+          ]
+        }
+      ],
+      "provenance": {
+        "provider": "huggingface_inference_providers",
+        "model_identifier": "Qwen/Qwen3.5-9B",
+        "prompt_version": "concept-originator-1.0",
+        "generated_at": "2026-09-09T22:21:51.671323Z",
+        "input_trend_ids": [
+          "demo-deconstruction",
+          "demo-blue",
+          "demo-narrow",
+          "demo-volume",
+          "demo-yellow"
+        ],
+        "input_evidence_ids": [
+          "ev-about",
+          "ev-artisans",
+          "ev-fw26-runway",
+          "ev-fw26-category",
+          "ev-p01",
+          "ev-p02",
+          "ev-p03",
+          "ev-p04",
+          "ev-p05",
+          "ev-p06",
+          "ev-p07",
+          "ev-p08",
+          "ev-p09",
+          "ev-p10",
+          "ev-p11",
+          "ev-p12"
+        ],
+        "category": "Small Leather Good",
+        "requested_draft_count": 4,
+        "provider_response_id": "oze95qa-fdNmn-a38995d99d59d4a8"
+      }
+    },
+    {
+      "drafts": [
+        {
+          "product_name": "Interlaced Sole Slipper",
+          "category": "Footwear",
+          "core_structural_idea": "A single, continuous loop of calfskin weaves through internal Teslin shanks at regular intervals to form the upper's perimeter and the sole's edge simultaneously. No glue or stitching joins these sections; the entire form relies on the tension of the lacing loop against the compressed core. The design eliminates the traditional sole-to-upper transition, making the boundary ambiguous while maximizing tension distribution.",
+          "silhouette_form": "Narrow Silhouette with Integrated Sole",
+          "construction_mechanism": "Single-piece woven construction using an internal shank framework that dictates the flex pattern. The upper is not stitched but wrapped through the shanks, creating a rigid arch that softens only at the ball of the foot where the weave is relaxed.",
+          "materials_and_behavior": [
+            "Natural Calveskin",
+            "Intertwined natural-fiber Teslin",
+            "Nappa leather insole"
+          ],
+          "colors": [
+            "Electric Blue",
+            "Butter Yellow"
+          ],
+          "product_behavior": "The shoe forms a closed hinged ring. When worn, the foot compresses the Teslin core, causing the upper loops to tighten securely without laces. The visual identity is defined by the horizontal rhythm of the weaves.",
+          "whitespace_rationale": "Rejects the familiar 'upper stitched to sole' cliché by using a structural weave as the primary load-bearing element, replacing seams with interlaced tension.",
+          "trend_signal_ids": [
+            "demo-deconstruction",
+            "demo-narrow"
+          ],
+          "brand_evidence_ids": [
+            "ev-p04",
+            "ev-p05",
+            "ev-artisans"
+          ],
+          "manufacturability_explanation": "Constructed manually using traditional pull-through weaving techniques on a custom loom, mimicking the craftsmanship of leatherworking bundles. The mechanism relies on precise tension tolerance, requiring artisan calibration rather than industrial automation.",
+          "image_prompt": "Photorealistic studio shot of a luxury footwear concept featuring a narrow silhouette where the upper material and the sole edge are indistinguishable, formed by a continuous woven loop of large pores calfskin and textured Teslin. No logos, no branding, no monograms. The texture shows horizontal interlacing ribs. Neutral studio lighting, seamless background.",
+          "uncertainty_limitations": [
+            "Requires highly specialized manual weaving skills."
+          ]
+        },
+        {
+          "product_name": "Hexagonal Cell Clog",
+          "category": "Footwear",
+          "core_structural_idea": "A rigid, honeycomb-structured outsole made of compressed cork and layered suede forms the base. Flexible, tubular leather cells sit atop this unit, connecting at the heel but leaving the forefoot as a series of open, breathable hexagonal apertures. The cells act as both upper and structural strut.",
+          "silhouette_form": "Narrow Silhouette with Selective Openness",
+          "construction_mechanism": "The hexagonal frame is cast from a solid block of cork covered in smooth leather, then cut and glued into a grid. The flexible cells are inserted into the grid with minimal adhesive, relying on friction and the rigidity of the base for stability.",
+          "materials_and_behavior": [
+            "Compressed natural cork",
+            "Suede",
+            "Smooth calfskin"
+          ],
+          "colors": [
+            "Butter Yellow",
+            "Onyx Black"
+          ],
+          "product_behavior": "The cells expand slightly when stepped into, then retract. The open forefoot design reduces heat and weight while the hexagonal pattern distributes impact forces across the entire foot surface.",
+          "whitespace_rationale": "Replaces the continuous leather shell with a cellular metal-like structure that is soft yet rigid, focusing on environmental resonance and structural lattice design rather than conventional shape wrapping.",
+          "trend_signal_ids": [
+            "demo-volume",
+            "demo-deconstruction"
+          ],
+          "brand_evidence_ids": [
+            "ev-p04",
+            "ev-p01"
+          ],
+          "manufacturability_explanation": "The base can be machine-molded from cork granulate, while the leather cells are hand-cut and fitted. This hybrid approach allows for scalable production while maintaining the detailed hand-fitting required for the grid alignment.",
+          "image_prompt": "Close-up product shot of a clog featuring a rigid honeycomb base made of natural cork and textured leather tubes forming the upper. The toe area has open hexagonal gaps. No logos or text. Neutral lighting highlighting the pore texture of the leather and the grain of the cork.",
+          "uncertainty_limitations": [
+            "Open toe structure limits styling versatility compared to closed shoes."
+          ]
+        },
+        {
+          "product_name": "Suspension Arch Sandal",
+          "category": "Footwear",
+          "core_structural_idea": "The foot rests entirely within a suspended cavity formed by a rigid arch strap that bridges the heel and the inner toes, bypassing the midfoot entirely. The arch itself is tensioned by a counterweight mechanism behind the heel, keeping the strap taut and conforming to the foot's unique shape without direct contact.",
+          "silhouette_form": "Narrow Silhouette",
+          "construction_mechanism": "A solid, curved arch of leather is held in place by a tensioning system at the heel. The arch does not touch the foot; instead, it acts as a bridge, with the foot sliding underneath a secondary, softer lining that is held flat by the arch's tension.",
+          "materials_and_behavior": [
+            "Deerskin",
+            "Cotton canvas",
+            "Natural rubber"
+          ],
+          "colors": [
+            "Electric Blue",
+            "Bone White"
+          ],
+          "product_behavior": "The sandal feels weightless as the arch lifts the foot slightly. The tensioning system ensures the arch remains perfectly aligned regardless of foot movement, offering support without restricting natural flexion.",
+          "whitespace_rationale": "Eliminates all contact points in the midfoot, a radical departure from traditional sandals and shoes, focusing on the structural relationship between supporting elements and the empty space they create.",
+          "trend_signal_ids": [
+            "demo-narrow",
+            "demo-deconstruction"
+          ],
+          "brand_evidence_ids": [
+            "ev-p04",
+            "ev-p05",
+            "ev-artisans"
+          ],
+          "manufacturability_explanation": "The arch is hand-cut and shaped from a single piece of deerskin, then tensioned using a simple knot and friction system at the heel. The lack of complex closures or hardware simplifies manufacturing while relying on masterful cutting skills.",
+          "image_prompt": "Side view of a luxury sandal where the foot is cradled by a suspended leather arch that does not touch the ground or the midfoot. The arch is held in place by a tensioning system at the heel. No logos, no branding. Clean, minimalist aesthetic.",
+          "uncertainty_limitations": [
+            "Requires precise foot shape to function correctly; may not suit all foot sizes."
+          ]
+        },
+        {
+          "product_name": "Chain-Link Herringbone Moccasin",
+          "category": "Footwear",
+          "core_structural_idea": "A series of interlocking metal-style links made from thin, durable leather strips replace the traditional moccasin vamp. These links are stitched together in a herringbone pattern, creating a flexible yet structured cage around the foot. The sole is a single block of rubber molded to the shape of the linked upper.",
+          "silhouette_form": "Narrow Silhouette",
+          "construction_mechanism": "The leather strips are folded and stitched together to form a chain-like structure. The entire cage is then pressed into the rubber sole, creating a unified piece where the upper and sole are mechanically integrated through the link structure.",
+          "materials_and_behavior": [
+            "Buff calf leather",
+            "Natural rubber"
+          ],
+          "colors": [
+            "Butter Yellow",
+            "Onyx Black"
+          ],
+          "product_behavior": "The chain-link pattern allows for extreme flexibility and breathability while maintaining a rigid outer profile. The herringbone stitch provides structural integrity and a highly textured visual rhythm.",
+          "whitespace_rationale": "Substitutes continuous leather with a discrete, modular link system, transforming the moccasin from a solid form into a skeletal, architectural construction.",
+          "trend_signal_ids": [
+            "demo-deconstruction",
+            "demo-narrow"
+          ],
+          "brand_evidence_ids": [
+            "ev-p04",
+            "ev-p01"
+          ],
+          "manufacturability_explanation": "The leather links are cut using a die-cutting machine, then assembled using a specialized beading technique to create the chain links. The integration with the sole is done via a molding process that preserves the integrity of the leather structure.",
+          "image_prompt": "Close-up of a moccasin-style shoe where the upper is made of interlocking leather strips in a herringbone pattern. The sole is a single block of rubber molded to the upper. No logos, no text. High-contrast lighting to highlight the texture of the links.",
+          "uncertainty_limitations": [
+            "The beading technique is labor-intensive and may require specialized tools."
+          ]
+        },
+        {
+          "product_name": "Fluid Drip Loafer",
+          "category": "Footwear",
+          "core_structural_idea": "A series of elongated, teardrop-shaped leather elements are suspended from a central spine at the heel and the top of the toe, mimicking the way water drips from a fountain. These elements overlap and slide against each other, changing the shoe's appearance based on movement and weight.",
+          "silhouette_form": "Narrow Silhouette with Selective Volume",
+          "construction_mechanism": "The spine is a rigid, curved piece of leather. The teardrop elements are attached to it using small, invisible stitches that allow them to pivot. The overlap between the elements is managed by a specialized gluing technique that creates a friction fit.",
+          "materials_and_behavior": [
+            "Silk finish calfskin",
+            "Suede"
+          ],
+          "colors": [
+            "Electric Blue",
+            "Bone White"
+          ],
+          "product_behavior": "As the wearer walks, the teardrop elements shift, creating a fluid, dynamic silhouette that changes with each step. The overlapping surfaces create a shimmering effect as light reflects off the silk finish.",
+          "whitespace_rationale": "Replaces the static, solid surface of a loafer with a series of moving, overlapping forms that interact with the environment and the wearer's motion, creating a sense of perpetual flux.",
+          "trend_signal_ids": [
+            "demo-volume",
+            "demo-deconstruction"
+          ],
+          "brand_evidence_ids": [
+            "ev-p03",
+            "ev-p05"
+          ],
+          "manufacturability_explanation": "The teardrop elements are mirror-cut and then manually aligned and glued to the spine. The overlapping technique requires high precision and skill, but can be scaled with automated assembly lines once the manual process is perfected.",
+          "image_prompt": "Studio shot of a loafer-style shoe where the upper consists of overlapping teardrop-shaped leather pieces that are suspended and sliding against each other. The leather has a silk finish. No logos, no text. Soft lighting to highlight the sheen of the leather.",
+          "uncertainty_limitations": [
+            "The moving parts may become misaligned over time, requiring maintenance."
+          ]
+        },
+        {
+          "product_name": "Geom Grid Monk",
+          "category": "Footwear",
+          "core_structural_idea": "A rigid grid of vertical and horizontal leather strips forms the upper and sole of the shoe. The grid is flexible in specific directions, allowing the foot to move naturally, while remaining rigid in others to provide support. The monk strap is integrated into the grid as a horizontal bar.",
+          "silhouette_form": "Narrow Silhouette",
+          "construction_mechanism": "The grid is constructed by weaving leather strips together in a specific pattern. The monk strap is integrated as one of the horizontal bars, which can be tightened or loosened with a buckle.",
+          "materials_and_behavior": [
+            "Full-grain calfskin",
+            "Heavy-weight linen"
+          ],
+          "colors": [
+            "Onyx Black",
+            "Butter Yellow"
+          ],
+          "product_behavior": "The grid provides a unique tactile experience, with different parts of the foot interacting with different materials and textures. The grid also creates a highly structured, architectural silhouette.",
+          "whitespace_rationale": "Replaces the traditional moccasin or boot construction with a pure grid system, exploring the relationship between structure and flexibility in a new way.",
+          "trend_signal_ids": [
+            "demo-deconstruction",
+            "demo-narrow"
+          ],
+          "brand_evidence_ids": [
+            "ev-p01",
+            "ev-p06"
+          ],
+          "manufacturability_explanation": "The grid can be constructed using a weaving loom, similar to the method used for the Interlaced Sole Slipper, but with a different pattern. The integration of the monk strap is simple and can be done by hand or machine.",
+          "image_prompt": "Top-down view of a monk-strap shoe where the upper and sole are made of a geometric grid of leather strips. The strips are arranged in a precise pattern, creating a structured, architectural look. No logos, no text. Clean, minimalist lighting.",
+          "uncertainty_limitations": [
+            "The grid structure may be less comfortable for some users compared to softer uppers."
+          ]
+        }
+      ],
+      "provenance": {
+        "provider": "huggingface_inference_providers",
+        "model_identifier": "Qwen/Qwen3.5-9B",
+        "prompt_version": "concept-originator-1.0",
+        "generated_at": "2026-09-09T22:22:22.934264Z",
+        "input_trend_ids": [
+          "demo-deconstruction",
+          "demo-blue",
+          "demo-narrow",
+          "demo-volume",
+          "demo-yellow"
+        ],
+        "input_evidence_ids": [
+          "ev-about",
+          "ev-artisans",
+          "ev-fw26-runway",
+          "ev-fw26-category",
+          "ev-p01",
+          "ev-p02",
+          "ev-p03",
+          "ev-p04",
+          "ev-p05",
+          "ev-p06",
+          "ev-p07",
+          "ev-p08",
+          "ev-p09",
+          "ev-p10",
+          "ev-p11",
+          "ev-p12"
+        ],
+        "category": "Footwear",
+        "requested_draft_count": 6,
+        "provider_response_id": "oze9FNc-fdNmn-a38996a1f81bc4a7"
+      }
+    },
+    {
+      "drafts": [
+        {
+          "product_name": "Radial Weft Coat",
+          "category": "Ready-to-Wear",
+          "core_structural_idea": "A jacket where the main body is formed by individual woven bands running laterally rather than continuous vertical fabric strips. These bands interlock at the shoulders and hem to create a self-supporting shell.",
+          "silhouette_form": "tubular column with wide base",
+          "construction_mechanism": "The garment is constructed from a single continuous warp knit that is cut into radial segments. These segments are pieced together with invisible chain-stitching that floats slightly away from the surface, creating a 'breathing' texture that expands when moving. The closure is a hidden magnetic interface within a single thickened woven rib, avoiding zippers or buttons.",
+          "materials_and_behavior": [
+            "Heavy-gauge cotton gauze for the warp",
+            "Silk train for the floating surface layers"
+          ],
+          "colors": [
+            "Electric Blue for the warp ribs",
+            "Butter Yellow for the floating surface"
+          ],
+          "product_behavior": "When the wearer moves, the radial segments shift slightly relative to one another, causing the surface texture to ripple without loosening the structural form.",
+          "whitespace_rationale": "Avoids traditional side seams and pockets; volume is generated by the three-dimensional spacing of the woven ribs rather than internal padding.",
+          "trend_signal_ids": [
+            "demo-deconstruction",
+            "demo-blue",
+            "demo-narrow"
+          ],
+          "brand_evidence_ids": [
+            "ev-about",
+            "ev-artisans",
+            "ev-p01"
+          ],
+          "manufacturability_explanation": "Can be produced via industrial wide-format knitting followed by precision hand-sewing of the radial interlocking points, a technique consistent with artisanal weaving.",
+          "image_prompt": "A full-body shot of a jacket made of horizontal woven ribs in electric blue and butter yellow. The ribs interlock at the shoulders and hem, forming a self-supporting tubular shape. No logos, no buttons, no zippers. The texture shows slight separation between the rib layers, creating depth. Shot in neutral daylight against a white background. Photorealistic, 8k.",
+          "uncertainty_limitations": [
+            "The synthesis of heavy warp knitting with fine silk floatation may require specialized loom tension control.",
+            "Heat-shaping the woven ribs to maintain the radial curve without thermal distortion of the silk."
+          ]
+        },
+        {
+          "product_name": "Ambient Cuff Blazer",
+          "category": "Ready-to-Wear",
+          "core_structural_idea": "A blazer where the shoulder structure is not fixed to the upper garment but hangs loosely from the collar, shifting weight and position based on arm movement.",
+          "silhouette_form": "loose rectangular box with mobile shoulders",
+          "construction_mechanism": "The collar connects to short, tensioned silk cords that anchor the shoulder pads to the pro's chest. As the arms move, the shoulders drift, creating a dynamic silhouette that changes from structured to draped. The lapels are made of a rigid, quilted panel that retains its shape independently of the body below.",
+          "materials_and_behavior": [
+            "Virgin wool body",
+            "Quilted silk shoulder pads",
+            "Silk thread cords"
+          ],
+          "colors": [
+            "Olive Green (body)",
+            "Charcoal (shoulders)"
+          ],
+          "product_behavior": "The blazer does not conform to the wearer's static posture but creates a floating perimeter around the torso. The distance between the collar and the shoulder pad changes with every motion.",
+          "whitespace_rationale": "Replaces the static shoulder construction with a dynamic, gravity-defying element that alters the garment's footprint continuously.",
+          "trend_signal_ids": [
+            "demo-deconstruction",
+            "demo-volume"
+          ],
+          "brand_evidence_ids": [
+            "ev-about",
+            "ev-p03",
+            "ev-p05"
+          ],
+          "manufacturability_explanation": "The shoulder assembly uses simple tension rods and adjustable cords, similar to architectural draping techniques, which are feasible with high-end tailoring craft.",
+          "image_prompt": "A medium shot of a blazer with loose, mobile shoulder pads connected by thin silk cords to the collar. The shoulders float slightly away from the body. The body is made of solid quilted wool. No logos, no branding. Neutral background. Photorealistic, 8k.",
+          "uncertainty_limitations": [
+            "Balancing the weight of the shoulder pads against the tension of the silk cords to prevent sagging.",
+            "Ensuring the dynamic movement does not compromise the garment's structural integrity over time."
+          ]
+        },
+        {
+          "product_name": "Inverted Lapel Trench",
+          "category": "Ready-to-Wear",
+          "core_structural_idea": "A trench coat where the lapels are positioned internally, forming a reverse collar that covers the neck when the wearer lowers their head.",
+          "silhouette_form": "elongated trapezoid leaning forward",
+          "construction_mechanism": "The coat is cut from a single wide panel folded lengthwise. The inner face of the fabric becomes the outer shell, exposing the raw edge as a decorative grain. The collar is a double-layered closure that wraps around the neck rather than opening it. A hidden magnetic snap replaces the traditional button.",
+          "materials_and_behavior": [
+            "Deerskin exterior",
+            "Silk satin lining",
+            "Leather trim"
+          ],
+          "colors": [
+            "Deep Brown (exterior)",
+            "Cream (lining)"
+          ],
+          "product_behavior": "When the wearer moves, the internal lapels shift, creating a rhythmic sound and movement within the garment. The coat feels heavier than it appears due to the internal structure.",
+          "whitespace_rationale": "Eliminates the traditional front opening, replacing it with a continuous wrap that conceals the body's contours while providing warmth.",
+          "trend_signal_ids": [
+            "demo-deconstruction",
+            "demo-blue",
+            "demo-volume"
+          ],
+          "brand_evidence_ids": [
+            "ev-p04",
+            "ev-p10"
+          ],
+          "manufacturability_explanation": "Construction uses traditional leatherworking techniques for the face panels and satin lining, with hidden magnetic closures similar to high-end fashion.",
+          "image_prompt": "A full-body shot of a trench coat with an internal collar. The coat is made of deep brown deerskin with a cream satin lining. The front is a single continuous panel with no buttons or zippers visible. No logos, no branding. Neutral background. Photorealistic, 8k.",
+          "uncertainty_limitations": [
+            "Ensuring the internal lapels do not bunch up or cause discomfort during movement.",
+            "Maintaining the leather's structural integrity when folded inward."
+          ]
+        },
+        {
+          "product_name": "Kinetic Bias Skirt",
+          "category": "Ready-to-Wear",
+          "core_structural_idea": "A skirt constructed from multiple panels cut on the extreme bias, allowing the fabric to stretch and rotate around the wearer's legs.",
+          "silhouette_form": "long narrow tube that expands with movement",
+          "construction_mechanism": "The skirt is made of narrow strips of silk sewn together in a spiral pattern. As the wearer moves, the spiral tightens and tightens, creating a dynamic silhouette. The waist is a rigid band that anchors the spiral.",
+          "materials_and_behavior": [
+            "Silk taffeta",
+            "Leather waistband",
+            "Silk thread"
+          ],
+          "colors": [
+            "Butter Yellow",
+            "White"
+          ],
+          "product_behavior": "The skirt rotates around the legs as the wearer walks, creating a visual effect of movement. The fabric stretches and contracts based on the wearer's stride.",
+          "whitespace_rationale": "Creates a sense of motion and fluidity through the bias cut, rather than relying on traditional pleating or gathering.",
+          "trend_signal_ids": [
+            "demo-narrow",
+            "demo-volume",
+            "demo-deconstruction"
+          ],
+          "brand_evidence_ids": [
+            "ev-p02",
+            "ev-p09"
+          ],
+          "manufacturability_explanation": "Construction uses traditional sewing techniques for the silk strips and leather waistband, with precise cutting on the bias to achieve the desired movement.",
+          "image_prompt": "A full-body shot of a skirt made of narrow silk strips sewn in a spiral pattern. The skirt rotates around the legs as the wearer walks. The waist is a rigid leather band. No logos, no branding. Neutral background. Photorealistic, 8k.",
+          "uncertainty_limitations": [
+            "Ensuring the spiral pattern does not create uneven tension or discomfort.",
+            "Maintaining the silk's structural integrity over time."
+          ]
+        },
+        {
+          "product_name": "Modular Hem Tunic",
+          "category": "Ready-to-Wear",
+          "core_structural_idea": "A tunic where the hemline is modular, allowing the wearer to adjust the length and shape of the garment by reconfiguring the panels.",
+          "silhouette_form": "asymmetrical rectangle with adjustable hem",
+          "construction_mechanism": "The tunic is made of three separate panels that can be reconfigured in different ways. The hemline is a series of magnets that allow the panels to be joined in different positions. The sleeves are also modular, allowing the wearer to adjust the fit.",
+          "materials_and_behavior": [
+            "Cotton gauze",
+            "Silk lining",
+            "Magnetic snaps"
+          ],
+          "colors": [
+            "Olive Green",
+            "Charcoal"
+          ],
+          "product_behavior": "The tunic transforms from a long, flowing garment to a shorter, more structured piece. The hemline shifts with every step.",
+          "whitespace_rationale": "Replaces the traditional fixed hemline with a flexible, modular design that adapts to the wearer's needs.",
+          "trend_signal_ids": [
+            "demo-deconstruction",
+            "demo-narrow",
+            "demo-blue"
+          ],
+          "brand_evidence_ids": [
+            "ev-p01",
+            "ev-p06"
+          ],
+          "manufacturability_explanation": "Construction uses traditional sewing techniques for the panels and magnetic snaps, similar to high-end fashion modifications.",
+          "image_prompt": "A full-body shot of a tunic with adjustable hemline. The tunic is made of three separate panels that can be reconfigured. The hemline is a series of magnets. No logos, no branding. Neutral background. Photorealistic, 8k.",
+          "uncertainty_limitations": [
+            "Ensuring the magnetic snaps do not fall out or damage the fabric over time.",
+            "Maintaining the structural integrity of the tunic when reconfigured."
+          ]
+        },
+        {
+          "product_name": "Tension Kinetic Blazer",
+          "category": "Ready-to-Wear",
+          "core_structural_idea": "A blazer where the front panels are not stitched to the body but suspended by a hidden leather tension line that gathers the fabric only when the wearer's arms move.",
+          "silhouette_form": "structured boxy shape that fluidly redistributes volume",
+          "construction_mechanism": "The garment consists of a central torso block and two floating front panels. These panels are connected to the back via a continuous leather cord that passes through the fabric. As the arms move, the tension in the cord increases, pulling the front panels back and creating a dynamic, flowing effect. The sleeves are integrated into the front panels and extend from the shoulder.",
+          "materials_and_behavior": [
+            "Virgin wool body",
+            "Leather tension cord",
+            "Silk lining"
+          ],
+          "colors": [
+            "Electric Blue",
+            "Butter Yellow"
+          ],
+          "product_behavior": "The blazer's appearance changes with every movement, as the front panels shift and flow. The garment does not hang statically but moves in sync with the wearer's motion.",
+          "whitespace_rationale": "Replaces the static front panels with a dynamic, tension-based system that creates a sense of motion and fluidity.",
+          "trend_signal_ids": [
+            "demo-deconstruction",
+            "demo-volume",
+            "demo-narrow"
+          ],
+          "brand_evidence_ids": [
+            "ev-p02",
+            "ev-p05"
+          ],
+          "manufacturability_explanation": "Construction uses traditional sewing techniques for the wool body and leather cord, with precise tension control to ensure the panels move smoothly.",
+          "image_prompt": "A medium shot of a blazer with front panels suspended by a hidden leather cord. The blazer moves in sync with the wearer's motion. The body is made of solid wool. No logos, no branding. Neutral background. Photorealistic, 8k.",
+          "uncertainty_limitations": [
+            "Ensuring the leather cord does not snap or cause discomfort over time.",
+            "Maintaining the fabric's structural integrity when the panels shift."
+          ]
+        }
+      ],
+      "provenance": {
+        "provider": "huggingface_inference_providers",
+        "model_identifier": "Qwen/Qwen3.5-9B",
+        "prompt_version": "concept-originator-1.0",
+        "generated_at": "2026-09-09T22:22:57.069037Z",
+        "input_trend_ids": [
+          "demo-deconstruction",
+          "demo-blue",
+          "demo-narrow",
+          "demo-volume",
+          "demo-yellow"
+        ],
+        "input_evidence_ids": [
+          "ev-about",
+          "ev-artisans",
+          "ev-fw26-runway",
+          "ev-fw26-category",
+          "ev-p01",
+          "ev-p02",
+          "ev-p03",
+          "ev-p04",
+          "ev-p05",
+          "ev-p06",
+          "ev-p07",
+          "ev-p08",
+          "ev-p09",
+          "ev-p10",
+          "ev-p11",
+          "ev-p12"
+        ],
+        "category": "Ready-to-Wear",
+        "requested_draft_count": 6,
+        "provider_response_id": "oze9Qbx-fdNmn-a3899763fed3e5e8"
+      }
+    },
+    {
+      "drafts": [
+        {
+          "product_name": "Torque Magle",
+          "category": "Belt / Accessory",
+          "core_structural_idea": "A belt consisting of three distinct leather plates pinned internally at a central pivot point. Unlike conventional belts that rely on a linear hole-and-buckle path, this design uses torque to transform the belt's width profile. Wearing the belt requires gripping the outer plates and rotating them relative to the center pin. This rotation tightens the connection between the plates, narrowing the waist-gape mechanically without friction locking. The tension is maintained by the rotational friction of the organic leather layers against the rigid internal dowel, allowing the wearer to expand or contract the belt's passage by twisting, rather than pulling.",
+          "silhouette_form": "Asymmetrical Taper",
+          "construction_mechanism": "Pinned internal pivot assembly with torque-resistant dowel; layered organic vegetable-tanned leather plates; mechanical reveals through rotational friction rather than zippers or buckles.",
+          "materials_and_behavior": [
+            "Vegetable-tanned Italian leather (rigid flexion)",
+            "Hardened brass internal dowel (pivot axis)"
+          ],
+          "colors": [
+            "Butter Yellow",
+            "Deep Smoke"
+          ],
+          "product_behavior": "The belt functions as a mechanical hinge around the waist. The wearer grips the two outer rectangular plates and rotates them to cinch the central opening. The action creates a 'locked' visual state where the plates are crossed, hiding the central pivot. This explores interaction through rotation and friction rather than traditional latching.",
+          "whitespace_rationale": "Eliminates the buckle entirely, replacing it with an invisible internal pivot. The external focus shifts to the silhouette of the crossed or aligned plates. The interaction is a behavioral twist, making the belt an active sports-like device rather than a static garment.",
+          "trend_signal_ids": [
+            "demo-deconstruction",
+            "demo-volume",
+            "demo-narrow"
+          ],
+          "brand_evidence_ids": [
+            "ev-about",
+            "ev-p04",
+            "ev-p10"
+          ],
+          "manufacturability_explanation": "Constructible using traditional leatherbookbinding and metalworking techniques. The internal pivots are machined brass dowels bored cleanly into the leather, then rivet-sealed. The edges are skived, softened, and burnished, requiring no complex injection molding or soft hardware. It relies on precise trimming and high-tension leather qualities consistent with artisanal production.",
+          "image_prompt": "Photorealistic still life of three rectangular vegetable-tanned leather plates pinned at a central brass dowel, arranged on a neutral stone surface in a crossed configuration. Leather shows natural grain and slight edge fraying. Colors are butter yellow and deep smoke. No logos, no text, no brand monograms, no popular luxury shapes, no reflective surfaces, no impossible geometry.",
+          "uncertainty_limitations": [
+            "The internal pin mechanism requires precise tolerances to prevent leather tearing over time."
+          ]
+        },
+        {
+          "product_name": "Arch Weaver",
+          "category": "Belt / Accessory",
+          "core_structural_idea": "A continuous strap made of woven silk and leather that functions as a structural armature that stiffens only when tensioned by wear. The belt is composed of thousands of fine silk threads interlaced with occasional thick leather strands, winding in a spiral tension pattern around the wearer's midsection. When loose, the structure collapses into a flat, airy ribbon. As the waist naturally settles and the wearer moves, the spiral spirals tighten, engaging the leather threads to pull the silk silks into a rigid, supportive cylinder. The belt becomes 'hot' and supportive only under motion and weight, refusing to hold shape when at rest.",
+          "silhouette_form": "Arch Cylinder",
+          "construction_mechanism": "Continuous spiral knitting; raw silk and deerskin interlacing; mechanical stiffening via pre-tensioned wound coils; no sewn seams.",
+          "materials_and_behavior": [
+            "Raw silk (high tensile, limp when relaxed)",
+            "Deerskin strands (structural, ratchet-like tension)"
+          ],
+          "colors": [
+            "Electric Blue",
+            "Charcoal Grey"
+          ],
+          "product_behavior": "The belt adheres to the body like a second skin but remains voluminous and soft until movement applies tension. The spiral construct_actively reacts to the wearer's gait. It prevents sagging not by being stiff, but by being reactive. The visual read changes from a delicate thread to a solid architectural column as the day progresses.",
+          "whitespace_rationale": "Replaces the concept of a 'strap' with the concept of a 'reactive column'. The innovation lies in the material memory and the kinetic construction rather than a new closure. It challenges the idea that a belt must be heavy or stiff to provide support.",
+          "trend_signal_ids": [
+            "demo-blue",
+            "demo-deconstruction",
+            "demo-volume"
+          ],
+          "brand_evidence_ids": [
+            "ev-p03",
+            "ev-p11",
+            "ev-about"
+          ],
+          "manufacturability_explanation": "Manufactured via a specialized loom or hand-weaving process where silk is interwoven with short leather battens. The tension is set by the weave density and the natural stretch difference between silk and leather. No gluing or mechanical hardware is required; the structural integrity comes from the braiding pattern. This aligns with artisanal weaving and leather crafting capabilities.",
+          "image_prompt": "Close-up macro shot of a silk and leather woven band coiled loosely on a grey stone. The silk is a vivid electric blue, the leather grey. The weave is tight and intricate, showing individual threads. No brand names, no logos, no visible buckles, no recognizable fashion shapes, no impossible structures. Soft, diffused lighting.",
+          "uncertainty_limitations": [
+            "Long-term durability of the interwoven silk and leather junction points; silk may fray faster than leather."
+          ]
+        },
+        {
+          "product_name": "Flux Node",
+          "category": "Belt / Accessory",
+          "core_structural_idea": "A modular belt system where the strap is not a single loop but a series of identical, self-contained leather cubes linked by small, hidden magnetic joints. Each cube is a hollow shell containing a card slot and a pen loop. The linkages are so subtle that from a distance, the belt appears as a solid, corrugated tube. However, the wearer can engage specific magnets to 'lock' the cubes into a permanent shape (e.g., a rectangular tray) or disengage them to collapse the belt into a flat stack of individual work-stations. The closure is the collapse itself; the belt widens to become a functional surface.",
+          "silhouette_form": "Segmented Cube",
+          "construction_mechanism": "Interlocking hollow leather geometric shells; magnetic internal latching; fold-flat geometry.",
+          "materials_and_behavior": [
+            "Full-grain leather cubes (compacted rings)",
+            "Neodymium magnets (hidden inside seam)"
+          ],
+          "colors": [
+            "Deep Smoke",
+            "Charcoal Navy"
+          ],
+          "product_behavior": "The belt transforms from a thin, restrictive loop into a wide, flat, utilitarian surface. By engaging the hidden magnets at specific points, the wearer constructs a rigid platform in the center of the waist. It functions as a temporary desktop for sketching or maps, expanding and contracting without visible clasps or flaps.",
+          "whitespace_rationale": "Reframes the belt as a 'wearable desktop'. The novelty is the geometric complexity of the closure mechanism (cube collapse) rather than a new way to secure the loop around the waist. The interaction is tactile and structural, manipulating geometry.",
+          "trend_signal_ids": [
+            "demo-narrow",
+            "demo-deconstruction",
+            "demo-volume"
+          ],
+          "brand_evidence_ids": [
+            "ev-about",
+            "ev-p05",
+            "ev-p12"
+          ],
+          "manufacturability_explanation": "Each cube is a simple double-layer leather saddle attachment, sewn and shaped, with a small pocket for a magnet. The cubes are then linked in a chain that naturally flattens. This relies on precise sewing and standard magnetic components hidden within the bulk of the leather structure. No complex electronics or precision manufacturing is needed, just high-quality leatherjoinery.",
+          "image_prompt": "Orthogonal view of a belt made of dark leather cubes linked together. The central section is expanded into a flat, wide surface for writing. The cubes are uniform, dark charcoal. No logos, no brand marks, no text, no recognizable luxury branding silhouettes, no impossible floating parts. Studio lighting on a neutral surface.",
+          "uncertainty_limitations": [
+            "The magnetic alignment requires perfect tolerance for the cubes to lock securely; risk of accidental disengagement during vigorous activity."
+          ]
+        },
+        {
+          "product_name": "Drift Wrap",
+          "category": "Belt / Accessory",
+          "core_structural_idea": "An asymmetrical strap constructed from a single continuous piece of stiff leather that spirals around the waist, unanchored by any buckle. The strap enters from one side of the waist, crosses diagonally over the torso to the opposite hip, and returns to the starting side, creating a floating triangle upon the body. The tension is controlled not by pulling the strap tight, but by sliding a weighted, rounded leather bead along the spiral path. As the bead slides, it pulls the adjacent leather against the body skin, creating a localized band of compression anywhere along the waistline while the rest of the strap hangs loose and decorative. It offers infinite positioning for support without a fixed closure point.",
+          "silhouette_form": "Floating Spiral Triangle",
+          "construction_mechanism": "Continuous spiral cutting; weighted leather bead slider; skin-friction rigidity for anchoring.",
+          "materials_and_behavior": [
+            "Stiff, vegetable-tanned leather (drift-pleated appearance)",
+            "Rounded weighted leather bead (mass slider)"
+          ],
+          "colors": [
+            "Butter Yellow",
+            "Charcoal Navy"
+          ],
+          "product_behavior": "The belt exists as a loose, flowing garment-like drape that suddenly morphs into a supportive corset section wherever the bead is placed. The wearer can 'walk the bead' to adjust support levels throughout the day. The visual language is one of continuous motion and weight, with no static clasp. The strap itself has depth and volume due to the spiral construction.",
+          "whitespace_rationale": "Eliminates the concept of a 'waistline' as a fixed measurement. The innovation is in the slider mechanism and the continuous spiral form that allows the belt to define the waist dynamically. It creates a new interaction: the 'bead walk' allows reconfiguration of the garment.",
+          "trend_signal_ids": [
+            "demo-volume",
+            "demo-deconstruction",
+            "demo-narrow"
+          ],
+          "brand_evidence_ids": [
+            "ev-p01",
+            "ev-p06",
+            "ev-about"
+          ],
+          "manufacturability_explanation": "Constructed from a single long strip of leather cut and spiraled, then sewn along the outer edge to create a channel for the bead. The bead is a standard leather component weighted with stone or metal. No complex engineering is required, only precise cutting and sewing to maintain the spiral tension. It uses traditional leather manipulation.",
+          "image_prompt": "A single yellow leather strap spiraling around a torso dummy, anchored by a dark bead that has slid to the center. The leather forms a loose triangle. No brand logos, no text, no recognizable fasteners, no impossible construction. Natural lighting on a neutral background.",
+          "uncertainty_limitations": [
+            "The bead slider path requires consistent surface friction; if the leather is too polished or too textured, the bead may slide too freely or get stuck."
+          ]
+        }
+      ],
+      "provenance": {
+        "provider": "huggingface_inference_providers",
+        "model_identifier": "Qwen/Qwen3.5-9B",
+        "prompt_version": "concept-originator-1.0",
+        "generated_at": "2026-09-09T22:23:23.027086Z",
+        "input_trend_ids": [
+          "demo-deconstruction",
+          "demo-blue",
+          "demo-narrow",
+          "demo-volume",
+          "demo-yellow"
+        ],
+        "input_evidence_ids": [
+          "ev-about",
+          "ev-artisans",
+          "ev-fw26-runway",
+          "ev-fw26-category",
+          "ev-p01",
+          "ev-p02",
+          "ev-p03",
+          "ev-p04",
+          "ev-p05",
+          "ev-p06",
+          "ev-p07",
+          "ev-p08",
+          "ev-p09",
+          "ev-p10",
+          "ev-p11",
+          "ev-p12"
+        ],
+        "category": "Belt / Accessory",
+        "requested_draft_count": 4,
+        "provider_response_id": "oze9av1-3pDw3Z-a389983c9912840d"
+      }
+    },
+    {
+      "drafts": [
+        {
+          "product_name": "Aperture Silk Band",
+          "category": "Scarf",
+          "core_structural_idea": "The band features a continuous, uninterrupted loop of silk cut into a variable-width onion shape rather than a flat rectangle. When wrapped, the tapered ends mechanically overlap and lock via a friction-fit dovetail edge, creating a self-contained necklace or collar without any visible clasps, ties, or fringes. The volume is generated solely by the geometric curvature of the profile.",
+          "silhouette_form": "Variable-width onion profile with self-locking dovetail edge",
+          "construction_mechanism": "Seamless tubular weave with precision-calibrated tapered edges that interlock tightly when overlapped at an angle; no external fasteners or stitching visible on the side profile.",
+          "materials_and_behavior": [
+            "Moiré Silk (highly absorbent, crepe texture)",
+            "Hand-folded heat set to maintain precise taper geometry"
+          ],
+          "colors": [
+            "Deep Emerald",
+            "Burnt Orange"
+          ],
+          "product_behavior": "The user holds the band; the tapered overlap naturally grips itself, holding the wrapped loop in place. The onion geometry allows the band to expand only slightly around the neck, creating a secure, sculptural collar that collapses flat when removed.",
+          "whitespace_rationale": "The concept derives identity from the physical geometry of the weave and the friction-fit mechanism, distinct from traditional tied knetypes or pinned designs. No branding or decorative motifs are used.",
+          "trend_signal_ids": [
+            "demo-deconstruction",
+            "demo-volume"
+          ],
+          "brand_evidence_ids": [
+            "ev-p03",
+            "ev-p04",
+            "ev-about"
+          ],
+          "manufacturability_explanation": "Feasible via precision loom programming to cut the fabric into a tapered tube rather than a rectangle. The dovetail edge requires high-quality, consistent fabric tension during weaving; no additional assembly steps beyond cutting and heat-setting are needed.",
+          "image_prompt": "Studio product photography, deep emerald open-loop silk scarf bent into a curved circle, tapered edges overlapping to lock, hand holding the item, neutral grey background, sharp lighting highlighting the fabric texture, no logos, no text, no brand names, raw material focus.",
+          "uncertainty_limitations": [
+            "The heat-set geometry must maintain its shape after washing.",
+            "Silk may gather at the overlap point if not woven evenly."
+          ]
+        },
+        {
+          "product_name": "Ribbed Tension Wrapper",
+          "category": "Scarf",
+          "core_structural_idea": "A cylindrical tube of heavy wool with a flexible internal ribbed structure that expands radially when pulled. The scarf functions as both a wrap and a supporting element. When wrapped around the neck, the internal ribs compress and lock together, creating a rigid, architectural collar that can support the weight of a statement necklace or light jewelry.",
+          "silhouette_form": "Expandable rigid cylinder with internal ribbed locking structure",
+          "construction_mechanism": "Externally appears as a simple tube; internally features perpendicular fiber bundles woven into a spring-like tension mechanism that locks when compressed circumferentially.",
+          "materials_and_behavior": [
+            "Virgin wool outer shell",
+            "Internal woven tension cords"
+          ],
+          "colors": [
+            "Butter Yellow",
+            "Slate Grey"
+          ],
+          "product_behavior": "The user wraps the tube; as they pull it tight, the internal ribs engage, stiffening the fabric to hold a specific, upright shape. It transitions from a soft wrap to a structural frame.",
+          "whitespace_rationale": "The concept innovates by turning the scarf into a structural building block rather than a purely decorative textile, utilizing tension to alter physical form without external hardware.",
+          "trend_signal_ids": [
+            "demo-deconstruction",
+            "demo-narrow"
+          ],
+          "brand_evidence_ids": [
+            "ev-p02",
+            "ev-p09",
+            "ev-artisans"
+          ],
+          "manufacturability_explanation": "Achieved through specialized weaving techniques that interlock tension cords within the wool shell. The mechanism relies on material tension rather than mechanical parts, keeping production feasible within luxury textile constraints.",
+          "image_prompt": "Studio product photography, butter yellow wool scarf wrapped around a mannequin neck transforming into a rigid geometric tube, internal tension cords visible in cross-section slice, neutral background, natural light, no logos, no text, raw material focus, architectural lighting.",
+          "uncertainty_limitations": [
+            "The wool shell may snag on external jewelry.",
+            "Internal rib engagement may lose memory after repeated washing."
+          ]
+        }
+      ],
+      "provenance": {
+        "provider": "huggingface_inference_providers",
+        "model_identifier": "Qwen/Qwen3.5-9B",
+        "prompt_version": "concept-originator-1.0",
+        "generated_at": "2026-09-09T22:23:36.060855Z",
+        "input_trend_ids": [
+          "demo-deconstruction",
+          "demo-blue",
+          "demo-narrow",
+          "demo-volume",
+          "demo-yellow"
+        ],
+        "input_evidence_ids": [
+          "ev-about",
+          "ev-artisans",
+          "ev-fw26-runway",
+          "ev-fw26-category",
+          "ev-p01",
+          "ev-p02",
+          "ev-p03",
+          "ev-p04",
+          "ev-p05",
+          "ev-p06",
+          "ev-p07",
+          "ev-p08",
+          "ev-p09",
+          "ev-p10",
+          "ev-p11",
+          "ev-p12"
+        ],
+        "category": "Scarf",
+        "requested_draft_count": 2,
+        "provider_response_id": "oze9iX6-fdNmn-a38998dcbcf650e5"
+      }
+    },
+    {
+      "drafts": [
+        {
+          "product_name": "Meridian Tension Cuff",
+          "category": "Jewelry",
+          "core_structural_idea": "A continuous loop of malleable metal formed around a rigid internal core. The cuff is not a static bangle but a dynamic lever system; bending the metal at a single, specific weak point (a 'choke') compresses the internal core, reducing the circumference to slide over a hand, after which the core expands to lock the metal into a solid, rigid form against the wrist without clasps.",
+          "silhouette_form": "A seamless, non-circular ring that appears slightly flattened when closed but round when opened. The form relies on variable rigidity rather than thickness.",
+          "construction_mechanism": "Manufactured via a two-stage hydroforming process. First, the internal core (soft titanium or wax-filled polymer) is shaped. Second, a layer of high-strength 18k gold or sterling silver tube is bonded to the core using a vacuum diffusion seal, creating a composite shell. The 'choke' is the only canalized deformation point. Once the cuff is tensed to fit the wrist, the internal pressure distributes, preventing compression at the choke, thus locking the size permanently until manual release.",
+          "materials_and_behavior": [
+            "Outer Shell: 18k Gold (polished) or Sterling Silver (brushed)",
+            "Internal Core: Soft Titanium or Medical-Grade Polymer",
+            "Interaction:requires manual flexion to unlock, then sets rigidly. No clasps, hinges, or pin mechanisms."
+          ],
+          "colors": [
+            "Electric Blue",
+            "Butter Yellow"
+          ],
+          "product_behavior": "The product changes from a rigid ring to a flexible tube upon intentional stress applied to a singular node, then reverts to a rigid, secure fit automatically.",
+          "whitespace_rationale": "Eliminates visible hardware entirely by hiding the locking mechanism within the material transition (tube vs. solid ring), adhering to the artisanal focus on material integrity and functional details.",
+          "trend_signal_ids": [
+            "demo-deconstruction",
+            "demo-blue",
+            "demo-narrow"
+          ],
+          "brand_evidence_ids": [
+            "ev-about",
+            "ev-artisans",
+            "ev-fw26-runway",
+            "ev-p04"
+          ],
+          "manufacturability_explanation": "The design uses established composite manufacturing (similar to aerospace skin-building) scaled to jewelry dimensions. The 'choke' is created during the initial cold-work forming stage, ensuring consistent stress points. This avoids impossible floating parts or complex mechanical engineering.",
+          "image_prompt": "A close-up studio shot of a metallic cuff bracelet made of brushed gold and polished silver. The bracelet is slipped onto a hand, showing the material shifting from a bent, flexible tube state to a rigid, perfect circle resting on the wrist. There are no clasps, buttons, or visible hinges. The background is a seamless deep electric blue. Lighting highlights the seam where the flexible material meets the rigid form. No logos, no text.",
+          "uncertainty_limitations": [
+            "The material transition from tube to solid may require specific temperature or force control to avoid permanent deformation of the outer shell if mishandled.",
+            "The internal core must be perfectly dimensioned to allow slip without damaging the outer shell upon release."
+          ]
+        },
+        {
+          "product_name": "Knotbed Nail Art",
+          "category": "Jewelry",
+          "core_structural_idea": "A series of flat, rigid metal plates linked by a central, tensioned thread. Unlike traditional chain links, the thread is integral to the spacing and locking mechanism. The plates are not connected by direct metal joints but are 'stitched' together using a high-tensile thread that passes through the plate holes. Pulling the thread tight brings the plates together, creating a rigid, stacked unit. Loosening the thread expands the stack into a necklace-like flow.",
+          "silhouette_form": "A linear assembly of irregular trapezoidal plates. When closed, it resembles a dense, textured pillar. When opened, it flows as a loose, draped chain with significant gaps between plates.",
+          "construction_mechanism": "The plates are cast from solid metal, each featuring four holes at the corners. A high-strength stainless steel or silk thread is woven through these holes in a cross-stitch pattern across all plates. A specialized tensioning bead, hidden at the end, allows the thread to be cinched. Cinching creates friction locks between plate edges, eliminating the need for chain links or clasps.",
+          "materials_and_behavior": [
+            "Plates: 18k Gold or Platinum (rolled to thin uniform thickness)",
+            "Tension Thread: Fine Stainless Steel or High-Weave Silk",
+            "Interaction: The entire piece lies in a loose state; snapping it into position tightens the internal geometry."
+          ],
+          "colors": [
+            "Butter Yellow",
+            "Silver"
+          ],
+          "product_behavior": "The product exists in two states: a loose, voluminous drape and a tight, rigid collar. The transition is a single gesture of tensioning the internal thread.",
+          "whitespace_rationale": "The aesthetic relies on the negative space between the plates and the visibility of the 'stitch'. The construction logic is revealed, not hidden, emphasizing the artisanal nature of the 'thread' as a structural element rather than a decorative one.",
+          "trend_signal_ids": [
+            "demo-deconstruction",
+            "demo-yellow",
+            "demo-volume"
+          ],
+          "brand_evidence_ids": [
+            "ev-about",
+            "ev-artisans",
+            "ev-p03",
+            "ev-p06"
+          ],
+          "manufacturability_explanation": "The plates are thin and light enough for manual threading or micro-automation. The 'locking' is achieved through friction and geometry (tightening reduces hole clearance), a principle used in traditional cordage and leatherworking, scaled to metal. This avoids complex hinges or spring mechanisms.",
+          "image_prompt": "A high-resolution shot of a necklace composed of flat, hammered gold trapezoid plates linked by a visible silver thread running through them. The thread is pulled taut, causing the plates to lock together into a rigid, square column. The background is a soft, neutral tone. No logos, no text. The focus is on the texture of the metal plates and the tension of the thread.",
+          "uncertainty_limitations": [
+            "The thread must maintain extreme tensile strength; repeated cinching and relaxing could theoretically fatigue the material over long periods.",
+            "The friction lock relies on precise hole dimensions; manufacturing tolerances must be tight to prevent slippage."
+          ]
+        }
+      ],
+      "provenance": {
+        "provider": "huggingface_inference_providers",
+        "model_identifier": "Qwen/Qwen3.5-9B",
+        "prompt_version": "concept-originator-1.0",
+        "generated_at": "2026-09-09T22:23:51.991007Z",
+        "input_trend_ids": [
+          "demo-deconstruction",
+          "demo-blue",
+          "demo-narrow",
+          "demo-volume",
+          "demo-yellow"
+        ],
+        "input_evidence_ids": [
+          "ev-about",
+          "ev-artisans",
+          "ev-fw26-runway",
+          "ev-fw26-category",
+          "ev-p01",
+          "ev-p02",
+          "ev-p03",
+          "ev-p04",
+          "ev-p05",
+          "ev-p06",
+          "ev-p07",
+          "ev-p08",
+          "ev-p09",
+          "ev-p10",
+          "ev-p11",
+          "ev-p12"
+        ],
+        "category": "Jewelry",
+        "requested_draft_count": 2,
+        "provider_response_id": "oze9nhT-fdNmn-a38999349df47c67"
+      }
+    }
+  ],
+  "drafts": [
+    {
+      "product_name": "Toroidal Sheath Coat",
+      "category": "Outerwear",
+      "core_structural_idea": "A single piece of heavy gauge wool felt is wound into a closed torus (doughnut) shape, then unrolled into a standing column envelope. The 'hole' of the torus becomes a high side-entry slit that wraps the torso, allowing the garment to fall in two distinct vertical panels that reconnect only at the shoulder and crotch via a concealed elasticated channel running along the back seam. This eliminates the front dart and back princess seam found in traditional coats, replacing them with a continuous load path that tightens or loosens based on the wearer's torsion.",
+      "silhouette_form": "Narrow cylinder with a high-wrap side drape",
+      "construction_mechanism": "Spiral spiral-winding felt-torus unrolled to column; back-seam tension channel redistributes panel volume without standard pleats or flaps",
+      "materials_and_behavior": [
+        "Virgin Wool Felt",
+        "Elasticated Suture Thread"
+      ],
+      "colors": [
+        "Electric Blue"
+      ],
+      "product_behavior": "The winding creates inherent tension in the fabric; as the wearer twists, the coating tightens around the waist, while relaxing creates a loose, draped fall at the hips. The side entry allows the coat to open fully without revealing a traditional center opening.",
+      "whitespace_rationale": "Eliminates the visible center seam and front closure entirely, using the geometry of the fabric's initial state as the primary fastening logic.",
+      "trend_signal_ids": [
+        "demo-deconstruction",
+        "demo-narrow",
+        "demo-volume"
+      ],
+      "brand_evidence_ids": [
+        "ev-fw26-runway",
+        "ev-about",
+        "ev-artisans"
+      ],
+      "manufacturability_explanation": "The concept relies on spiral-pattern cutting of wool felt, a technique used in traditional basketry and felt-work, rather than woven garment pattern making. The 'torus' shape is cut on the bias of the felt's compression grain. The back channel is a simple tubular insert of elasticated silk, a standard luxury lining technique, sewn into the seam allowance.",
+      "image_prompt": "High-resolution 3D render of a luxury wool coat in Electric Blue. The garment has a unique toroidal origin: the hem is in two panels meeting at the side, connected at the shoulder and crotch. The side opening is wide and wraps around the body. No logos. No text. No brand names. Clean studio lighting on a neutral background. Photorealistic fabric texture.",
+      "uncertainty_limitations": [
+        "Felt requires specific environmental humidity to maintain structure; may shift if stored dry.",
+        "The internal elastic channel could add bulk if high-tension is required."
+      ]
+    },
+    {
+      "product_name": "Cantilevered Capeblazer",
+      "category": "Outerwear",
+      "core_structural_idea": "A double-breasted blazer silhouette where the entire front closure and lapels are replaced by a rigid, architectural yoke that acts as a cantilever. The yoke is constructed from a semi-rigid matelassé cotton, allowing it to be reshaped by hand. The shoulders of the rest of the coat are fully exposed and do not connect to the front yoke, creating a hollow space between the torso and the front apron. The wearer steps through the back; the front yoke is fastened separately around the neck, resting entirely on the shoulders.",
+      "silhouette_form": "Draped yoke over exposed shoulders",
+      "construction_mechanism": "Cantilevered front yoke detached from shoulder seams; neck-ring closure creates a suspended torso envelope beneath the yoke",
+      "materials_and_behavior": [
+        "Matelassé Cotton",
+        "Hidden Ring Fasteners"
+      ],
+      "colors": [
+        "Butter Yellow"
+      ],
+      "product_behavior": "The front yoke can be shaped aggressively (sharp or soft) without affecting the drape of the underlying garment. The detachability allows the coat to be worn as a standalone jacket or as a cape when the front yoke is removed completely.",
+      "whitespace_rationale": "Reinterprets the lapel not as a trim but as a structural armature that holds the weight of the front panels, freeing the shoulder seam from closure tension.",
+      "trend_signal_ids": [
+        "demo-deconstruction",
+        "demo-narrow"
+      ],
+      "brand_evidence_ids": [
+        "ev-p06",
+        "ev-artisans"
+      ],
+      "manufacturability_explanation": "The yoke is cut from extra-width fabric and stiffened with foam core or interlining, common in aviation or architectural leather goods. The neck ring is a simple closure, similar to a scarf tie but rigidified with stitching. The isolation of the front yoke from the shoulder seams is a standard pattern-making adjustment for cape-like garments.",
+      "image_prompt": "High-resolution 3D render of a luxury cotton coat in Butter Yellow. The garment features a detached, rigid front yoke wrapped around the neck, while the shoulders and sleeves are completely exposed and connected only at the back. No logos. No text. No brand names. Clean studio lighting on a white background. Photorealistic fabric texture.",
+      "uncertainty_limitations": [
+        "The detached yoke may shift independently of the torso during active movement.",
+        "The underlying garment must maintain its shape independently to look intentional."
+      ]
+    },
+    {
+      "product_name": "Interlocked Shell Anorak",
+      "category": "Outerwear",
+      "core_structural_idea": "A coat composed of two identical, opposing shells made of technical-silk leather that can be fastened together or worn separately. The 'interlocked' state creates a single garment with a high collar and rear vent, while the 'separate' state creates two open-ended sleeves/capes that can be draped around the body. The closure mechanism relies on a groove-snap system where the edges of the shells lock into one another, creating a smooth, continuous seam without zippers or buttons.",
+      "silhouette_form": "Dual-shell convertible drape",
+      "construction_mechanism": "Opposing shells with groove-snap locking edges; allows separation into two wearable panels or locking into a single form",
+      "materials_and_behavior": [
+        "Suede Leather",
+        "Groove-Snap Hardware"
+      ],
+      "colors": [
+        "Electric Blue",
+        "Butter Yellow"
+      ],
+      "product_behavior": "The wearer can slip the two halves together to create a full coat with a hood, or pull them apart to create an asymmetrical, layered outerwear ensemble. The snap closure creates a flat profile on the outside when locked.",
+      "whitespace_rationale": "Uses the layering concept to create transformation, where the seams are hidden within the locking groove rather than being zippers or buttons.",
+      "trend_signal_ids": [
+        "demo-deconstruction",
+        "demo-volume"
+      ],
+      "brand_evidence_ids": [
+        "ev-p04",
+        "ev-about"
+      ],
+      "manufacturability_explanation": "Cutting two mirror-image patterns and adding a groove channel to the edge of each piece is a technique used in bookbinding. The snap inserts are small, industrial standard components, sewn into the channel. The leather is soft enough to fold without creasing permanently.",
+      "image_prompt": "High-resolution 3D render of two luxury leather coat halves in Electric Blue. The edges are sharp and structured, designed to interlock. One half is partially fastened to the other, showing the groove-snap mechanism. No logos. No text. No brand names. Clean studio lighting on a dark background. Photorealistic leather texture.",
+      "uncertainty_limitations": [
+        "The snaps may wear out over time if used frequently in high-stress areas.",
+        "The leather may be too stiff for the intended drape in warmer climates."
+      ]
+    },
+    {
+      "product_name": "Fluid-Skirt Trench",
+      "category": "Outerwear",
+      "core_structural_idea": "A long trench coat where the back panel is entirely replaced by a fluid, gathered skirt panel made of sheer silk. The skirt is attached to the waistline and flows to the hem, obscuring the rear view. The front panels are narrow and constructed from a heavy cotton gabardine, creating a stark contrast between the front and back. The skirt panel includes internal weights or magnets at the hem to keep it full and structured even when the coat is closed.",
+      "silhouette_form": "Front narrow, back voluminous skirt",
+      "construction_mechanism": "Back panel replaced by weighted gathered silk skirt; internal weight distribution stabilizes volume without external panels",
+      "materials_and_behavior": [
+        "Silk Satin",
+        "Heavy Cotton Gabardine"
+      ],
+      "colors": [
+        "Electric Blue"
+      ],
+      "product_behavior": "The coat closes neatly at the front, but the back fans out into a dramatic, moving skirt. The skirt can be lifted to reveal the legs, or left down for a theatrical silhouette. The internal weights ensure the skirt maintains its shape regardless of movement.",
+      "whitespace_rationale": "Uses the volume of the skirt to create a new silhouette rather than adding external pockets or flaps, utilizing the fabric's inherent properties.",
+      "trend_signal_ids": [
+        "demo-deconstruction",
+        "demo-volume"
+      ],
+      "brand_evidence_ids": [
+        "ev-p03",
+        "ev-about"
+      ],
+      "manufacturability_explanation": "The skirt panel is cut from sheer silk with internal catch-stitching to hold the gathers. Small lead weights or similar are sewn into the hem, a common technique in evening wear. The front panels are standard trench construction, utilizing the same pattern pieces but replacing the back.",
+      "image_prompt": "High-resolution 3D render of a luxury trench coat in Electric Blue. The front is narrow and structured, while the back fans out into a voluminous, sheer silk skirt. No logos. No text. No brand names. Clean studio lighting on a light background. Photorealistic fabric texture.",
+      "uncertainty_limitations": [
+        "The sheer panel may be too transparent for office environments without additional layers.",
+        "The internal weights may create a clinking sound or discomfort in certain movements."
+      ]
+    },
+    {
+      "product_name": "Kinetic Collar Cape",
+      "category": "Outerwear",
+      "core_structural_idea": "A minimalist hoodless jacket where the collar is the primary functional element. The collar is constructed from three interlocking, articulated segments of leather that can be extended to form a cape, or collapsed to form a high neck. The segments are connected by a series of small, low-profile hinges that allow them to rotate independently. When extended, the cape wraps around the wearer's back, providing coverage without the bulk of a traditional hood or cape.",
+      "silhouette_form": "Modular collar-cape drape",
+      "construction_mechanism": "Three-segment articulated collar; low-profile hinge system allows independent rotation to form a cape",
+      "materials_and_behavior": [
+        "Vegetable-Tanned Leather",
+        "Flexible Polymer Hinges"
+      ],
+      "colors": [
+        "Butter Yellow"
+      ],
+      "product_behavior": "The user can adjust the collar height, open it into a half-cape, or fully extend it to cover the back. The segments move in harmony with the wearer's head and shoulders, creating a dynamic, responsive silhouette.",
+      "whitespace_rationale": "Replaces the static collar with a modular system thatresponds to the wearer's need for coverage, using the collar itself as the source of volume.",
+      "trend_signal_ids": [
+        "demo-deconstruction",
+        "demo-narrow"
+      ],
+      "brand_evidence_ids": [
+        "ev-p04",
+        "ev-p05"
+      ],
+      "manufacturability_explanation": "The segments are cut from leather and joined with flexible polymer hinges, similar to those used in high-end watch straps or jewelry. The connection points are reinforced with stitching, and the system is designed to move smoothly without binding.",
+      "image_prompt": "High-resolution 3D render of a luxury leather jacket in Butter Yellow. The collar is composed of three articulated segments that can be extended into a cape. No logos. No text. No brand names. Clean studio lighting on a gray background. Photorealistic leather texture.",
+      "uncertainty_limitations": [
+        "The hinges may require regular cleaning to prevent grit accumulation.",
+        "The leather may be too stiff for the intended fluid movement in colder climates."
+      ]
+    },
+    {
+      "product_name": "Magnetic-Flap Trench",
+      "category": "Outerwear",
+      "core_structural_idea": "A traditional trench coat silhouette where the front closure and side pockets are replaced by magnetic flaps that can be reconfigured. The coat features large, flat panels at the front that can be flipped inside out or layered over each other, changing the coat's volume and warmth. The side pockets are integrated into the flaps, allowing for variable storage capacity. The entire coat is held together by a series of powerful magnets embedded in the seams, eliminating the need for buttons or zippers.",
+      "silhouette_form": "Variable-volume panel drape",
+      "construction_mechanism": "Large magnetic flap panels; seams embedded with magnets allow reconfiguration of panel layers",
+      "materials_and_behavior": [
+        "Virgin Wool Felt",
+        "Neodymium Magnets",
+        "Silicone Coating"
+      ],
+      "colors": [
+        "Electric Blue"
+      ],
+      "product_behavior": "The wearer can adjust the coat's length, width, and even the number of layers by flipping or resewing the panels. The magnetic closure ensures a secure fit without visible hardware.",
+      "whitespace_rationale": "Uses magnetic force to create a seamless, transformable coat, eliminating the need for traditional closures or pockets.",
+      "trend_signal_ids": [
+        "demo-deconstruction",
+        "demo-volume"
+      ],
+      "brand_evidence_ids": [
+        "ev-p01",
+        "ev-about"
+      ],
+      "manufacturability_explanation": "Magnets are small, industrial standard components, sewn into the seams of the panels. The silicone coating prevents rust and keeps the magnets secure. The panels are cut from extra-heavy wool felt, which is stable enough to hold the shape of the coat.",
+      "image_prompt": "High-resolution 3D render of a luxury wool coat in Electric Blue. The coat features large, flat panels that can be flipped or layered, held together by hidden magnets. No logos. No text. No brand names. Clean studio lighting on a black background. Photorealistic fabric texture.",
+      "uncertainty_limitations": [
+        "The magnets may interfere with electronic devices in the wearer's pocket.",
+        "The wool felt may be too heavy for the intended layered construction."
+      ]
+    },
+    {
+      "product_name": "Interlaced Wale Satchel",
+      "category": "Bag",
+      "core_structural_idea": "A woven saddlebag constructed where two distinct layers of woven leather are braided together with stiffened cords visible on the exterior spine, creating a dual-inner-box structure where the outer weave expands independently of the inner chamber.",
+      "silhouette_form": "Boxy, flat-top trapezoid with a visible horizontal dividing line running front-to-back.",
+      "construction_mechanism": "Two separate rectangular looms of woven leather (weft leather provides stiffness) are stitched together along a central 'zip-wave' joint. Opening the bag splits the weave horizontally rather than unzipping a perimeter, allowing the two woven shells to fan open like a book.",
+      "materials_and_behavior": [
+        "Rigid, stiffened raw-edge Calfskin (thickness 2.4mm)"
+      ],
+      "colors": [
+        "Sap Green woven with Copper",
+        "Indigo woven with Sand"
+      ],
+      "product_behavior": "Dual-layer expansion; the inner weave holds cards, while the outer woven layer holds documents, protected by the outer weave's inherent thickness.",
+      "whitespace_rationale": "No zippers or flaps; the bag is defined entirely by the tension of the interlaced weaving.",
+      "trend_signal_ids": [
+        "demo-deconstruction",
+        "demo-volume"
+      ],
+      "brand_evidence_ids": [
+        "ev-artisans",
+        "ev-about"
+      ],
+      "manufacturability_explanation": "Constructed using industrial loom weaving techniques followed by hand-stitching at the split-line using heavy waxed thread. The weave density provides structural rigidity without internal frames.",
+      "image_prompt": "Isometric product shot of a boxy woven leather bag, raw-edge calfskin, stiffened texture visible, split front-center vertical, split weave revealing two separate interior chambers, no zippers, no handles, no logos, electric blue and sap green or indigo and sand colorways, neutral grey background, soft studio lighting.",
+      "uncertainty_limitations": [
+        "Relies on high-cost weaving machinery for mass production of the looms."
+      ]
+    },
+    {
+      "product_name": "Pivot-Base Traveler",
+      "category": "Bag",
+      "core_structural_idea": "A cylindrical trunk where the base panel is a rotating disc on a silent bearing, allowing the entire lower third of the bag to pivot 90 degrees to stand upright or lay flat for packing.",
+      "silhouette_form": "Tall cylinder with a distinct, slightly protruding base.",
+      "construction_mechanism": "The body and base are one piece of stiffened leather, but the bottom seam is grafted to a separate motorized-free rotation disk. The seam acts as a pivot point rather than a closure.",
+      "materials_and_behavior": [
+        "Soft, heavy-weight Vachetta (thickness 2.0mm)"
+      ],
+      "colors": [
+        "Butter Yellow",
+        "Deep Navy"
+      ],
+      "product_behavior": "Pivoting base allows the bag to sit securely on a suitcase handle or lay flat against a wall; the upper section swings freely.",
+      "whitespace_rationale": "The motion of the base is the primary visual flaw in the silhouette, emphasizing function over geometry.",
+      "trend_signal_ids": [
+        "demo-deconstruction",
+        "demo-narrow"
+      ],
+      "brand_evidence_ids": [
+        "ev-artisans",
+        "ev-about"
+      ],
+      "manufacturability_explanation": "Uses industrial dovetail joints reinforced with metal eyelets and silicone-coated washers hidden inside the seam to allow smooth rotation without hardware.",
+      "image_prompt": "Side profile of a tall cylindrical leather trunk, vachetta material, distinct base panel rotating slightly inward to show hinge mechanism, standing on a wooden floor, soft photorealistic render, butter yellow and deep navy colorways, no logos, no text, neutral background.",
+      "uncertainty_limitations": [
+        "Rotation mechanism may degrade over time if not precisely engineered."
+      ]
+    },
+    {
+      "product_name": "Hollow-Column Brief",
+      "category": "Bag",
+      "core_structural_idea": "A briefcase constructed as a hollow square tube where the four sides are removable panels tensioned by a central elastic core, allowing the sides to be extracted for a flat folder mode.",
+      "silhouette_form": "Slim, tall rectangular prism with sharp square corners.",
+      "construction_mechanism": "A central tube of steel-cored zipper or elastic cord runs vertically. Four rectangular pockets of leather slide onto this core. When the core is released, the panels pull apart; when engaged, they form a rigid box.",
+      "materials_and_behavior": [
+        "Stiffened Goatskin (thickness 1.8mm)"
+      ],
+      "colors": [
+        "Electric Blue with White trim",
+        "Black with Gold trim"
+      ],
+      "product_behavior": "Collapsible from a rigid brief into a thin, roll-like folder; the central tube provides structural support.",
+      "whitespace_rationale": "The visible connection points of the sliding panels create a ladder-like aesthetic on the exterior.",
+      "trend_signal_ids": [
+        "demo-narrow",
+        "demo-volume"
+      ],
+      "brand_evidence_ids": [
+        "ev-about",
+        "ev-p05"
+      ],
+      "manufacturability_explanation": "Sliding pockets are guided by leather channels lined with smooth Teflon fabric. The core tube is lightweight and flexible but strong enough to hold the form.",
+      "image_prompt": "Front view of a slim rectangular leather briefcase, goatskin, sharp corners, four side panels visibly connected by a central vertical seam, panels slightly pulled apart showing flexibility, electric blue and white or black and gold, studio lighting, neutral background.",
+      "uncertainty_limitations": [
+        "Core tube must be strong enough to prevent collapse when panels are fully extended."
+      ]
+    },
+    {
+      "product_name": "Strap-Integrated Sack",
+      "category": "Bag",
+      "core_structural_idea": "A soft sack where the load-bearing strap is not attached to the bag but is an integral part of the bag's top rim, formed by folding the leather inward to create a collar that carries the weight.",
+      "silhouette_form": "Irregular, amorphous top-down circle, flattened bottom.",
+      "construction_mechanism": "The top edge of the bag is folded under 180 degrees to form a stiffened cuff. The strap is glued or stitched into this cuff, so the cuff becomes the handle. The body hangs directly from the strap.",
+      "materials_and_behavior": [
+        "Soft, supple Box Calf (thickness 1.2mm)"
+      ],
+      "colors": [
+        "Butter Yellow",
+        "Saffron Orange"
+      ],
+      "product_behavior": "The bag's body sways freely from the strap; the strap provides all structural support, creating a dynamic silhouette.",
+      "whitespace_rationale": "No traditional top-seaming; the bag is one continuous piece of leather folded into a loop.",
+      "trend_signal_ids": [
+        "demo-volume",
+        "demo-narrow"
+      ],
+      "brand_evidence_ids": [
+        "ev-about",
+        "ev-p01"
+      ],
+      "manufacturability_explanation": "Constructed using blind-stitching along the folded edge to prevent fraying. The stiffness comes from the leather weight and the fold angle, not from rigid backing.",
+      "image_prompt": "Perspective shot of a soft leather sack, box calf, irregular top opening, single thick strap attached to the top rim acting as a handle, hanging freely, butter yellow and saffron orange, soft studio lighting, neutral background, no logos.",
+      "uncertainty_limitations": [
+        "Weight capacity must be carefully calculated to ensure the fold does not tear under heavy loads."
+      ]
+    },
+    {
+      "product_name": "Segmented Cylinder",
+      "category": "Bag",
+      "core_structural_idea": "A cylindrical bag constructed from vertical segments that can be slid up and down relative to each other, changing the bag's circumference and height.",
+      "silhouette_form": "Tall cylinder with horizontal grooves separating segments.",
+      "construction_mechanism": "Three vertical channels are created by stitching grooves into the leather cylinder. Two separate ring-shaped panels of leather slide over these channels like beads on a string. Moving the rings changes the bag's volume and shape.",
+      "materials_and_behavior": [
+        "Rigid, stiffened Horse Skin (thickness 2.0mm)"
+      ],
+      "colors": [
+        "Electric Blue with White",
+        "Sage Green with Black"
+      ],
+      "product_behavior": "The rings can be separated to widen the bag or brought together to narrow it, creating a variable silhouette.",
+      "whitespace_rationale": "The horizontal grooves are the primary visual feature, indicating modularity.",
+      "trend_signal_ids": [
+        "demo-deconstruction",
+        "demo-narrow"
+      ],
+      "brand_evidence_ids": [
+        "ev-artisans",
+        "ev-about"
+      ],
+      "manufacturability_explanation": "Uses a system of leather beads sliding over a fixed leather core. The stiffness of the horse skin prevents the core from collapsing when beads are moved.",
+      "image_prompt": "Front view of a cylindrical leather bag, horse skin, distinct horizontal grooves sliding, two ring sections slightly offset, electric blue with white or sage green with black, studio lighting, neutral background, no logos.",
+      "uncertainty_limitations": [
+        "Sliding mechanism may become sluggish over time without precise lubrication."
+      ]
+    },
+    {
+      "product_name": "Floating Lattice",
+      "category": "Bag",
+      "core_structural_idea": "A bag where the exterior is a grid of intersecting leather struts that form a cage, while the interior is a separate fabric pouch suspended within the grid.",
+      "silhouette_form": "Geometric, open-frame cube or sphere depending on the model.",
+      "construction_mechanism": "A rigid internal scaffold of leather struts is stitched together to form a hollow shape. A separate pouch is suspended from the termini of these struts using short loops of the same leather. The pouch hangs freely inside the cage.",
+      "materials_and_behavior": [
+        "Stiffened Cuoio (thickness 2.5mm) for struts",
+        "Soft cotton canvas for pouch"
+      ],
+      "colors": [
+        "Black with White canvas",
+        "Navy with Gold struts"
+      ],
+      "product_behavior": "The pouch moves independently within the cage, allowing for airflow and preventing snagging.",
+      "whitespace_rationale": "The open lattice structure creates a visual illusion of lightness despite the heavy leather struts.",
+      "trend_signal_ids": [
+        "demo-deconstruction",
+        "demo-narrow"
+      ],
+      "brand_evidence_ids": [
+        "ev-artisans",
+        "ev-about"
+      ],
+      "manufacturability_explanation": "Struts are laser-cut leather strips assembled into a frame. The pouch is sewn separately and attached with brass eyelets for durability.",
+      "image_prompt": "Isometric view of a geometric leather cage, stiffened leather struts forming a cube, soft cotton fabric pouch hanging inside, floating elements, black with white or navy with gold, studio lighting, neutral background, no logos.",
+      "uncertainty_limitations": [
+        "Structural integrity depends on the precise alignment of the struts and the stiffness of the leather."
+      ]
+    },
+    {
+      "product_name": "Collapsed Dimple Satchel",
+      "category": "Small Leather Good",
+      "core_structural_idea": "A minimalist satchel where the bottom panel is segmented into flexible vertical blades rather than a single rigid sheet. When light is applied or pressure is distributed, the blades spring outward to create a wider, stable base and a deeper compartment. When unloaded, the blades settle back against each other, creating a narrow, profile-dim operating size. The tension is managed by a hidden internal suspension matrix of horizontal straps that lock the blades in place without external visible hardware.",
+      "silhouette_form": "Electric Blue, Selective Volume",
+      "construction_mechanism": "The silhouette shifts from narrow to wide based on internal blade tension. The 'demolition' of the rigid bag bottom into articulated segments creates the final form. The weight of the contents determines the footprint; an empty bag is a shadow, a full bag is a platform. No external zippers or clasps define the opening; the base tension naturally pulls the top flaps taut.",
+      "materials_and_behavior": [
+        "Butter Yellow grained calfskin for the flexible bottom blades, allowing organic spring-back.",
+        "Electric Blue smooth leather for the upper shell and top apron, providing contrast and structural definition.",
+        "Internal beige calf/mat-lining taffeta to prevent blade friction."
+      ],
+      "colors": [
+        "Electric Blue",
+        "Butter Yellow"
+      ],
+      "product_behavior": "The bag stands upright only when loaded; when empty, it collapses into a compact, flat profile to fit in a pocket. The transition is silent and haptic, driven entirely by the tension of the internal strap matrix acting on the segmented base.",
+      "whitespace_rationale": "A rejection of the static, geometric container. The form is a direct result of mass and tension interaction, prioritizing utility in transit (collapse) and utility at rest (support).",
+      "trend_signal_ids": [
+        "demo-blue",
+        "demo-yellow",
+        "demo-volume"
+      ],
+      "brand_evidence_ids": [
+        "ev-artisans"
+      ],
+      "manufacturability_explanation": "Crafted using traditional saddle-stitching techniques. The vertical blades are pre-stretched on frames before attachment. Horizontal retention straps are sewn into the seams, hidden from view, providing the necessary tension. The skin is selected for specific tensile memory to ensure consistent spring-back action.",
+      "image_prompt": "A minimalist luxury leather satchel in electric blue and butter yellow. The bag is empty and collapsed flat on a neutral surface, showing vertical pleats or folds at the bottom. The concept relies on material tension and structure rather than logos or hardware. No text, no brand names, no monograms. Physical, realistic lighting, photorealistic, 8k. Focus on the interlocking leather geometry.",
+      "uncertainty_limitations": [
+        "Tension consistency depends on leather hydration and temperature.",
+        "Long-term wear may flatten blades over time.",
+        "Durability of fraying on blade tips requires reinforced seam work."
+      ]
+    },
+    {
+      "product_name": "Threaded Loop Briefcase",
+      "category": "Small Leather Good",
+      "core_structural_idea": "A briefcase constructed not from panels sewn together, but from a continuous loop of wide leather strap that weaves through itself. The body comprises a singular strand that wraps, twists, and locks around its own circumference.closure is achieved by threading a leather toggle through a reinforced loop in the strand itself. The structure relies on the braided or lox-style weave of a single continuous piece of material rather than stitched gussets.",
+      "silhouette_form": "Narrow Silhouettes, Deconstructed Tailoring",
+      "construction_mechanism": "The loop travels through itself to form rigid boxes, transforming a flexible cylinder into a structured rectangular prism. The tension of the loop maintains the shape without internal padding. The exterior is a series of interlocking loops, creating a lattice-like texture that breathes and flexes. No side seams exist; the 'seam' is the path of the thread weaving through the body. The closure mechanism is a 'self-threading' action where the strap passes through a dedicated anchor point.",
+      "materials_and_behavior": [
+        "Electric Blue vegetable-tanned leather for the main structural strand, chosen for high tensile strength and color depth.",
+        "Butter Yellow full-grain leather for the interior lining, providing a soft contrast to the structural exterior.",
+        "Silk twist wire for internal reinforcement if needed, hidden within the weave."
+      ],
+      "colors": [
+        "Electric Blue",
+        "Butter Yellow"
+      ],
+      "product_behavior": "The bag has a unique flex; squeezing the sides compresses the weave temporarily, allowing it to slide under a chair, but it instantly rebounds to a rigid, narrow shape when released. This mimics the idea of a knitted garment or a bracelet transformed into a container. The narrow silhouette is maintained by the tension of the single loop woven tightly around itself.",
+      "whitespace_rationale": "A reimagining of the 'seam' as the 'body'. Instead of cutting leather into shapes and sewing them, the shape is created purely through the manipulation of a single continuous line. The aesthetic is of raw, industrial construction refined to luxury.",
+      "trend_signal_ids": [
+        "demo-blue",
+        "demo-yellow",
+        "demo-deconstruction"
+      ],
+      "brand_evidence_ids": [
+        "ev-artisans"
+      ],
+      "manufacturability_explanation": "Constructed using specialized 'piping' jigs where a single long strap is wound and stitched to itself in precise geometric loops. The weaving process requires high precision to ensure the bag does not unravel. The leather thickness must be uniform to maintain the weave integrity.",
+      "image_prompt": "A luxury leather briefcase made from a single continuous strand of electric blue leather. The strands weave and lock together to form a rectangular container structure. No logos, no brand text. The concept relies on the geometric interlocking of the material. Wireframe style but photorealistic ends. Neutral background, soft lighting. Focus on the texture of the weave and the color contrast.",
+      "uncertainty_limitations": [
+        "Risk of unraveling if the weave is overstretched.",
+        "Weight distribution may be uneven if the weave is not perfectly symmetric.",
+        "Wear on the outer loops may be faster than traditional stitched seams."
+      ]
+    },
+    {
+      "product_name": "Clustered Knot Wallet",
+      "category": "Small Leather Good",
+      "core_structural_idea": "A wallet that uses the physics of knotting to create its structure, rather than sewing. It consists of multiple pre-formed leather loops tied around a central spine. When the wallet is closed, the knots are pulled tight, cinching the side compartments shut and creating a compact, cylindrical form. When opened or un-tied, the loops expand, allowing cards and cash to tuck into the expanded space. The 'closure' is a series of friction knots tied and untied by hand via the fingers or a specific lever.",
+      "silhouette_form": "Selective Volume, Narrow Silhouettes",
+      "construction_mechanism": "The wallet is assembled by tying a continuous length of leather through fixed eyelets in a central band. Each card slot is formed by a loop of leather that is knotted at the front. The tension of the knot dictates the width of the slot. The wallet is not a flat rectangle; it is a series of volumetric knots. The interaction is tactile; the user feels the tightness of the knot, which signals capacity.",
+      "materials_and_behavior": [
+        "Electric Blue vegetable-tanned leather for the main knots and loops, chosen for its ability to hold shape under tension.",
+        "Butter Yellow suede-lined interior to prevent cards from sliding.",
+        "Raw-edge un-finished leather for the central spine, emphasizing the hand-made knotting process."
+      ],
+      "colors": [
+        "Electric Blue",
+        "Butter Yellow"
+      ],
+      "product_behavior": "The wallet changes its volume dynamically. A 'full' wallet is a series of large, puffed-out knots. An 'empty' wallet is a tight, thin cylinder. The user can adjust the tightness of individual knots to expand or contract specific card slots, offering a modular capacity without flipping flaps.",
+      "whitespace_rationale": "This concept challenges the 'flat, stitched rectangle' paradigm of wallets. It introduces a dynamic, tactile interface where the function of holding cards is communicated through the tension and geometry of knots. It is a utilitarian object that looks like a sculptural study of binding.",
+      "trend_signal_ids": [
+        "demo-blue",
+        "demo-yellow",
+        "demo-deconstruction"
+      ],
+      "brand_evidence_ids": [
+        "ev-artisans"
+      ],
+      "manufacturability_explanation": "Constructed using specialized knotting jigs that ensure each loop is uniform. The central spine is pre-woven, and the loops are tied by hand or machine using a 'cable' technique. Reinforced knots at stress points prevent slippage. The leather must be treated to prevent swelling when wet.",
+      "image_prompt": "A luxury leather wallet made entirely of tied knots and loops in electric blue and butter yellow. The structure looks like a series of interlocking knots forming a wallet shape. No logos, no brand text. The focus is on the handcrafted knotting technique and the organic geometry. Neutral background, soft lighting. Photorealistic, 8k.",
+      "uncertainty_limitations": [
+        "Knots can loosen over time with heavy use.",
+        "Access speed may be slower than zippered wallets.",
+        "Water resistance is limited unless the leather is heavily treated."
+      ]
+    },
+    {
+      "product_name": "Interlinked Ring Purse",
+      "category": "Small Leather Good",
+      "core_structural_idea": "A small hand-held purse constructed from a continuous thread of leather that weaves through a series of rigid, thin leather rings. The rings form the skeleton, while the thread forms the skin. The bag is carried by a single ring that acts as the handle and the base. The rings can be opened and re-closed, changing the bag from a closed cylinder to an open basket, or from a wide tote to a narrow clutch. The 'closure' is a simple friction fit of one ring inside another.",
+      "silhouette_form": "Narrow Silhouettes, Deconstructed Tailoring",
+      "construction_mechanism": "The bag is built as a chainmail, but instead of metal, it uses interlocking leather rings and a continuous leather strap. The strap runs through every ring, binding them together. The rings provide the rigid structure, while the strap provides the flexibility and aesthetic. The silhouette is defined by the number of rings engaged - more rings, wider body; fewer rings, narrow profile. The interaction is purely mechanical: threading the strap through or unthreading the rings changes the form.",
+      "materials_and_behavior": [
+        "Electric Blue polished leather for the rings, cut to precise dimensions for interlocking.",
+        "Butter Yellow soft leather for the continuous strap, allowing fluid movement.",
+        "Gold-plated metal hooks to hide the connection points at the top and bottom."
+      ],
+      "colors": [
+        "Electric Blue",
+        "Butter Yellow"
+      ],
+      "product_behavior": "The bag transforms from a structured, rigid cylinder to a soft, flexible hoop. The user can collapse the bag by passing the strap through fewer rings, making it pocket-sized. The expansion is controlled by pulling the strap taut, which forces the rings into a larger circumference. The closure is achieved by the natural friction of the rings when the strap is tightened.",
+      "whitespace_rationale": "A rejection of the 'bag is a box' mentality. This bag is a subtractive process; it starts as a wall of rings and is molded into shape by tension. It highlights the material strength of leather and the geometry of interlocking loops.",
+      "trend_signal_ids": [
+        "demo-blue",
+        "demo-yellow",
+        "demo-deconstruction"
+      ],
+      "brand_evidence_ids": [
+        "ev-artisans"
+      ],
+      "manufacturability_explanation": "Requires high-precision cutting of rings to ensure perfect interlocking. The continuous strap must be sewn or glued to the rings in a specific pattern. The metal hooks are embedded invisibly to allow the rings to pivot without sagging. The rings are pre-assembled in a tube before the final strap attachment.",
+      "image_prompt": "A luxury handbag made of interlocking blue and yellow leather rings. The structure looks like a chainmail or jewelry piece. The strap winds through the rings, holding them together. No logos, no brand text. The concept relies on the geometric precision of the rings. Neutral background, soft lighting. Photorealistic, 8k.",
+      "uncertainty_limitations": [
+        "Rings may eventually show signs of wear or deformation.",
+        "Interlocking mechanism may be prone to jamming if dirt accumulates.",
+        "Skin may stretch or tear if the rings become too loose."
+      ]
+    },
+    {
+      "product_name": "Interlaced Sole Slipper",
+      "category": "Footwear",
+      "core_structural_idea": "A single, continuous loop of calfskin weaves through internal Teslin shanks at regular intervals to form the upper's perimeter and the sole's edge simultaneously. No glue or stitching joins these sections; the entire form relies on the tension of the lacing loop against the compressed core. The design eliminates the traditional sole-to-upper transition, making the boundary ambiguous while maximizing tension distribution.",
+      "silhouette_form": "Narrow Silhouette with Integrated Sole",
+      "construction_mechanism": "Single-piece woven construction using an internal shank framework that dictates the flex pattern. The upper is not stitched but wrapped through the shanks, creating a rigid arch that softens only at the ball of the foot where the weave is relaxed.",
+      "materials_and_behavior": [
+        "Natural Calveskin",
+        "Intertwined natural-fiber Teslin",
+        "Nappa leather insole"
+      ],
+      "colors": [
+        "Electric Blue",
+        "Butter Yellow"
+      ],
+      "product_behavior": "The shoe forms a closed hinged ring. When worn, the foot compresses the Teslin core, causing the upper loops to tighten securely without laces. The visual identity is defined by the horizontal rhythm of the weaves.",
+      "whitespace_rationale": "Rejects the familiar 'upper stitched to sole' cliché by using a structural weave as the primary load-bearing element, replacing seams with interlaced tension.",
+      "trend_signal_ids": [
+        "demo-deconstruction",
+        "demo-narrow"
+      ],
+      "brand_evidence_ids": [
+        "ev-p04",
+        "ev-p05",
+        "ev-artisans"
+      ],
+      "manufacturability_explanation": "Constructed manually using traditional pull-through weaving techniques on a custom loom, mimicking the craftsmanship of leatherworking bundles. The mechanism relies on precise tension tolerance, requiring artisan calibration rather than industrial automation.",
+      "image_prompt": "Photorealistic studio shot of a luxury footwear concept featuring a narrow silhouette where the upper material and the sole edge are indistinguishable, formed by a continuous woven loop of large pores calfskin and textured Teslin. No logos, no branding, no monograms. The texture shows horizontal interlacing ribs. Neutral studio lighting, seamless background.",
+      "uncertainty_limitations": [
+        "Requires highly specialized manual weaving skills."
+      ]
+    },
+    {
+      "product_name": "Hexagonal Cell Clog",
+      "category": "Footwear",
+      "core_structural_idea": "A rigid, honeycomb-structured outsole made of compressed cork and layered suede forms the base. Flexible, tubular leather cells sit atop this unit, connecting at the heel but leaving the forefoot as a series of open, breathable hexagonal apertures. The cells act as both upper and structural strut.",
+      "silhouette_form": "Narrow Silhouette with Selective Openness",
+      "construction_mechanism": "The hexagonal frame is cast from a solid block of cork covered in smooth leather, then cut and glued into a grid. The flexible cells are inserted into the grid with minimal adhesive, relying on friction and the rigidity of the base for stability.",
+      "materials_and_behavior": [
+        "Compressed natural cork",
+        "Suede",
+        "Smooth calfskin"
+      ],
+      "colors": [
+        "Butter Yellow",
+        "Onyx Black"
+      ],
+      "product_behavior": "The cells expand slightly when stepped into, then retract. The open forefoot design reduces heat and weight while the hexagonal pattern distributes impact forces across the entire foot surface.",
+      "whitespace_rationale": "Replaces the continuous leather shell with a cellular metal-like structure that is soft yet rigid, focusing on environmental resonance and structural lattice design rather than conventional shape wrapping.",
+      "trend_signal_ids": [
+        "demo-volume",
+        "demo-deconstruction"
+      ],
+      "brand_evidence_ids": [
+        "ev-p04",
+        "ev-p01"
+      ],
+      "manufacturability_explanation": "The base can be machine-molded from cork granulate, while the leather cells are hand-cut and fitted. This hybrid approach allows for scalable production while maintaining the detailed hand-fitting required for the grid alignment.",
+      "image_prompt": "Close-up product shot of a clog featuring a rigid honeycomb base made of natural cork and textured leather tubes forming the upper. The toe area has open hexagonal gaps. No logos or text. Neutral lighting highlighting the pore texture of the leather and the grain of the cork.",
+      "uncertainty_limitations": [
+        "Open toe structure limits styling versatility compared to closed shoes."
+      ]
+    },
+    {
+      "product_name": "Suspension Arch Sandal",
+      "category": "Footwear",
+      "core_structural_idea": "The foot rests entirely within a suspended cavity formed by a rigid arch strap that bridges the heel and the inner toes, bypassing the midfoot entirely. The arch itself is tensioned by a counterweight mechanism behind the heel, keeping the strap taut and conforming to the foot's unique shape without direct contact.",
+      "silhouette_form": "Narrow Silhouette",
+      "construction_mechanism": "A solid, curved arch of leather is held in place by a tensioning system at the heel. The arch does not touch the foot; instead, it acts as a bridge, with the foot sliding underneath a secondary, softer lining that is held flat by the arch's tension.",
+      "materials_and_behavior": [
+        "Deerskin",
+        "Cotton canvas",
+        "Natural rubber"
+      ],
+      "colors": [
+        "Electric Blue",
+        "Bone White"
+      ],
+      "product_behavior": "The sandal feels weightless as the arch lifts the foot slightly. The tensioning system ensures the arch remains perfectly aligned regardless of foot movement, offering support without restricting natural flexion.",
+      "whitespace_rationale": "Eliminates all contact points in the midfoot, a radical departure from traditional sandals and shoes, focusing on the structural relationship between supporting elements and the empty space they create.",
+      "trend_signal_ids": [
+        "demo-narrow",
+        "demo-deconstruction"
+      ],
+      "brand_evidence_ids": [
+        "ev-p04",
+        "ev-p05",
+        "ev-artisans"
+      ],
+      "manufacturability_explanation": "The arch is hand-cut and shaped from a single piece of deerskin, then tensioned using a simple knot and friction system at the heel. The lack of complex closures or hardware simplifies manufacturing while relying on masterful cutting skills.",
+      "image_prompt": "Side view of a luxury sandal where the foot is cradled by a suspended leather arch that does not touch the ground or the midfoot. The arch is held in place by a tensioning system at the heel. No logos, no branding. Clean, minimalist aesthetic.",
+      "uncertainty_limitations": [
+        "Requires precise foot shape to function correctly; may not suit all foot sizes."
+      ]
+    },
+    {
+      "product_name": "Chain-Link Herringbone Moccasin",
+      "category": "Footwear",
+      "core_structural_idea": "A series of interlocking metal-style links made from thin, durable leather strips replace the traditional moccasin vamp. These links are stitched together in a herringbone pattern, creating a flexible yet structured cage around the foot. The sole is a single block of rubber molded to the shape of the linked upper.",
+      "silhouette_form": "Narrow Silhouette",
+      "construction_mechanism": "The leather strips are folded and stitched together to form a chain-like structure. The entire cage is then pressed into the rubber sole, creating a unified piece where the upper and sole are mechanically integrated through the link structure.",
+      "materials_and_behavior": [
+        "Buff calf leather",
+        "Natural rubber"
+      ],
+      "colors": [
+        "Butter Yellow",
+        "Onyx Black"
+      ],
+      "product_behavior": "The chain-link pattern allows for extreme flexibility and breathability while maintaining a rigid outer profile. The herringbone stitch provides structural integrity and a highly textured visual rhythm.",
+      "whitespace_rationale": "Substitutes continuous leather with a discrete, modular link system, transforming the moccasin from a solid form into a skeletal, architectural construction.",
+      "trend_signal_ids": [
+        "demo-deconstruction",
+        "demo-narrow"
+      ],
+      "brand_evidence_ids": [
+        "ev-p04",
+        "ev-p01"
+      ],
+      "manufacturability_explanation": "The leather links are cut using a die-cutting machine, then assembled using a specialized beading technique to create the chain links. The integration with the sole is done via a molding process that preserves the integrity of the leather structure.",
+      "image_prompt": "Close-up of a moccasin-style shoe where the upper is made of interlocking leather strips in a herringbone pattern. The sole is a single block of rubber molded to the upper. No logos, no text. High-contrast lighting to highlight the texture of the links.",
+      "uncertainty_limitations": [
+        "The beading technique is labor-intensive and may require specialized tools."
+      ]
+    },
+    {
+      "product_name": "Fluid Drip Loafer",
+      "category": "Footwear",
+      "core_structural_idea": "A series of elongated, teardrop-shaped leather elements are suspended from a central spine at the heel and the top of the toe, mimicking the way water drips from a fountain. These elements overlap and slide against each other, changing the shoe's appearance based on movement and weight.",
+      "silhouette_form": "Narrow Silhouette with Selective Volume",
+      "construction_mechanism": "The spine is a rigid, curved piece of leather. The teardrop elements are attached to it using small, invisible stitches that allow them to pivot. The overlap between the elements is managed by a specialized gluing technique that creates a friction fit.",
+      "materials_and_behavior": [
+        "Silk finish calfskin",
+        "Suede"
+      ],
+      "colors": [
+        "Electric Blue",
+        "Bone White"
+      ],
+      "product_behavior": "As the wearer walks, the teardrop elements shift, creating a fluid, dynamic silhouette that changes with each step. The overlapping surfaces create a shimmering effect as light reflects off the silk finish.",
+      "whitespace_rationale": "Replaces the static, solid surface of a loafer with a series of moving, overlapping forms that interact with the environment and the wearer's motion, creating a sense of perpetual flux.",
+      "trend_signal_ids": [
+        "demo-volume",
+        "demo-deconstruction"
+      ],
+      "brand_evidence_ids": [
+        "ev-p03",
+        "ev-p05"
+      ],
+      "manufacturability_explanation": "The teardrop elements are mirror-cut and then manually aligned and glued to the spine. The overlapping technique requires high precision and skill, but can be scaled with automated assembly lines once the manual process is perfected.",
+      "image_prompt": "Studio shot of a loafer-style shoe where the upper consists of overlapping teardrop-shaped leather pieces that are suspended and sliding against each other. The leather has a silk finish. No logos, no text. Soft lighting to highlight the sheen of the leather.",
+      "uncertainty_limitations": [
+        "The moving parts may become misaligned over time, requiring maintenance."
+      ]
+    },
+    {
+      "product_name": "Geom Grid Monk",
+      "category": "Footwear",
+      "core_structural_idea": "A rigid grid of vertical and horizontal leather strips forms the upper and sole of the shoe. The grid is flexible in specific directions, allowing the foot to move naturally, while remaining rigid in others to provide support. The monk strap is integrated into the grid as a horizontal bar.",
+      "silhouette_form": "Narrow Silhouette",
+      "construction_mechanism": "The grid is constructed by weaving leather strips together in a specific pattern. The monk strap is integrated as one of the horizontal bars, which can be tightened or loosened with a buckle.",
+      "materials_and_behavior": [
+        "Full-grain calfskin",
+        "Heavy-weight linen"
+      ],
+      "colors": [
+        "Onyx Black",
+        "Butter Yellow"
+      ],
+      "product_behavior": "The grid provides a unique tactile experience, with different parts of the foot interacting with different materials and textures. The grid also creates a highly structured, architectural silhouette.",
+      "whitespace_rationale": "Replaces the traditional moccasin or boot construction with a pure grid system, exploring the relationship between structure and flexibility in a new way.",
+      "trend_signal_ids": [
+        "demo-deconstruction",
+        "demo-narrow"
+      ],
+      "brand_evidence_ids": [
+        "ev-p01",
+        "ev-p06"
+      ],
+      "manufacturability_explanation": "The grid can be constructed using a weaving loom, similar to the method used for the Interlaced Sole Slipper, but with a different pattern. The integration of the monk strap is simple and can be done by hand or machine.",
+      "image_prompt": "Top-down view of a monk-strap shoe where the upper and sole are made of a geometric grid of leather strips. The strips are arranged in a precise pattern, creating a structured, architectural look. No logos, no text. Clean, minimalist lighting.",
+      "uncertainty_limitations": [
+        "The grid structure may be less comfortable for some users compared to softer uppers."
+      ]
+    },
+    {
+      "product_name": "Radial Weft Coat",
+      "category": "Ready-to-Wear",
+      "core_structural_idea": "A jacket where the main body is formed by individual woven bands running laterally rather than continuous vertical fabric strips. These bands interlock at the shoulders and hem to create a self-supporting shell.",
+      "silhouette_form": "tubular column with wide base",
+      "construction_mechanism": "The garment is constructed from a single continuous warp knit that is cut into radial segments. These segments are pieced together with invisible chain-stitching that floats slightly away from the surface, creating a 'breathing' texture that expands when moving. The closure is a hidden magnetic interface within a single thickened woven rib, avoiding zippers or buttons.",
+      "materials_and_behavior": [
+        "Heavy-gauge cotton gauze for the warp",
+        "Silk train for the floating surface layers"
+      ],
+      "colors": [
+        "Electric Blue for the warp ribs",
+        "Butter Yellow for the floating surface"
+      ],
+      "product_behavior": "When the wearer moves, the radial segments shift slightly relative to one another, causing the surface texture to ripple without loosening the structural form.",
+      "whitespace_rationale": "Avoids traditional side seams and pockets; volume is generated by the three-dimensional spacing of the woven ribs rather than internal padding.",
+      "trend_signal_ids": [
+        "demo-deconstruction",
+        "demo-blue",
+        "demo-narrow"
+      ],
+      "brand_evidence_ids": [
+        "ev-about",
+        "ev-artisans",
+        "ev-p01"
+      ],
+      "manufacturability_explanation": "Can be produced via industrial wide-format knitting followed by precision hand-sewing of the radial interlocking points, a technique consistent with artisanal weaving.",
+      "image_prompt": "A full-body shot of a jacket made of horizontal woven ribs in electric blue and butter yellow. The ribs interlock at the shoulders and hem, forming a self-supporting tubular shape. No logos, no buttons, no zippers. The texture shows slight separation between the rib layers, creating depth. Shot in neutral daylight against a white background. Photorealistic, 8k.",
+      "uncertainty_limitations": [
+        "The synthesis of heavy warp knitting with fine silk floatation may require specialized loom tension control.",
+        "Heat-shaping the woven ribs to maintain the radial curve without thermal distortion of the silk."
+      ]
+    },
+    {
+      "product_name": "Ambient Cuff Blazer",
+      "category": "Ready-to-Wear",
+      "core_structural_idea": "A blazer where the shoulder structure is not fixed to the upper garment but hangs loosely from the collar, shifting weight and position based on arm movement.",
+      "silhouette_form": "loose rectangular box with mobile shoulders",
+      "construction_mechanism": "The collar connects to short, tensioned silk cords that anchor the shoulder pads to the pro's chest. As the arms move, the shoulders drift, creating a dynamic silhouette that changes from structured to draped. The lapels are made of a rigid, quilted panel that retains its shape independently of the body below.",
+      "materials_and_behavior": [
+        "Virgin wool body",
+        "Quilted silk shoulder pads",
+        "Silk thread cords"
+      ],
+      "colors": [
+        "Olive Green (body)",
+        "Charcoal (shoulders)"
+      ],
+      "product_behavior": "The blazer does not conform to the wearer's static posture but creates a floating perimeter around the torso. The distance between the collar and the shoulder pad changes with every motion.",
+      "whitespace_rationale": "Replaces the static shoulder construction with a dynamic, gravity-defying element that alters the garment's footprint continuously.",
+      "trend_signal_ids": [
+        "demo-deconstruction",
+        "demo-volume"
+      ],
+      "brand_evidence_ids": [
+        "ev-about",
+        "ev-p03",
+        "ev-p05"
+      ],
+      "manufacturability_explanation": "The shoulder assembly uses simple tension rods and adjustable cords, similar to architectural draping techniques, which are feasible with high-end tailoring craft.",
+      "image_prompt": "A medium shot of a blazer with loose, mobile shoulder pads connected by thin silk cords to the collar. The shoulders float slightly away from the body. The body is made of solid quilted wool. No logos, no branding. Neutral background. Photorealistic, 8k.",
+      "uncertainty_limitations": [
+        "Balancing the weight of the shoulder pads against the tension of the silk cords to prevent sagging.",
+        "Ensuring the dynamic movement does not compromise the garment's structural integrity over time."
+      ]
+    },
+    {
+      "product_name": "Inverted Lapel Trench",
+      "category": "Ready-to-Wear",
+      "core_structural_idea": "A trench coat where the lapels are positioned internally, forming a reverse collar that covers the neck when the wearer lowers their head.",
+      "silhouette_form": "elongated trapezoid leaning forward",
+      "construction_mechanism": "The coat is cut from a single wide panel folded lengthwise. The inner face of the fabric becomes the outer shell, exposing the raw edge as a decorative grain. The collar is a double-layered closure that wraps around the neck rather than opening it. A hidden magnetic snap replaces the traditional button.",
+      "materials_and_behavior": [
+        "Deerskin exterior",
+        "Silk satin lining",
+        "Leather trim"
+      ],
+      "colors": [
+        "Deep Brown (exterior)",
+        "Cream (lining)"
+      ],
+      "product_behavior": "When the wearer moves, the internal lapels shift, creating a rhythmic sound and movement within the garment. The coat feels heavier than it appears due to the internal structure.",
+      "whitespace_rationale": "Eliminates the traditional front opening, replacing it with a continuous wrap that conceals the body's contours while providing warmth.",
+      "trend_signal_ids": [
+        "demo-deconstruction",
+        "demo-blue",
+        "demo-volume"
+      ],
+      "brand_evidence_ids": [
+        "ev-p04",
+        "ev-p10"
+      ],
+      "manufacturability_explanation": "Construction uses traditional leatherworking techniques for the face panels and satin lining, with hidden magnetic closures similar to high-end fashion.",
+      "image_prompt": "A full-body shot of a trench coat with an internal collar. The coat is made of deep brown deerskin with a cream satin lining. The front is a single continuous panel with no buttons or zippers visible. No logos, no branding. Neutral background. Photorealistic, 8k.",
+      "uncertainty_limitations": [
+        "Ensuring the internal lapels do not bunch up or cause discomfort during movement.",
+        "Maintaining the leather's structural integrity when folded inward."
+      ]
+    },
+    {
+      "product_name": "Kinetic Bias Skirt",
+      "category": "Ready-to-Wear",
+      "core_structural_idea": "A skirt constructed from multiple panels cut on the extreme bias, allowing the fabric to stretch and rotate around the wearer's legs.",
+      "silhouette_form": "long narrow tube that expands with movement",
+      "construction_mechanism": "The skirt is made of narrow strips of silk sewn together in a spiral pattern. As the wearer moves, the spiral tightens and tightens, creating a dynamic silhouette. The waist is a rigid band that anchors the spiral.",
+      "materials_and_behavior": [
+        "Silk taffeta",
+        "Leather waistband",
+        "Silk thread"
+      ],
+      "colors": [
+        "Butter Yellow",
+        "White"
+      ],
+      "product_behavior": "The skirt rotates around the legs as the wearer walks, creating a visual effect of movement. The fabric stretches and contracts based on the wearer's stride.",
+      "whitespace_rationale": "Creates a sense of motion and fluidity through the bias cut, rather than relying on traditional pleating or gathering.",
+      "trend_signal_ids": [
+        "demo-narrow",
+        "demo-volume",
+        "demo-deconstruction"
+      ],
+      "brand_evidence_ids": [
+        "ev-p02",
+        "ev-p09"
+      ],
+      "manufacturability_explanation": "Construction uses traditional sewing techniques for the silk strips and leather waistband, with precise cutting on the bias to achieve the desired movement.",
+      "image_prompt": "A full-body shot of a skirt made of narrow silk strips sewn in a spiral pattern. The skirt rotates around the legs as the wearer walks. The waist is a rigid leather band. No logos, no branding. Neutral background. Photorealistic, 8k.",
+      "uncertainty_limitations": [
+        "Ensuring the spiral pattern does not create uneven tension or discomfort.",
+        "Maintaining the silk's structural integrity over time."
+      ]
+    },
+    {
+      "product_name": "Modular Hem Tunic",
+      "category": "Ready-to-Wear",
+      "core_structural_idea": "A tunic where the hemline is modular, allowing the wearer to adjust the length and shape of the garment by reconfiguring the panels.",
+      "silhouette_form": "asymmetrical rectangle with adjustable hem",
+      "construction_mechanism": "The tunic is made of three separate panels that can be reconfigured in different ways. The hemline is a series of magnets that allow the panels to be joined in different positions. The sleeves are also modular, allowing the wearer to adjust the fit.",
+      "materials_and_behavior": [
+        "Cotton gauze",
+        "Silk lining",
+        "Magnetic snaps"
+      ],
+      "colors": [
+        "Olive Green",
+        "Charcoal"
+      ],
+      "product_behavior": "The tunic transforms from a long, flowing garment to a shorter, more structured piece. The hemline shifts with every step.",
+      "whitespace_rationale": "Replaces the traditional fixed hemline with a flexible, modular design that adapts to the wearer's needs.",
+      "trend_signal_ids": [
+        "demo-deconstruction",
+        "demo-narrow",
+        "demo-blue"
+      ],
+      "brand_evidence_ids": [
+        "ev-p01",
+        "ev-p06"
+      ],
+      "manufacturability_explanation": "Construction uses traditional sewing techniques for the panels and magnetic snaps, similar to high-end fashion modifications.",
+      "image_prompt": "A full-body shot of a tunic with adjustable hemline. The tunic is made of three separate panels that can be reconfigured. The hemline is a series of magnets. No logos, no branding. Neutral background. Photorealistic, 8k.",
+      "uncertainty_limitations": [
+        "Ensuring the magnetic snaps do not fall out or damage the fabric over time.",
+        "Maintaining the structural integrity of the tunic when reconfigured."
+      ]
+    },
+    {
+      "product_name": "Tension Kinetic Blazer",
+      "category": "Ready-to-Wear",
+      "core_structural_idea": "A blazer where the front panels are not stitched to the body but suspended by a hidden leather tension line that gathers the fabric only when the wearer's arms move.",
+      "silhouette_form": "structured boxy shape that fluidly redistributes volume",
+      "construction_mechanism": "The garment consists of a central torso block and two floating front panels. These panels are connected to the back via a continuous leather cord that passes through the fabric. As the arms move, the tension in the cord increases, pulling the front panels back and creating a dynamic, flowing effect. The sleeves are integrated into the front panels and extend from the shoulder.",
+      "materials_and_behavior": [
+        "Virgin wool body",
+        "Leather tension cord",
+        "Silk lining"
+      ],
+      "colors": [
+        "Electric Blue",
+        "Butter Yellow"
+      ],
+      "product_behavior": "The blazer's appearance changes with every movement, as the front panels shift and flow. The garment does not hang statically but moves in sync with the wearer's motion.",
+      "whitespace_rationale": "Replaces the static front panels with a dynamic, tension-based system that creates a sense of motion and fluidity.",
+      "trend_signal_ids": [
+        "demo-deconstruction",
+        "demo-volume",
+        "demo-narrow"
+      ],
+      "brand_evidence_ids": [
+        "ev-p02",
+        "ev-p05"
+      ],
+      "manufacturability_explanation": "Construction uses traditional sewing techniques for the wool body and leather cord, with precise tension control to ensure the panels move smoothly.",
+      "image_prompt": "A medium shot of a blazer with front panels suspended by a hidden leather cord. The blazer moves in sync with the wearer's motion. The body is made of solid wool. No logos, no branding. Neutral background. Photorealistic, 8k.",
+      "uncertainty_limitations": [
+        "Ensuring the leather cord does not snap or cause discomfort over time.",
+        "Maintaining the fabric's structural integrity when the panels shift."
+      ]
+    },
+    {
+      "product_name": "Torque Magle",
+      "category": "Belt / Accessory",
+      "core_structural_idea": "A belt consisting of three distinct leather plates pinned internally at a central pivot point. Unlike conventional belts that rely on a linear hole-and-buckle path, this design uses torque to transform the belt's width profile. Wearing the belt requires gripping the outer plates and rotating them relative to the center pin. This rotation tightens the connection between the plates, narrowing the waist-gape mechanically without friction locking. The tension is maintained by the rotational friction of the organic leather layers against the rigid internal dowel, allowing the wearer to expand or contract the belt's passage by twisting, rather than pulling.",
+      "silhouette_form": "Asymmetrical Taper",
+      "construction_mechanism": "Pinned internal pivot assembly with torque-resistant dowel; layered organic vegetable-tanned leather plates; mechanical reveals through rotational friction rather than zippers or buckles.",
+      "materials_and_behavior": [
+        "Vegetable-tanned Italian leather (rigid flexion)",
+        "Hardened brass internal dowel (pivot axis)"
+      ],
+      "colors": [
+        "Butter Yellow",
+        "Deep Smoke"
+      ],
+      "product_behavior": "The belt functions as a mechanical hinge around the waist. The wearer grips the two outer rectangular plates and rotates them to cinch the central opening. The action creates a 'locked' visual state where the plates are crossed, hiding the central pivot. This explores interaction through rotation and friction rather than traditional latching.",
+      "whitespace_rationale": "Eliminates the buckle entirely, replacing it with an invisible internal pivot. The external focus shifts to the silhouette of the crossed or aligned plates. The interaction is a behavioral twist, making the belt an active sports-like device rather than a static garment.",
+      "trend_signal_ids": [
+        "demo-deconstruction",
+        "demo-volume",
+        "demo-narrow"
+      ],
+      "brand_evidence_ids": [
+        "ev-about",
+        "ev-p04",
+        "ev-p10"
+      ],
+      "manufacturability_explanation": "Constructible using traditional leatherbookbinding and metalworking techniques. The internal pivots are machined brass dowels bored cleanly into the leather, then rivet-sealed. The edges are skived, softened, and burnished, requiring no complex injection molding or soft hardware. It relies on precise trimming and high-tension leather qualities consistent with artisanal production.",
+      "image_prompt": "Photorealistic still life of three rectangular vegetable-tanned leather plates pinned at a central brass dowel, arranged on a neutral stone surface in a crossed configuration. Leather shows natural grain and slight edge fraying. Colors are butter yellow and deep smoke. No logos, no text, no brand monograms, no popular luxury shapes, no reflective surfaces, no impossible geometry.",
+      "uncertainty_limitations": [
+        "The internal pin mechanism requires precise tolerances to prevent leather tearing over time."
+      ]
+    },
+    {
+      "product_name": "Arch Weaver",
+      "category": "Belt / Accessory",
+      "core_structural_idea": "A continuous strap made of woven silk and leather that functions as a structural armature that stiffens only when tensioned by wear. The belt is composed of thousands of fine silk threads interlaced with occasional thick leather strands, winding in a spiral tension pattern around the wearer's midsection. When loose, the structure collapses into a flat, airy ribbon. As the waist naturally settles and the wearer moves, the spiral spirals tighten, engaging the leather threads to pull the silk silks into a rigid, supportive cylinder. The belt becomes 'hot' and supportive only under motion and weight, refusing to hold shape when at rest.",
+      "silhouette_form": "Arch Cylinder",
+      "construction_mechanism": "Continuous spiral knitting; raw silk and deerskin interlacing; mechanical stiffening via pre-tensioned wound coils; no sewn seams.",
+      "materials_and_behavior": [
+        "Raw silk (high tensile, limp when relaxed)",
+        "Deerskin strands (structural, ratchet-like tension)"
+      ],
+      "colors": [
+        "Electric Blue",
+        "Charcoal Grey"
+      ],
+      "product_behavior": "The belt adheres to the body like a second skin but remains voluminous and soft until movement applies tension. The spiral construct_actively reacts to the wearer's gait. It prevents sagging not by being stiff, but by being reactive. The visual read changes from a delicate thread to a solid architectural column as the day progresses.",
+      "whitespace_rationale": "Replaces the concept of a 'strap' with the concept of a 'reactive column'. The innovation lies in the material memory and the kinetic construction rather than a new closure. It challenges the idea that a belt must be heavy or stiff to provide support.",
+      "trend_signal_ids": [
+        "demo-blue",
+        "demo-deconstruction",
+        "demo-volume"
+      ],
+      "brand_evidence_ids": [
+        "ev-p03",
+        "ev-p11",
+        "ev-about"
+      ],
+      "manufacturability_explanation": "Manufactured via a specialized loom or hand-weaving process where silk is interwoven with short leather battens. The tension is set by the weave density and the natural stretch difference between silk and leather. No gluing or mechanical hardware is required; the structural integrity comes from the braiding pattern. This aligns with artisanal weaving and leather crafting capabilities.",
+      "image_prompt": "Close-up macro shot of a silk and leather woven band coiled loosely on a grey stone. The silk is a vivid electric blue, the leather grey. The weave is tight and intricate, showing individual threads. No brand names, no logos, no visible buckles, no recognizable fashion shapes, no impossible structures. Soft, diffused lighting.",
+      "uncertainty_limitations": [
+        "Long-term durability of the interwoven silk and leather junction points; silk may fray faster than leather."
+      ]
+    },
+    {
+      "product_name": "Flux Node",
+      "category": "Belt / Accessory",
+      "core_structural_idea": "A modular belt system where the strap is not a single loop but a series of identical, self-contained leather cubes linked by small, hidden magnetic joints. Each cube is a hollow shell containing a card slot and a pen loop. The linkages are so subtle that from a distance, the belt appears as a solid, corrugated tube. However, the wearer can engage specific magnets to 'lock' the cubes into a permanent shape (e.g., a rectangular tray) or disengage them to collapse the belt into a flat stack of individual work-stations. The closure is the collapse itself; the belt widens to become a functional surface.",
+      "silhouette_form": "Segmented Cube",
+      "construction_mechanism": "Interlocking hollow leather geometric shells; magnetic internal latching; fold-flat geometry.",
+      "materials_and_behavior": [
+        "Full-grain leather cubes (compacted rings)",
+        "Neodymium magnets (hidden inside seam)"
+      ],
+      "colors": [
+        "Deep Smoke",
+        "Charcoal Navy"
+      ],
+      "product_behavior": "The belt transforms from a thin, restrictive loop into a wide, flat, utilitarian surface. By engaging the hidden magnets at specific points, the wearer constructs a rigid platform in the center of the waist. It functions as a temporary desktop for sketching or maps, expanding and contracting without visible clasps or flaps.",
+      "whitespace_rationale": "Reframes the belt as a 'wearable desktop'. The novelty is the geometric complexity of the closure mechanism (cube collapse) rather than a new way to secure the loop around the waist. The interaction is tactile and structural, manipulating geometry.",
+      "trend_signal_ids": [
+        "demo-narrow",
+        "demo-deconstruction",
+        "demo-volume"
+      ],
+      "brand_evidence_ids": [
+        "ev-about",
+        "ev-p05",
+        "ev-p12"
+      ],
+      "manufacturability_explanation": "Each cube is a simple double-layer leather saddle attachment, sewn and shaped, with a small pocket for a magnet. The cubes are then linked in a chain that naturally flattens. This relies on precise sewing and standard magnetic components hidden within the bulk of the leather structure. No complex electronics or precision manufacturing is needed, just high-quality leatherjoinery.",
+      "image_prompt": "Orthogonal view of a belt made of dark leather cubes linked together. The central section is expanded into a flat, wide surface for writing. The cubes are uniform, dark charcoal. No logos, no brand marks, no text, no recognizable luxury branding silhouettes, no impossible floating parts. Studio lighting on a neutral surface.",
+      "uncertainty_limitations": [
+        "The magnetic alignment requires perfect tolerance for the cubes to lock securely; risk of accidental disengagement during vigorous activity."
+      ]
+    },
+    {
+      "product_name": "Drift Wrap",
+      "category": "Belt / Accessory",
+      "core_structural_idea": "An asymmetrical strap constructed from a single continuous piece of stiff leather that spirals around the waist, unanchored by any buckle. The strap enters from one side of the waist, crosses diagonally over the torso to the opposite hip, and returns to the starting side, creating a floating triangle upon the body. The tension is controlled not by pulling the strap tight, but by sliding a weighted, rounded leather bead along the spiral path. As the bead slides, it pulls the adjacent leather against the body skin, creating a localized band of compression anywhere along the waistline while the rest of the strap hangs loose and decorative. It offers infinite positioning for support without a fixed closure point.",
+      "silhouette_form": "Floating Spiral Triangle",
+      "construction_mechanism": "Continuous spiral cutting; weighted leather bead slider; skin-friction rigidity for anchoring.",
+      "materials_and_behavior": [
+        "Stiff, vegetable-tanned leather (drift-pleated appearance)",
+        "Rounded weighted leather bead (mass slider)"
+      ],
+      "colors": [
+        "Butter Yellow",
+        "Charcoal Navy"
+      ],
+      "product_behavior": "The belt exists as a loose, flowing garment-like drape that suddenly morphs into a supportive corset section wherever the bead is placed. The wearer can 'walk the bead' to adjust support levels throughout the day. The visual language is one of continuous motion and weight, with no static clasp. The strap itself has depth and volume due to the spiral construction.",
+      "whitespace_rationale": "Eliminates the concept of a 'waistline' as a fixed measurement. The innovation is in the slider mechanism and the continuous spiral form that allows the belt to define the waist dynamically. It creates a new interaction: the 'bead walk' allows reconfiguration of the garment.",
+      "trend_signal_ids": [
+        "demo-volume",
+        "demo-deconstruction",
+        "demo-narrow"
+      ],
+      "brand_evidence_ids": [
+        "ev-p01",
+        "ev-p06",
+        "ev-about"
+      ],
+      "manufacturability_explanation": "Constructed from a single long strip of leather cut and spiraled, then sewn along the outer edge to create a channel for the bead. The bead is a standard leather component weighted with stone or metal. No complex engineering is required, only precise cutting and sewing to maintain the spiral tension. It uses traditional leather manipulation.",
+      "image_prompt": "A single yellow leather strap spiraling around a torso dummy, anchored by a dark bead that has slid to the center. The leather forms a loose triangle. No brand logos, no text, no recognizable fasteners, no impossible construction. Natural lighting on a neutral background.",
+      "uncertainty_limitations": [
+        "The bead slider path requires consistent surface friction; if the leather is too polished or too textured, the bead may slide too freely or get stuck."
+      ]
+    },
+    {
+      "product_name": "Aperture Silk Band",
+      "category": "Scarf",
+      "core_structural_idea": "The band features a continuous, uninterrupted loop of silk cut into a variable-width onion shape rather than a flat rectangle. When wrapped, the tapered ends mechanically overlap and lock via a friction-fit dovetail edge, creating a self-contained necklace or collar without any visible clasps, ties, or fringes. The volume is generated solely by the geometric curvature of the profile.",
+      "silhouette_form": "Variable-width onion profile with self-locking dovetail edge",
+      "construction_mechanism": "Seamless tubular weave with precision-calibrated tapered edges that interlock tightly when overlapped at an angle; no external fasteners or stitching visible on the side profile.",
+      "materials_and_behavior": [
+        "Moiré Silk (highly absorbent, crepe texture)",
+        "Hand-folded heat set to maintain precise taper geometry"
+      ],
+      "colors": [
+        "Deep Emerald",
+        "Burnt Orange"
+      ],
+      "product_behavior": "The user holds the band; the tapered overlap naturally grips itself, holding the wrapped loop in place. The onion geometry allows the band to expand only slightly around the neck, creating a secure, sculptural collar that collapses flat when removed.",
+      "whitespace_rationale": "The concept derives identity from the physical geometry of the weave and the friction-fit mechanism, distinct from traditional tied knetypes or pinned designs. No branding or decorative motifs are used.",
+      "trend_signal_ids": [
+        "demo-deconstruction",
+        "demo-volume"
+      ],
+      "brand_evidence_ids": [
+        "ev-p03",
+        "ev-p04",
+        "ev-about"
+      ],
+      "manufacturability_explanation": "Feasible via precision loom programming to cut the fabric into a tapered tube rather than a rectangle. The dovetail edge requires high-quality, consistent fabric tension during weaving; no additional assembly steps beyond cutting and heat-setting are needed.",
+      "image_prompt": "Studio product photography, deep emerald open-loop silk scarf bent into a curved circle, tapered edges overlapping to lock, hand holding the item, neutral grey background, sharp lighting highlighting the fabric texture, no logos, no text, no brand names, raw material focus.",
+      "uncertainty_limitations": [
+        "The heat-set geometry must maintain its shape after washing.",
+        "Silk may gather at the overlap point if not woven evenly."
+      ]
+    },
+    {
+      "product_name": "Ribbed Tension Wrapper",
+      "category": "Scarf",
+      "core_structural_idea": "A cylindrical tube of heavy wool with a flexible internal ribbed structure that expands radially when pulled. The scarf functions as both a wrap and a supporting element. When wrapped around the neck, the internal ribs compress and lock together, creating a rigid, architectural collar that can support the weight of a statement necklace or light jewelry.",
+      "silhouette_form": "Expandable rigid cylinder with internal ribbed locking structure",
+      "construction_mechanism": "Externally appears as a simple tube; internally features perpendicular fiber bundles woven into a spring-like tension mechanism that locks when compressed circumferentially.",
+      "materials_and_behavior": [
+        "Virgin wool outer shell",
+        "Internal woven tension cords"
+      ],
+      "colors": [
+        "Butter Yellow",
+        "Slate Grey"
+      ],
+      "product_behavior": "The user wraps the tube; as they pull it tight, the internal ribs engage, stiffening the fabric to hold a specific, upright shape. It transitions from a soft wrap to a structural frame.",
+      "whitespace_rationale": "The concept innovates by turning the scarf into a structural building block rather than a purely decorative textile, utilizing tension to alter physical form without external hardware.",
+      "trend_signal_ids": [
+        "demo-deconstruction",
+        "demo-narrow"
+      ],
+      "brand_evidence_ids": [
+        "ev-p02",
+        "ev-p09",
+        "ev-artisans"
+      ],
+      "manufacturability_explanation": "Achieved through specialized weaving techniques that interlock tension cords within the wool shell. The mechanism relies on material tension rather than mechanical parts, keeping production feasible within luxury textile constraints.",
+      "image_prompt": "Studio product photography, butter yellow wool scarf wrapped around a mannequin neck transforming into a rigid geometric tube, internal tension cords visible in cross-section slice, neutral background, natural light, no logos, no text, raw material focus, architectural lighting.",
+      "uncertainty_limitations": [
+        "The wool shell may snag on external jewelry.",
+        "Internal rib engagement may lose memory after repeated washing."
+      ]
+    },
+    {
+      "product_name": "Meridian Tension Cuff",
+      "category": "Jewelry",
+      "core_structural_idea": "A continuous loop of malleable metal formed around a rigid internal core. The cuff is not a static bangle but a dynamic lever system; bending the metal at a single, specific weak point (a 'choke') compresses the internal core, reducing the circumference to slide over a hand, after which the core expands to lock the metal into a solid, rigid form against the wrist without clasps.",
+      "silhouette_form": "A seamless, non-circular ring that appears slightly flattened when closed but round when opened. The form relies on variable rigidity rather than thickness.",
+      "construction_mechanism": "Manufactured via a two-stage hydroforming process. First, the internal core (soft titanium or wax-filled polymer) is shaped. Second, a layer of high-strength 18k gold or sterling silver tube is bonded to the core using a vacuum diffusion seal, creating a composite shell. The 'choke' is the only canalized deformation point. Once the cuff is tensed to fit the wrist, the internal pressure distributes, preventing compression at the choke, thus locking the size permanently until manual release.",
+      "materials_and_behavior": [
+        "Outer Shell: 18k Gold (polished) or Sterling Silver (brushed)",
+        "Internal Core: Soft Titanium or Medical-Grade Polymer",
+        "Interaction:requires manual flexion to unlock, then sets rigidly. No clasps, hinges, or pin mechanisms."
+      ],
+      "colors": [
+        "Electric Blue",
+        "Butter Yellow"
+      ],
+      "product_behavior": "The product changes from a rigid ring to a flexible tube upon intentional stress applied to a singular node, then reverts to a rigid, secure fit automatically.",
+      "whitespace_rationale": "Eliminates visible hardware entirely by hiding the locking mechanism within the material transition (tube vs. solid ring), adhering to the artisanal focus on material integrity and functional details.",
+      "trend_signal_ids": [
+        "demo-deconstruction",
+        "demo-blue",
+        "demo-narrow"
+      ],
+      "brand_evidence_ids": [
+        "ev-about",
+        "ev-artisans",
+        "ev-fw26-runway",
+        "ev-p04"
+      ],
+      "manufacturability_explanation": "The design uses established composite manufacturing (similar to aerospace skin-building) scaled to jewelry dimensions. The 'choke' is created during the initial cold-work forming stage, ensuring consistent stress points. This avoids impossible floating parts or complex mechanical engineering.",
+      "image_prompt": "A close-up studio shot of a metallic cuff bracelet made of brushed gold and polished silver. The bracelet is slipped onto a hand, showing the material shifting from a bent, flexible tube state to a rigid, perfect circle resting on the wrist. There are no clasps, buttons, or visible hinges. The background is a seamless deep electric blue. Lighting highlights the seam where the flexible material meets the rigid form. No logos, no text.",
+      "uncertainty_limitations": [
+        "The material transition from tube to solid may require specific temperature or force control to avoid permanent deformation of the outer shell if mishandled.",
+        "The internal core must be perfectly dimensioned to allow slip without damaging the outer shell upon release."
+      ]
+    },
+    {
+      "product_name": "Knotbed Nail Art",
+      "category": "Jewelry",
+      "core_structural_idea": "A series of flat, rigid metal plates linked by a central, tensioned thread. Unlike traditional chain links, the thread is integral to the spacing and locking mechanism. The plates are not connected by direct metal joints but are 'stitched' together using a high-tensile thread that passes through the plate holes. Pulling the thread tight brings the plates together, creating a rigid, stacked unit. Loosening the thread expands the stack into a necklace-like flow.",
+      "silhouette_form": "A linear assembly of irregular trapezoidal plates. When closed, it resembles a dense, textured pillar. When opened, it flows as a loose, draped chain with significant gaps between plates.",
+      "construction_mechanism": "The plates are cast from solid metal, each featuring four holes at the corners. A high-strength stainless steel or silk thread is woven through these holes in a cross-stitch pattern across all plates. A specialized tensioning bead, hidden at the end, allows the thread to be cinched. Cinching creates friction locks between plate edges, eliminating the need for chain links or clasps.",
+      "materials_and_behavior": [
+        "Plates: 18k Gold or Platinum (rolled to thin uniform thickness)",
+        "Tension Thread: Fine Stainless Steel or High-Weave Silk",
+        "Interaction: The entire piece lies in a loose state; snapping it into position tightens the internal geometry."
+      ],
+      "colors": [
+        "Butter Yellow",
+        "Silver"
+      ],
+      "product_behavior": "The product exists in two states: a loose, voluminous drape and a tight, rigid collar. The transition is a single gesture of tensioning the internal thread.",
+      "whitespace_rationale": "The aesthetic relies on the negative space between the plates and the visibility of the 'stitch'. The construction logic is revealed, not hidden, emphasizing the artisanal nature of the 'thread' as a structural element rather than a decorative one.",
+      "trend_signal_ids": [
+        "demo-deconstruction",
+        "demo-yellow",
+        "demo-volume"
+      ],
+      "brand_evidence_ids": [
+        "ev-about",
+        "ev-artisans",
+        "ev-p03",
+        "ev-p06"
+      ],
+      "manufacturability_explanation": "The plates are thin and light enough for manual threading or micro-automation. The 'locking' is achieved through friction and geometry (tightening reduces hole clearance), a principle used in traditional cordage and leatherworking, scaled to metal. This avoids complex hinges or spring mechanisms.",
+      "image_prompt": "A high-resolution shot of a necklace composed of flat, hammered gold trapezoid plates linked by a visible silver thread running through them. The thread is pulled taut, causing the plates to lock together into a rigid, square column. The background is a soft, neutral tone. No logos, no text. The focus is on the texture of the metal plates and the tension of the thread.",
+      "uncertainty_limitations": [
+        "The thread must maintain extreme tensile strength; repeated cinching and relaxing could theoretically fatigue the material over long periods.",
+        "The friction lock relies on precise hole dimensions; manufacturing tolerances must be tight to prevent slippage."
+      ]
+    }
+  ],
+  "excluded_demo_concept_count": 22,
+  "similarity_method": "casefolded token Jaccard; reject at >= 0.55",
+  "limitations": [
+    "Drafts are AI-generated experimental proposals, not evaluated or approved products.",
+    "Inputs and trend scores remain synthetic demonstration data.",
+    "Brand evidence is a narrow fictional validation case and does not imply affiliation."
+  ]
+}
