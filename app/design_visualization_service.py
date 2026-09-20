@@ -1,4 +1,4 @@
-"""Fail-closed access to two persisted experimental design visualizations."""
+"""Fail-closed access to allowlisted persisted experimental design visualizations."""
 
 from __future__ import annotations
 
@@ -20,6 +20,18 @@ BASE_ASSET_SHA256 = "0ea05d4d081c47aadf72b3d60eb5dbac611480ad357d51c80d2c81137f3
 REFINEMENT_V2_ASSET_SHA256 = (
     "ed579db4a037e604b5d63804d50a93ea64a04d4eabdfa7f69899fbfcca4fb98b"
 )
+INTERLINKED_RING_PURSE_ASSET_SHA256 = (
+    "b038b4537d7d7d230f84c60b71b57b77c513e3f280a3ad603d80f7d8283341b5"
+)
+AMBIENT_CUFF_BLAZER_ASSET_SHA256 = (
+    "bc9929efb9098b67631faf7a5420cfe5ecf754ec957b10705dfe884a9671cb58"
+)
+HOLLOW_COLUMN_BRIEF_ASSET_SHA256 = (
+    "c7bd36beff54df1070ff012586cd3574fdaec68ab38081c7a7ce08072ab2d9e7"
+)
+KINETIC_BIAS_SKIRT_ASSET_SHA256 = (
+    "67407238d761d8bf89319b29e27c59d217b1dc240eae83791204829abdb85163"
+)
 
 
 class VisualizationNotFoundError(LookupError):
@@ -36,6 +48,7 @@ class DesignVisualizationAsset:
 class _RegistryEntry:
     development_stage: str
     run_field: str
+    draft_id: str
     unit_key: str = "design-021-variation-1"
 
 
@@ -43,10 +56,36 @@ _ASSET_REGISTRY = {
     BASE_ASSET_SHA256: _RegistryEntry(
         development_stage="base_approved_draft",
         run_field="base_visualization_run",
+        draft_id="draft-62985a9b7ad80e4844d1bc1918bcbba8ef064d500f13ef395c2854fa793af64b-021",
     ),
     REFINEMENT_V2_ASSET_SHA256: _RegistryEntry(
         development_stage="creative_refinement_v2",
         run_field="refinement_v2_visualization_run",
+        draft_id="draft-62985a9b7ad80e4844d1bc1918bcbba8ef064d500f13ef395c2854fa793af64b-021",
+    ),
+    INTERLINKED_RING_PURSE_ASSET_SHA256: _RegistryEntry(
+        development_stage="creative_refinement_v2",
+        run_field="interlinked_ring_purse_visualization_run",
+        draft_id="draft-62985a9b7ad80e4844d1bc1918bcbba8ef064d500f13ef395c2854fa793af64b-015",
+        unit_key="design-015-variation-1",
+    ),
+    AMBIENT_CUFF_BLAZER_ASSET_SHA256: _RegistryEntry(
+        development_stage="creative_refinement_v2",
+        run_field="ambient_cuff_blazer_visualization_run",
+        draft_id="draft-62985a9b7ad80e4844d1bc1918bcbba8ef064d500f13ef395c2854fa793af64b-023",
+        unit_key="design-023-variation-1",
+    ),
+    HOLLOW_COLUMN_BRIEF_ASSET_SHA256: _RegistryEntry(
+        development_stage="creative_refinement_v2",
+        run_field="hollow_column_brief_visualization_run",
+        draft_id="draft-62985a9b7ad80e4844d1bc1918bcbba8ef064d500f13ef395c2854fa793af64b-008",
+        unit_key="design-008-variation-1",
+    ),
+    KINETIC_BIAS_SKIRT_ASSET_SHA256: _RegistryEntry(
+        development_stage="creative_refinement_v2",
+        run_field="kinetic_bias_skirt_visualization_run",
+        draft_id="draft-62985a9b7ad80e4844d1bc1918bcbba8ef064d500f13ef395c2854fa793af64b-025",
+        unit_key="design-025-variation-1",
     ),
 }
 
@@ -79,12 +118,13 @@ def load_design_visualization(
 
     development = load_creative_development(paths)
     concepts = development.get("concepts", [])
-    geom = [item for item in concepts if item.get("product_name") == "Geom Grid Monk"]
-    if len(geom) != 1:
+    matched_concepts = [item for item in concepts if item.get("draft_id") == entry.draft_id]
+    if len(matched_concepts) != 1:
         raise ArtifactError("Design visualization concept provenance is inconsistent.")
+    concept = matched_concepts[0]
     matches = [
         item
-        for item in geom[0].get("visualizations", [])
+        for item in concept.get("visualizations", [])
         if item.get("development_stage") == entry.development_stage
         and item.get("output_asset_sha256") == asset_sha256
         and item.get("unit_key") == entry.unit_key
@@ -99,7 +139,7 @@ def load_design_visualization(
     if (
         _sha256(lineage_raw) != metadata.get("lineage_sha256")
         or lineage.get("unit_key") != entry.unit_key
-        or lineage.get("draft_id") != geom[0].get("draft_id")
+        or lineage.get("draft_id") != entry.draft_id
         or lineage.get("output_asset_filename") != "design.png"
         or lineage.get("output_asset_sha256") != asset_sha256
         or lineage.get("generation_provider") != metadata.get("generation_provider")

@@ -9,7 +9,11 @@ from fastapi.testclient import TestClient
 
 from app.creative_development_service import CreativeDevelopmentPaths
 from app.design_visualization_service import (
+    AMBIENT_CUFF_BLAZER_ASSET_SHA256,
     BASE_ASSET_SHA256,
+    HOLLOW_COLUMN_BRIEF_ASSET_SHA256,
+    INTERLINKED_RING_PURSE_ASSET_SHA256,
+    KINETIC_BIAS_SKIRT_ASSET_SHA256,
     REFINEMENT_V2_ASSET_SHA256,
     load_design_visualization,
 )
@@ -27,10 +31,34 @@ ASSETS = {
         CreativeDevelopmentPaths().refinement_v2_visualization_run
         / "checkpoints/design-021-variation-1/design.png"
     ),
+    INTERLINKED_RING_PURSE_ASSET_SHA256: (
+        CreativeDevelopmentPaths().interlinked_ring_purse_visualization_run
+        / "checkpoints/design-015-variation-1/design.png"
+    ),
+    AMBIENT_CUFF_BLAZER_ASSET_SHA256: (
+        CreativeDevelopmentPaths().ambient_cuff_blazer_visualization_run
+        / "checkpoints/design-023-variation-1/design.png"
+    ),
+    HOLLOW_COLUMN_BRIEF_ASSET_SHA256: (
+        CreativeDevelopmentPaths().hollow_column_brief_visualization_run
+        / "checkpoints/design-008-variation-1/design.png"
+    ),
+    KINETIC_BIAS_SKIRT_ASSET_SHA256: (
+        CreativeDevelopmentPaths().kinetic_bias_skirt_visualization_run
+        / "checkpoints/design-025-variation-1/design.png"
+    ),
+}
+RUN_UNITS = {
+    "base_visualization_run": "design-021-variation-1",
+    "refinement_v2_visualization_run": "design-021-variation-1",
+    "interlinked_ring_purse_visualization_run": "design-015-variation-1",
+    "ambient_cuff_blazer_visualization_run": "design-023-variation-1",
+    "hollow_column_brief_visualization_run": "design-008-variation-1",
+    "kinetic_bias_skirt_visualization_run": "design-025-variation-1",
 }
 
 
-@pytest.mark.parametrize("asset_sha256", [BASE_ASSET_SHA256, REFINEMENT_V2_ASSET_SHA256])
+@pytest.mark.parametrize("asset_sha256", list(ASSETS))
 def test_exact_visualization_returns_verified_png_and_headers(asset_sha256):
     expected = ASSETS[asset_sha256].read_bytes()
 
@@ -64,15 +92,16 @@ def _copy_runtime(tmp_path: Path, *, include_assets: bool = True) -> CreativeDev
         if original.is_dir():
             target.mkdir(parents=True, exist_ok=True)
             shutil.copy2(original / "manifest.json", target / "manifest.json")
-            unit = target / "checkpoints/design-021-variation-1"
+            unit_key = RUN_UNITS[descriptor.name]
+            unit = target / "checkpoints" / unit_key
             unit.mkdir(parents=True, exist_ok=True)
             shutil.copy2(
-                original / "checkpoints/design-021-variation-1/lineage.json",
+                original / "checkpoints" / unit_key / "lineage.json",
                 unit / "lineage.json",
             )
             if include_assets:
                 shutil.copy2(
-                    original / "checkpoints/design-021-variation-1/design.png",
+                    original / "checkpoints" / unit_key / "design.png",
                     unit / "design.png",
                 )
         else:
@@ -141,6 +170,20 @@ def test_visualization_route_preserves_historical_files_and_public_routes():
         paths.refinement_v2_visualization_run / "checkpoints/design-021-variation-1/lineage.json",
         ASSETS[REFINEMENT_V2_ASSET_SHA256],
     ]
+    for field, unit in RUN_UNITS.items():
+        if field in {"base_visualization_run", "refinement_v2_visualization_run"}:
+            continue
+        run = getattr(paths, field)
+        historical.extend([
+            run / "manifest.json",
+            run / "checkpoints" / unit / "lineage.json",
+        ])
+    historical.extend(ASSETS[asset_sha256] for asset_sha256 in (
+        INTERLINKED_RING_PURSE_ASSET_SHA256,
+        AMBIENT_CUFF_BLAZER_ASSET_SHA256,
+        HOLLOW_COLUMN_BRIEF_ASSET_SHA256,
+        KINETIC_BIAS_SKIRT_ASSET_SHA256,
+    ))
     before = {path: path.read_bytes() for path in historical}
 
     assert client.get("/").status_code == 200

@@ -53,6 +53,26 @@ class CreativeDevelopmentPaths:
         / "design_generations"
         / "experimental_design_generation_20260919_geom_grid_monk_refinement_v2_audit"
     )
+    interlinked_ring_purse_visualization_run: Path = (
+        EXPERIMENT_ROOT
+        / "design_generations"
+        / "experimental_design_generation_015_refinement_v2_architectural_clarity"
+    )
+    ambient_cuff_blazer_visualization_run: Path = (
+        EXPERIMENT_ROOT
+        / "design_generations"
+        / "experimental_design_generation_023_refinement_v2_architectural_clarity"
+    )
+    hollow_column_brief_visualization_run: Path = (
+        EXPERIMENT_ROOT
+        / "design_generations"
+        / "experimental_design_generation_008_refinement_v2_architectural_clarity"
+    )
+    kinetic_bias_skirt_visualization_run: Path = (
+        EXPERIMENT_ROOT
+        / "design_generations"
+        / "experimental_design_generation_025_refinement_v2_architectural_clarity"
+    )
 
 
 DEFAULT_PATHS = CreativeDevelopmentPaths()
@@ -115,6 +135,8 @@ def _validate_visualization(
     approval_by_id: dict[str, dict[str, Any]],
     decomposition_by_id: dict[str, dict[str, Any]],
     refinement_by_id: dict[str, dict[str, Any]],
+    planned_ids: set[str],
+    checkpoint_unit_key: str,
 ) -> tuple[str, dict[str, Any]]:
     manifest, _, manifest_sha256 = _read_json(run_path / "manifest.json", "Visualization manifest")
     plan = manifest.get("plan")
@@ -142,10 +164,12 @@ def _validate_visualization(
     ) is not None:
         raise ArtifactError("Base visualization unexpectedly references creative refinement.")
 
+    if not planned_ids or not planned_ids.issubset(approved_ids):
+        raise ArtifactError("Visualization plan selection is inconsistent with the approval.")
     items = plan.get("items")
-    if not isinstance(items, list) or len(items) != 15:
-        raise ArtifactError("Visualization plan must contain the approved five by three variations.")
-    coverage: dict[str, set[int]] = {draft_id: set() for draft_id in approved_ids}
+    if not isinstance(items, list) or len(items) != len(planned_ids) * 3:
+        raise ArtifactError("Visualization plan does not have three variations per selected concept.")
+    coverage: dict[str, set[int]] = {draft_id: set() for draft_id in planned_ids}
     item_by_key = {}
     for item in items:
         if not isinstance(item, dict):
@@ -154,7 +178,7 @@ def _validate_visualization(
         number = item.get("variation_number")
         unit_key = item.get("unit_key")
         if (
-            draft_id not in approved_ids
+            draft_id not in planned_ids
             or number not in (1, 2, 3)
             or not isinstance(unit_key, str)
             or unit_key in item_by_key
@@ -168,10 +192,23 @@ def _validate_visualization(
     if any(numbers != {1, 2, 3} for numbers in coverage.values()):
         raise ArtifactError("Visualization plan does not cover every approved variation.")
 
-    checkpoint = run_path / "checkpoints" / "design-021-variation-1"
+    checkpoints = run_path / "checkpoints"
+    if (
+        not checkpoints.is_dir()
+        or checkpoints.is_symlink()
+        or {path.name for path in checkpoints.iterdir()} != {checkpoint_unit_key}
+    ):
+        raise ArtifactError("Visualization run must contain exactly its approved checkpoint.")
+    checkpoint = checkpoints / checkpoint_unit_key
     lineage, _, lineage_sha256 = _read_json(checkpoint / "lineage.json", "Visualization lineage")
     item = item_by_key.get(lineage.get("unit_key"))
-    if item is None or lineage.get("draft_id") != item.get("draft_id"):
+    if (
+        item is None
+        or lineage.get("unit_key") != checkpoint_unit_key
+        or lineage.get("draft_id") != item.get("draft_id")
+        or lineage.get("variation_number") != 1
+        or lineage.get("variation_name") != "architectural_clarity"
+    ):
         raise ArtifactError("Visualization checkpoint identity is inconsistent.")
     expected = {
         "approval_artifact_sha256": hashes["approval"],
@@ -388,10 +425,28 @@ def load_creative_development(
     visualizations: dict[str, list[dict[str, Any]]] = {
         draft_id: [] for draft_id in approved_ids
     }
-    for run_path, stage in (
-        (paths.base_visualization_run, "base_approved_draft"),
-        (paths.refinement_v2_visualization_run, "creative_refinement_v2"),
-    ):
+    draft_id_by_suffix = {draft_id.rsplit("-", 1)[-1]: draft_id for draft_id in approved_ids}
+    if not {"021", "015", "023", "008", "025"}.issubset(draft_id_by_suffix):
+        raise ArtifactError("Creative-development visualization concepts are unavailable.")
+    visualization_runs = (
+        (paths.base_visualization_run, "base_approved_draft", approved_set,
+         "design-021-variation-1"),
+        (paths.refinement_v2_visualization_run, "creative_refinement_v2", approved_set,
+        "design-021-variation-1"),
+        (paths.interlinked_ring_purse_visualization_run, "creative_refinement_v2",
+         {draft_id_by_suffix["015"]},
+         "design-015-variation-1"),
+        (paths.ambient_cuff_blazer_visualization_run, "creative_refinement_v2",
+         {draft_id_by_suffix["023"]},
+         "design-023-variation-1"),
+        (paths.hollow_column_brief_visualization_run, "creative_refinement_v2",
+         {draft_id_by_suffix["008"]},
+         "design-008-variation-1"),
+        (paths.kinetic_bias_skirt_visualization_run, "creative_refinement_v2",
+         {draft_id_by_suffix["025"]},
+         "design-025-variation-1"),
+    )
+    for run_path, stage, planned_ids, checkpoint_unit_key in visualization_runs:
         draft_id, metadata = _validate_visualization(
             run_path=run_path,
             stage=stage,
@@ -400,6 +455,8 @@ def load_creative_development(
             approval_by_id=approval_by_id,
             decomposition_by_id=decomposition_by_id,
             refinement_by_id=refinement_by_id,
+            planned_ids=planned_ids,
+            checkpoint_unit_key=checkpoint_unit_key,
         )
         visualizations[draft_id].append(metadata)
 
