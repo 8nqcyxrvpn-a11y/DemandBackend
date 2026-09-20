@@ -12,6 +12,7 @@ from app.collection_service import load_collection
 from app.concept_drafts_preview_service import load_concept_drafts_preview
 from app.config import COLLECTION_PATH, DATASET_PATH, MODEL_PATH, cors_origins
 from app.demand_service import FEATURE_NAMES, predict_demand
+from app.evaluated_concepts_service import load_evaluated_concepts
 from app.model_loader import ArtifactError, load_model
 from app.schemas import DemandInput
 from app.trend_service import build_trend_signals
@@ -80,6 +81,15 @@ def concept_drafts_preview() -> dict:
         return load_concept_drafts_preview()
     except ArtifactError as exc:
         logger.exception("Concept draft preview request failed")
+        raise HTTPException(status_code=503, detail=str(exc)) from exc
+
+
+@app.get("/evaluated-concepts")
+def evaluated_concepts() -> dict:
+    try:
+        return load_evaluated_concepts()
+    except ArtifactError as exc:
+        logger.exception("Evaluated concepts request failed")
         raise HTTPException(status_code=503, detail=str(exc)) from exc
 
 
