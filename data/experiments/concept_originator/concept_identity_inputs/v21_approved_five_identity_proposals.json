@@ -1,0 +1,86 @@
+{
+  "version": "concept-identity-input-1",
+  "concepts": [
+    {
+      "draft_suffix": "021",
+      "concept_dna": [
+        {"field_path": "/core_structural_idea", "canonical": "A load-bearing woven or interlaced leather-strip lattice creates directional flexibility and support as an authentic part of the footwear structure.", "rationale": "The structural lattice and its directional behavior distinguish the concept; literal full-surface coverage does not."},
+        {"field_path": "/construction_mechanism", "canonical": "The functional monk strap remains continuous with and structurally integrated into the interlaced lattice.", "rationale": "The closure-to-lattice relationship is the distinctive construction idea."}
+      ],
+      "hard_constraints": [
+        {"field_path": "/category", "canonical": "The product remains footwear and recognizably uses a functional adjustable monk-strap closure.", "rationale": "Removing category or functional closure creates another product."},
+        {"field_path": "/construction_mechanism", "canonical": "The lattice must carry or transfer structural load and connect credibly to the shoe chassis; it cannot be a printed, embossed, appliqued, or decorative overlay.", "rationale": "Structural participation prevents conventional footwear with superficial grid styling."}
+      ],
+      "design_variables": [
+        {"id": "coverage", "field_path": "/core_structural_idea", "dimension": "lattice coverage and placement", "permitted": "Concentrate the lattice in selected load-bearing upper zones and use explicit structural anchors into a quieter sole or chassis.", "prohibited": "Removing structural lattice participation or reducing it to surface decoration.", "proposed": "Use a graded lattice at the instep and quarters with controlled anchor points into a refined solid sole, leaving calmer toe and heel fields."},
+        {"id": "geometry", "field_path": "/core_structural_idea", "dimension": "cell geometry, density, strip scale, and transitions", "permitted": "Vary cell size, orientation, density, strip width, and transition rhythm while retaining genuine interlacing.", "prohibited": "Replacing interlacing with a printed grid or unrelated perforation pattern.", "proposed": "Graduate from a tighter structural weave near the strap and instep to larger, quieter cells toward transition zones."},
+        {"id": "proportion", "field_path": "/silhouette_form", "dimension": "last, toe, heel, sole, and overall proportion", "permitted": "Substantially refine proportions and negative space while retaining footwear and monk identity.", "prohibited": "Changing category or eliminating the monk closure.", "proposed": "Use an elongated narrow last, low sculpted heel, and disciplined sole thickness with deliberate negative space."},
+        {"id": "material_color", "field_path": "/product_behavior", "dimension": "material and color distribution", "permitted": "Rebalance calfskin, linen, Onyx Black, and Butter Yellow by structural role.", "prohibited": "Using materials only as implausible texture or claiming tested comfort.", "proposed": "Make Onyx calfskin dominant; reserve linen and Butter Yellow for tension-bearing interlaces and precise touchpoint accents."}
+      ]
+    },
+    {
+      "draft_suffix": "015",
+      "concept_dna": [
+        {"field_path": "/core_structural_idea", "canonical": "Rigid leather rings form a reconfigurable skeleton while one continuous leather element binds them into a flexible skin.", "rationale": "The ring-skeleton and continuous binding relationship defines the purse."},
+        {"field_path": "/construction_mechanism", "canonical": "Changing how many rings are engaged mechanically changes capacity and silhouette.", "rationale": "User-controlled ring engagement is the transformation principle."}
+      ],
+      "hard_constraints": [
+        {"field_path": "/category", "canonical": "The product remains a functional small leather good capable of carrying contents.", "rationale": "It must remain a purse rather than sculpture."},
+        {"field_path": "/construction_mechanism", "canonical": "At least one continuous strap must pass through and bind functional rigid rings; rings cannot be ornamental appliques.", "rationale": "This protects the load-bearing mechanism."}
+      ],
+      "design_variables": [
+        {"id": "ring_system", "field_path": "/core_structural_idea", "dimension": "ring count, scale, spacing, section, and engagement", "permitted": "Vary ring hierarchy and engagement sequence while retaining reconfiguration.", "prohibited": "Fixed decorative rings with no structural transformation.", "proposed": "Use fewer, more precisely graduated rings with controlled overlaps and a clear transformation path."},
+        {"id": "silhouette", "field_path": "/silhouette_form", "dimension": "closed and expanded proportions", "permitted": "Redesign cylinder, basket, tote, or clutch proportions as states of one mechanism.", "prohibited": "Creating unrelated detachable bags.", "proposed": "Resolve a compact vertical clutch state and a broader low basket state with one continuous visual identity."},
+        {"id": "material_color", "field_path": "/product_behavior", "dimension": "leather finish, color hierarchy, and hardware visibility", "permitted": "Rebalance blue, yellow, and metal while clarifying load paths.", "prohibited": "Hiding the continuous binding relationship.", "proposed": "Use deep polished blue rings, a restrained yellow binding line, and nearly invisible precision hardware."}
+      ]
+    },
+    {
+      "draft_suffix": "023",
+      "concept_dna": [
+        {"field_path": "/core_structural_idea", "canonical": "A blazer has shoulder structures suspended from the collar rather than fixed conventionally to the body.", "rationale": "Mobile suspended shoulders define the concept."},
+        {"field_path": "/construction_mechanism", "canonical": "Movement changes tension and shoulder position, shifting the silhouette between structured and draped states.", "rationale": "Responsive suspension is the behavioral innovation."}
+      ],
+      "hard_constraints": [
+        {"field_path": "/category", "canonical": "The product remains a wearable tailored blazer with functional collar, lapel, body, and arm movement.", "rationale": "It cannot become an installation or cape."},
+        {"field_path": "/construction_mechanism", "canonical": "Shoulder elements remain physically suspended and movement-responsive, not merely oversized conventional padding.", "rationale": "This protects the mechanism from decorative substitution."}
+      ],
+      "design_variables": [
+        {"id": "suspension_expression", "field_path": "/construction_mechanism", "dimension": "cord visibility, anchor placement, shoulder travel, and tension", "permitted": "Vary suspension exposure and travel range while preserving real movement response.", "prohibited": "Concealing a fixed shoulder under fake cords.", "proposed": "Use minimal visible silk tension lines at deliberate collar anchors with controlled shoulder drift."},
+        {"id": "proportion", "field_path": "/silhouette_form", "dimension": "box volume, shoulder scale, lapel proportion, and body length", "permitted": "Substantially rebalance tailoring proportions around the mobile perimeter.", "prohibited": "Eliminating blazer identity or arm function.", "proposed": "Use a long lean body with a restrained floating shoulder perimeter and sharply edited independent lapels."},
+        {"id": "material_color", "field_path": "/product_behavior", "dimension": "wool/silk hierarchy and olive/charcoal distribution", "permitted": "Use contrast to clarify suspended versus grounded components.", "prohibited": "Suggesting impossible weightlessness or validated durability.", "proposed": "Keep matte olive wool quiet; concentrate charcoal quilted silk on mobile shoulder elements with tonal cords."}
+      ]
+    },
+    {
+      "draft_suffix": "008",
+      "concept_dna": [
+        {"field_path": "/core_structural_idea", "canonical": "Four removable structural panels assemble around a central tensioned core to alternate between rigid briefcase and flat-folder states.", "rationale": "Panel-to-core transformation defines the bag."},
+        {"field_path": "/construction_mechanism", "canonical": "Panels slide on and are tensioned by the central core rather than folding as a conventional soft bag.", "rationale": "Sliding/tension engagement is the construction innovation."}
+      ],
+      "hard_constraints": [
+        {"field_path": "/category", "canonical": "The product remains a functional bag/briefcase capable of carrying and protecting contents.", "rationale": "It cannot become modular sculpture."},
+        {"field_path": "/construction_mechanism", "canonical": "All four functional panels must engage one real central structural core and support reversible rigid and flat states.", "rationale": "This protects transformation integrity."}
+      ],
+      "design_variables": [
+        {"id": "panel_geometry", "field_path": "/core_structural_idea", "dimension": "panel proportion, thickness, corner treatment, and spacing", "permitted": "Refine panel geometry and junction gaps while retaining four-panel assembly.", "prohibited": "Replacing panels with one conventional gusseted shell.", "proposed": "Use four exceptionally thin goatskin planes with controlled shadow gaps and softened precision corners."},
+        {"id": "core_expression", "field_path": "/construction_mechanism", "dimension": "core placement, visibility, tension, and release detailing", "permitted": "Reveal or conceal portions of the core while making its operation legible.", "prohibited": "Using a nonfunctional decorative spine.", "proposed": "Expose the central core only at top and base interfaces through refined tension hardware."},
+        {"id": "proportion_color", "field_path": "/silhouette_form", "dimension": "brief proportions and color/trim distribution", "permitted": "Substantially rebalance height, width, handle, color blocks, and trim.", "prohibited": "Changing bag category or transformation states.", "proposed": "Use a tall, slim architectural brief in deep electric blue with restrained white edge punctuation."}
+      ]
+    },
+    {
+      "draft_suffix": "025",
+      "concept_dna": [
+        {"field_path": "/core_structural_idea", "canonical": "Extreme-bias fabric panels create a skirt whose textile structure stretches and rotates around the legs in motion.", "rationale": "Bias-driven kinetic rotation defines the garment."},
+        {"field_path": "/construction_mechanism", "canonical": "A continuous spiral assembly anchored at a stable waistband converts walking motion into changing tension and silhouette.", "rationale": "The anchored spiral is the operative mechanism."}
+      ],
+      "hard_constraints": [
+        {"field_path": "/category", "canonical": "The product remains a wearable skirt with a secure waist and usable leg movement.", "rationale": "It cannot become an abstract textile installation."},
+        {"field_path": "/construction_mechanism", "canonical": "Bias orientation, spiral continuity, and waistband anchoring must remain functional construction rather than printed spiral graphics.", "rationale": "This protects kinetic behavior."}
+      ],
+      "design_variables": [
+        {"id": "spiral_expression", "field_path": "/construction_mechanism", "dimension": "panel width, spiral pitch, seam rhythm, density, and directional emphasis", "permitted": "Vary spiral geometry while preserving continuous bias-driven motion.", "prohibited": "Replacing construction with surface print or static pleating.", "proposed": "Use a graduated spiral with broader quiet upper panels and increasingly expressive lower rotation."},
+        {"id": "proportion", "field_path": "/silhouette_form", "dimension": "length, tube width, flare, slit, and movement volume", "permitted": "Redesign static and moving proportions while remaining a wearable skirt.", "prohibited": "Changing category or blocking leg movement.", "proposed": "Resolve a long lean column at rest that opens into controlled asymmetric volume during stride."},
+        {"id": "material_color", "field_path": "/product_behavior", "dimension": "silk weight, surface, waistband hierarchy, and yellow/white balance", "permitted": "Rebalance material and palette to clarify motion and anchoring.", "prohibited": "Claiming tested tension durability or comfort.", "proposed": "Use luminous off-white silk as the field, a restrained Butter Yellow kinetic edge, and a quiet leather anchor band."}
+      ]
+    }
+  ]
+}
