@@ -1,0 +1,715 @@
+{
+  "artifact_kind": "concept_signal_linkages",
+  "artifact_version": "creative-refinement-v2-linkages-v2",
+  "created_at": "2026-09-21T00:00:00+03:00",
+  "linkages": [
+    {
+      "bundle_id": "bundle-f514e59d4eebbf174c183ee14137dcf38073c7f720d93b15c39fa9c00c7c3e47",
+      "canonical_taxonomy_code": "category:footwear",
+      "concept_id": "draft-62985a9b7ad80e4844d1bc1918bcbba8ef064d500f13ef395c2854fa793af64b-021",
+      "demand_contribution_assessed": false,
+      "eligible_for_market_evidence": true,
+      "evidence_role": "baseline_category",
+      "linkage_id": "linkage-208fdaa6edf3120a3dcecf4d19796af11d3f0ed1b6e57a2439552a653d297e60",
+      "query_id": "query-a657899a588302abdf0a4d04140245a96ed6ce7034d7a05e8233e3e2f8e87f46",
+      "review_basis": "Accepted baseline category representation only; specificity, evidence quality, search volume, and Demand Potential contribution are not established.",
+      "review_history": [
+        {
+          "decision": "reviewed",
+          "previous_state": "reviewed",
+          "rationale": "Accepted baseline category representation only; specificity, evidence quality, search volume, and Demand Potential contribution are not established.",
+          "review_version": "phase-1-human-query-review-v1",
+          "reviewed_at": "2026-09-21T00:00:00+03:00",
+          "reviewer": "human-approved-project-review"
+        }
+      ],
+      "review_state": "reviewed"
+    },
+    {
+      "bundle_id": "bundle-f514e59d4eebbf174c183ee14137dcf38073c7f720d93b15c39fa9c00c7c3e47",
+      "canonical_taxonomy_code": "reviewed_query:3134ba1de1b6c565e6a6adb3e520998456b011086c740242e20d4b874380274e",
+      "concept_id": "draft-62985a9b7ad80e4844d1bc1918bcbba8ef064d500f13ef395c2854fa793af64b-021",
+      "demand_contribution_assessed": false,
+      "eligible_for_market_evidence": true,
+      "evidence_role": "concept_attribute",
+      "linkage_id": "linkage-0e68eaefbf879febc27aa3729ad6b662df40fdf8f479015eb2180875cfcc653e",
+      "query_id": "query-3134ba1de1b6c565e6a6adb3e520998456b011086c740242e20d4b874380274e",
+      "review_basis": "Human-reviewed as an acceptable representation of the cited persisted Creative Refinement v2 attribute; no market demand or evidence quality is asserted.",
+      "review_history": [
+        {
+          "decision": "reviewed",
+          "previous_state": "candidate",
+          "rationale": "Human-reviewed as an acceptable representation of the cited persisted Creative Refinement v2 attribute; no market demand or evidence quality is asserted.",
+          "review_version": "phase-1-human-query-review-v1",
+          "reviewed_at": "2026-09-21T00:00:00+03:00",
+          "reviewer": "human-approved-project-review"
+        }
+      ],
+      "review_state": "reviewed"
+    },
+    {
+      "bundle_id": "bundle-f514e59d4eebbf174c183ee14137dcf38073c7f720d93b15c39fa9c00c7c3e47",
+      "canonical_taxonomy_code": "reviewed_query:0b35a9e7e1221583e214bb39309235e319d069020d5b1e0b6ba93aadf8f2fd35",
+      "concept_id": "draft-62985a9b7ad80e4844d1bc1918bcbba8ef064d500f13ef395c2854fa793af64b-021",
+      "demand_contribution_assessed": false,
+      "eligible_for_market_evidence": true,
+      "evidence_role": "concept_attribute",
+      "linkage_id": "linkage-381960eba05f558ba8391f82d15892dc6c93f831730e68b448978635dc02bba8",
+      "query_id": "query-0b35a9e7e1221583e214bb39309235e319d069020d5b1e0b6ba93aadf8f2fd35",
+      "review_basis": "Human-reviewed as an acceptable representation of the cited persisted Creative Refinement v2 attribute; no market demand or evidence quality is asserted.",
+      "review_history": [
+        {
+          "decision": "reviewed",
+          "previous_state": "candidate",
+          "rationale": "Human-reviewed as an acceptable representation of the cited persisted Creative Refinement v2 attribute; no market demand or evidence quality is asserted.",
+          "review_version": "phase-1-human-query-review-v1",
+          "reviewed_at": "2026-09-21T00:00:00+03:00",
+          "reviewer": "human-approved-project-review"
+        }
+      ],
+      "review_state": "reviewed"
+    },
+    {
+      "bundle_id": "bundle-f514e59d4eebbf174c183ee14137dcf38073c7f720d93b15c39fa9c00c7c3e47",
+      "canonical_taxonomy_code": "reviewed_query:63fdbed61c82a5ac34639ab68dd44885d80ee6c82fa25d499c5129391f98840a",
+      "concept_id": "draft-62985a9b7ad80e4844d1bc1918bcbba8ef064d500f13ef395c2854fa793af64b-021",
+      "demand_contribution_assessed": false,
+      "eligible_for_market_evidence": true,
+      "evidence_role": "concept_attribute",
+      "linkage_id": "linkage-9b0ba50af0db3a26158ddb57feaa774ae8e64acfabe43d78d4a1027dadf71649",
+      "query_id": "query-63fdbed61c82a5ac34639ab68dd44885d80ee6c82fa25d499c5129391f98840a",
+      "review_basis": "Human-reviewed as an acceptable representation of the cited persisted Creative Refinement v2 attribute; no market demand or evidence quality is asserted.",
+      "review_history": [
+        {
+          "decision": "reviewed",
+          "previous_state": "candidate",
+          "rationale": "Human-reviewed as an acceptable representation of the cited persisted Creative Refinement v2 attribute; no market demand or evidence quality is asserted.",
+          "review_version": "phase-1-human-query-review-v1",
+          "reviewed_at": "2026-09-21T00:00:00+03:00",
+          "reviewer": "human-approved-project-review"
+        }
+      ],
+      "review_state": "reviewed"
+    },
+    {
+      "bundle_id": "bundle-f514e59d4eebbf174c183ee14137dcf38073c7f720d93b15c39fa9c00c7c3e47",
+      "canonical_taxonomy_code": "reviewed_query:76bc190a022934e4efc714f5d3bbee6a4b7417a8886d5b2bd31125d6c50f0b7e",
+      "concept_id": "draft-62985a9b7ad80e4844d1bc1918bcbba8ef064d500f13ef395c2854fa793af64b-021",
+      "demand_contribution_assessed": false,
+      "eligible_for_market_evidence": true,
+      "evidence_role": "concept_attribute",
+      "linkage_id": "linkage-784ddc4d48b90d69a04638adb5d7dd928aeda7c91b86e41e153b9df052c968d8",
+      "query_id": "query-76bc190a022934e4efc714f5d3bbee6a4b7417a8886d5b2bd31125d6c50f0b7e",
+      "review_basis": "Human-reviewed as an acceptable representation of the cited persisted Creative Refinement v2 attribute; no market demand or evidence quality is asserted.",
+      "review_history": [
+        {
+          "decision": "reviewed",
+          "previous_state": "candidate",
+          "rationale": "Human-reviewed as an acceptable representation of the cited persisted Creative Refinement v2 attribute; no market demand or evidence quality is asserted.",
+          "review_version": "phase-1-human-query-review-v1",
+          "reviewed_at": "2026-09-21T00:00:00+03:00",
+          "reviewer": "human-approved-project-review"
+        }
+      ],
+      "review_state": "reviewed"
+    },
+    {
+      "bundle_id": "bundle-f514e59d4eebbf174c183ee14137dcf38073c7f720d93b15c39fa9c00c7c3e47",
+      "canonical_taxonomy_code": "reviewed_query:a54b5aea0cd4f4ee6c507e986ec2d97461512dbad93473a6765923dc9fc89332",
+      "concept_id": "draft-62985a9b7ad80e4844d1bc1918bcbba8ef064d500f13ef395c2854fa793af64b-021",
+      "demand_contribution_assessed": false,
+      "eligible_for_market_evidence": true,
+      "evidence_role": "concept_attribute",
+      "linkage_id": "linkage-e6b9ca5e7e33cfc1f506bb1d736ba1f97ecbd2a716910dc972bcf51aad94489d",
+      "query_id": "query-a54b5aea0cd4f4ee6c507e986ec2d97461512dbad93473a6765923dc9fc89332",
+      "review_basis": "Human-reviewed as an acceptable representation of the cited persisted Creative Refinement v2 attribute; no market demand or evidence quality is asserted.",
+      "review_history": [
+        {
+          "decision": "reviewed",
+          "previous_state": "candidate",
+          "rationale": "Human-reviewed as an acceptable representation of the cited persisted Creative Refinement v2 attribute; no market demand or evidence quality is asserted.",
+          "review_version": "phase-1-human-query-review-v1",
+          "reviewed_at": "2026-09-21T00:00:00+03:00",
+          "reviewer": "human-approved-project-review"
+        }
+      ],
+      "review_state": "reviewed"
+    },
+    {
+      "bundle_id": "bundle-70eed473bcf8c91b1fe7c9b8408e15d1cefe62538d709fd5c2f780196c0b87d4",
+      "canonical_taxonomy_code": "category:small_leather_good",
+      "concept_id": "draft-62985a9b7ad80e4844d1bc1918bcbba8ef064d500f13ef395c2854fa793af64b-015",
+      "demand_contribution_assessed": false,
+      "eligible_for_market_evidence": true,
+      "evidence_role": "baseline_category",
+      "linkage_id": "linkage-7f28da15484343cf998cd595d84ae1dfb60b21ab46897d4ae633cd538f9d5d82",
+      "query_id": "query-fd46b1687b772bf14342a130a8e1152a55f9e01eb10eef84c32aff5a07f65187",
+      "review_basis": "Accepted baseline category representation only; specificity, evidence quality, search volume, and Demand Potential contribution are not established.",
+      "review_history": [
+        {
+          "decision": "reviewed",
+          "previous_state": "reviewed",
+          "rationale": "Accepted baseline category representation only; specificity, evidence quality, search volume, and Demand Potential contribution are not established.",
+          "review_version": "phase-1-human-query-review-v1",
+          "reviewed_at": "2026-09-21T00:00:00+03:00",
+          "reviewer": "human-approved-project-review"
+        }
+      ],
+      "review_state": "reviewed"
+    },
+    {
+      "bundle_id": "bundle-70eed473bcf8c91b1fe7c9b8408e15d1cefe62538d709fd5c2f780196c0b87d4",
+      "canonical_taxonomy_code": "reviewed_query:976d50395246db5b83e4be437c86362b0c365e8d5ca069cd442d2b952d729c29",
+      "concept_id": "draft-62985a9b7ad80e4844d1bc1918bcbba8ef064d500f13ef395c2854fa793af64b-015",
+      "demand_contribution_assessed": false,
+      "eligible_for_market_evidence": true,
+      "evidence_role": "concept_attribute",
+      "linkage_id": "linkage-7fb7969eb0289f6eefb2785de13d9a57623e06420283fbfe98f1b0410c96ae7b",
+      "query_id": "query-976d50395246db5b83e4be437c86362b0c365e8d5ca069cd442d2b952d729c29",
+      "review_basis": "Human-reviewed as an acceptable representation of the cited persisted Creative Refinement v2 attribute; no market demand or evidence quality is asserted.",
+      "review_history": [
+        {
+          "decision": "reviewed",
+          "previous_state": "candidate",
+          "rationale": "Human-reviewed as an acceptable representation of the cited persisted Creative Refinement v2 attribute; no market demand or evidence quality is asserted.",
+          "review_version": "phase-1-human-query-review-v1",
+          "reviewed_at": "2026-09-21T00:00:00+03:00",
+          "reviewer": "human-approved-project-review"
+        }
+      ],
+      "review_state": "reviewed"
+    },
+    {
+      "bundle_id": "bundle-70eed473bcf8c91b1fe7c9b8408e15d1cefe62538d709fd5c2f780196c0b87d4",
+      "canonical_taxonomy_code": "reviewed_query:b52a39ab27ed07ec95d04c40fcdfd2c6e29723e152efdad4f0b16b890e275290",
+      "concept_id": "draft-62985a9b7ad80e4844d1bc1918bcbba8ef064d500f13ef395c2854fa793af64b-015",
+      "demand_contribution_assessed": false,
+      "eligible_for_market_evidence": true,
+      "evidence_role": "concept_attribute",
+      "linkage_id": "linkage-5a31c1a102e3cef11179c8094b57d14d7505486aadff9acf2faa61a20e3588f4",
+      "query_id": "query-b52a39ab27ed07ec95d04c40fcdfd2c6e29723e152efdad4f0b16b890e275290",
+      "review_basis": "Human-reviewed as an acceptable representation of the cited persisted Creative Refinement v2 attribute; no market demand or evidence quality is asserted.",
+      "review_history": [
+        {
+          "decision": "reviewed",
+          "previous_state": "candidate",
+          "rationale": "Human-reviewed as an acceptable representation of the cited persisted Creative Refinement v2 attribute; no market demand or evidence quality is asserted.",
+          "review_version": "phase-1-human-query-review-v1",
+          "reviewed_at": "2026-09-21T00:00:00+03:00",
+          "reviewer": "human-approved-project-review"
+        }
+      ],
+      "review_state": "reviewed"
+    },
+    {
+      "bundle_id": "bundle-70eed473bcf8c91b1fe7c9b8408e15d1cefe62538d709fd5c2f780196c0b87d4",
+      "canonical_taxonomy_code": "reviewed_query:8cf9b98aecb2a3c8227b0b78ce45d6d24961bcc9b50496eb5041bfb8ca3afa40",
+      "concept_id": "draft-62985a9b7ad80e4844d1bc1918bcbba8ef064d500f13ef395c2854fa793af64b-015",
+      "demand_contribution_assessed": false,
+      "eligible_for_market_evidence": true,
+      "evidence_role": "concept_attribute",
+      "linkage_id": "linkage-ff179c4dc5f6169ca08d20df2ba2ef62a7799b937b6ae6cdc4a9d876d5b240b2",
+      "query_id": "query-8cf9b98aecb2a3c8227b0b78ce45d6d24961bcc9b50496eb5041bfb8ca3afa40",
+      "review_basis": "Human-reviewed as an acceptable representation of the cited persisted Creative Refinement v2 attribute; no market demand or evidence quality is asserted.",
+      "review_history": [
+        {
+          "decision": "reviewed",
+          "previous_state": "candidate",
+          "rationale": "Human-reviewed as an acceptable representation of the cited persisted Creative Refinement v2 attribute; no market demand or evidence quality is asserted.",
+          "review_version": "phase-1-human-query-review-v1",
+          "reviewed_at": "2026-09-21T00:00:00+03:00",
+          "reviewer": "human-approved-project-review"
+        }
+      ],
+      "review_state": "reviewed"
+    },
+    {
+      "bundle_id": "bundle-70eed473bcf8c91b1fe7c9b8408e15d1cefe62538d709fd5c2f780196c0b87d4",
+      "canonical_taxonomy_code": null,
+      "concept_id": "draft-62985a9b7ad80e4844d1bc1918bcbba8ef064d500f13ef395c2854fa793af64b-015",
+      "demand_contribution_assessed": false,
+      "eligible_for_market_evidence": false,
+      "evidence_role": "concept_attribute",
+      "linkage_id": "linkage-00f63d2cebe9c68402424f8ba382a239a5c0ec2abb31b26f2d599b27dcc8ea19",
+      "query_id": "query-49c3b5318ea326d1cb86ec27dd8ef27370134694a448c7c737bd71e90be484c0",
+      "review_basis": null,
+      "review_history": [
+        {
+          "decision": "ambiguous",
+          "previous_state": "candidate",
+          "rationale": "Meaning or likely search intent is ambiguous; retained for audit history but ineligible for market evidence collection.",
+          "review_version": "phase-1-human-query-review-v1",
+          "reviewed_at": "2026-09-21T00:00:00+03:00",
+          "reviewer": "human-approved-project-review"
+        }
+      ],
+      "review_state": "ambiguous"
+    },
+    {
+      "bundle_id": "bundle-70eed473bcf8c91b1fe7c9b8408e15d1cefe62538d709fd5c2f780196c0b87d4",
+      "canonical_taxonomy_code": "reviewed_query:e68015d8a6adca24849018dc3412cd26bd97a61b299bd9746911a1221097d30a",
+      "concept_id": "draft-62985a9b7ad80e4844d1bc1918bcbba8ef064d500f13ef395c2854fa793af64b-015",
+      "demand_contribution_assessed": false,
+      "eligible_for_market_evidence": true,
+      "evidence_role": "concept_attribute",
+      "linkage_id": "linkage-8ecfd84a87b4cb1263f49e61ce538cc529a0a428f99bbf337165b45fa87f6c51",
+      "query_id": "query-e68015d8a6adca24849018dc3412cd26bd97a61b299bd9746911a1221097d30a",
+      "review_basis": "Human-reviewed as an acceptable representation of the cited persisted Creative Refinement v2 attribute; no market demand or evidence quality is asserted.",
+      "review_history": [
+        {
+          "decision": "reviewed",
+          "previous_state": "candidate",
+          "rationale": "Human-reviewed as an acceptable representation of the cited persisted Creative Refinement v2 attribute; no market demand or evidence quality is asserted.",
+          "review_version": "phase-1-human-query-review-v1",
+          "reviewed_at": "2026-09-21T00:00:00+03:00",
+          "reviewer": "human-approved-project-review"
+        }
+      ],
+      "review_state": "reviewed"
+    },
+    {
+      "bundle_id": "bundle-1c19fc5d5608d57e04986adcdb30459c365ba5d8c48e2ae6facc8eec53cba79e",
+      "canonical_taxonomy_code": "category:ready_to_wear",
+      "concept_id": "draft-62985a9b7ad80e4844d1bc1918bcbba8ef064d500f13ef395c2854fa793af64b-023",
+      "demand_contribution_assessed": false,
+      "eligible_for_market_evidence": true,
+      "evidence_role": "baseline_category",
+      "linkage_id": "linkage-31f028c15dd5810ba96ee131d4e6a0f358383865592b1bfc64e4b59fb6c54b40",
+      "query_id": "query-0e2d4141213b2aad6822a547d18d31935b6893ed369b21b5ce4221e76250204d",
+      "review_basis": "Accepted baseline category representation only; specificity, evidence quality, search volume, and Demand Potential contribution are not established.",
+      "review_history": [
+        {
+          "decision": "reviewed",
+          "previous_state": "reviewed",
+          "rationale": "Accepted baseline category representation only; specificity, evidence quality, search volume, and Demand Potential contribution are not established.",
+          "review_version": "phase-1-human-query-review-v1",
+          "reviewed_at": "2026-09-21T00:00:00+03:00",
+          "reviewer": "human-approved-project-review"
+        }
+      ],
+      "review_state": "reviewed"
+    },
+    {
+      "bundle_id": "bundle-1c19fc5d5608d57e04986adcdb30459c365ba5d8c48e2ae6facc8eec53cba79e",
+      "canonical_taxonomy_code": "reviewed_query:37969b19baa9b81d25d35f18b7f1c54cf68b229f12d9dd0a2a2fe4c47bc9e263",
+      "concept_id": "draft-62985a9b7ad80e4844d1bc1918bcbba8ef064d500f13ef395c2854fa793af64b-023",
+      "demand_contribution_assessed": false,
+      "eligible_for_market_evidence": true,
+      "evidence_role": "concept_attribute",
+      "linkage_id": "linkage-f3e4c46a1249f0d47b66200b0acc35e659fbfc4d19f04e984a1cde25765cc5e2",
+      "query_id": "query-37969b19baa9b81d25d35f18b7f1c54cf68b229f12d9dd0a2a2fe4c47bc9e263",
+      "review_basis": "Human-reviewed as an acceptable representation of the cited persisted Creative Refinement v2 attribute; no market demand or evidence quality is asserted.",
+      "review_history": [
+        {
+          "decision": "reviewed",
+          "previous_state": "candidate",
+          "rationale": "Human-reviewed as an acceptable representation of the cited persisted Creative Refinement v2 attribute; no market demand or evidence quality is asserted.",
+          "review_version": "phase-1-human-query-review-v1",
+          "reviewed_at": "2026-09-21T00:00:00+03:00",
+          "reviewer": "human-approved-project-review"
+        }
+      ],
+      "review_state": "reviewed"
+    },
+    {
+      "bundle_id": "bundle-1c19fc5d5608d57e04986adcdb30459c365ba5d8c48e2ae6facc8eec53cba79e",
+      "canonical_taxonomy_code": "reviewed_query:21c74d46464c045c057ac90db3093b979604c3f591dbd27558d01b266db345c1",
+      "concept_id": "draft-62985a9b7ad80e4844d1bc1918bcbba8ef064d500f13ef395c2854fa793af64b-023",
+      "demand_contribution_assessed": false,
+      "eligible_for_market_evidence": true,
+      "evidence_role": "concept_attribute",
+      "linkage_id": "linkage-127620ec2032b86e5c97726666eee4d62a8b14326c312b2de7a771b0f9e0ca4e",
+      "query_id": "query-21c74d46464c045c057ac90db3093b979604c3f591dbd27558d01b266db345c1",
+      "review_basis": "Human-reviewed as an acceptable representation of the cited persisted Creative Refinement v2 attribute; no market demand or evidence quality is asserted.",
+      "review_history": [
+        {
+          "decision": "reviewed",
+          "previous_state": "candidate",
+          "rationale": "Human-reviewed as an acceptable representation of the cited persisted Creative Refinement v2 attribute; no market demand or evidence quality is asserted.",
+          "review_version": "phase-1-human-query-review-v1",
+          "reviewed_at": "2026-09-21T00:00:00+03:00",
+          "reviewer": "human-approved-project-review"
+        }
+      ],
+      "review_state": "reviewed"
+    },
+    {
+      "bundle_id": "bundle-1c19fc5d5608d57e04986adcdb30459c365ba5d8c48e2ae6facc8eec53cba79e",
+      "canonical_taxonomy_code": "reviewed_query:69e848d33fdbd24c1ccc3ba863940b26b74cd37c1be2b6ed3793e1cef7cc2958",
+      "concept_id": "draft-62985a9b7ad80e4844d1bc1918bcbba8ef064d500f13ef395c2854fa793af64b-023",
+      "demand_contribution_assessed": false,
+      "eligible_for_market_evidence": true,
+      "evidence_role": "concept_attribute",
+      "linkage_id": "linkage-0c8b05f83ce513a66518a74860f8503d487c8ff6ff98c975639db05e59676da3",
+      "query_id": "query-69e848d33fdbd24c1ccc3ba863940b26b74cd37c1be2b6ed3793e1cef7cc2958",
+      "review_basis": "Human-reviewed as an acceptable representation of the cited persisted Creative Refinement v2 attribute; no market demand or evidence quality is asserted.",
+      "review_history": [
+        {
+          "decision": "reviewed",
+          "previous_state": "candidate",
+          "rationale": "Human-reviewed as an acceptable representation of the cited persisted Creative Refinement v2 attribute; no market demand or evidence quality is asserted.",
+          "review_version": "phase-1-human-query-review-v1",
+          "reviewed_at": "2026-09-21T00:00:00+03:00",
+          "reviewer": "human-approved-project-review"
+        }
+      ],
+      "review_state": "reviewed"
+    },
+    {
+      "bundle_id": "bundle-1c19fc5d5608d57e04986adcdb30459c365ba5d8c48e2ae6facc8eec53cba79e",
+      "canonical_taxonomy_code": "reviewed_query:285bb6e5fa56416c24edef34ba29b039d1471ab47346bb5658fa60445955ae9c",
+      "concept_id": "draft-62985a9b7ad80e4844d1bc1918bcbba8ef064d500f13ef395c2854fa793af64b-023",
+      "demand_contribution_assessed": false,
+      "eligible_for_market_evidence": true,
+      "evidence_role": "concept_attribute",
+      "linkage_id": "linkage-7ee144ab63662585643dc2829e36fe7501b63d4bd92e8a2336519a9f49d7fab5",
+      "query_id": "query-285bb6e5fa56416c24edef34ba29b039d1471ab47346bb5658fa60445955ae9c",
+      "review_basis": "Human-reviewed as an acceptable representation of the cited persisted Creative Refinement v2 attribute; no market demand or evidence quality is asserted.",
+      "review_history": [
+        {
+          "decision": "reviewed",
+          "previous_state": "candidate",
+          "rationale": "Human-reviewed as an acceptable representation of the cited persisted Creative Refinement v2 attribute; no market demand or evidence quality is asserted.",
+          "review_version": "phase-1-human-query-review-v1",
+          "reviewed_at": "2026-09-21T00:00:00+03:00",
+          "reviewer": "human-approved-project-review"
+        }
+      ],
+      "review_state": "reviewed"
+    },
+    {
+      "bundle_id": "bundle-1c19fc5d5608d57e04986adcdb30459c365ba5d8c48e2ae6facc8eec53cba79e",
+      "canonical_taxonomy_code": "reviewed_query:67be39a0b74f95ccf94f3d283ff3523a7fae2e2fc160e98197ec91c4312b4ccf",
+      "concept_id": "draft-62985a9b7ad80e4844d1bc1918bcbba8ef064d500f13ef395c2854fa793af64b-023",
+      "demand_contribution_assessed": false,
+      "eligible_for_market_evidence": true,
+      "evidence_role": "concept_attribute",
+      "linkage_id": "linkage-01e164ea576ba2a5969a4388047ed8e5c58e8cd414b566f306916fe7baad2f47",
+      "query_id": "query-67be39a0b74f95ccf94f3d283ff3523a7fae2e2fc160e98197ec91c4312b4ccf",
+      "review_basis": "Human-reviewed as an acceptable representation of the cited persisted Creative Refinement v2 attribute; no market demand or evidence quality is asserted.",
+      "review_history": [
+        {
+          "decision": "reviewed",
+          "previous_state": "candidate",
+          "rationale": "Human-reviewed as an acceptable representation of the cited persisted Creative Refinement v2 attribute; no market demand or evidence quality is asserted.",
+          "review_version": "phase-1-human-query-review-v1",
+          "reviewed_at": "2026-09-21T00:00:00+03:00",
+          "reviewer": "human-approved-project-review"
+        }
+      ],
+      "review_state": "reviewed"
+    },
+    {
+      "bundle_id": "bundle-96ed5048175b16ba48053e3933b27d3efe9db5aa01c540d46e8afbdab9a88ba6",
+      "canonical_taxonomy_code": "category:bag",
+      "concept_id": "draft-62985a9b7ad80e4844d1bc1918bcbba8ef064d500f13ef395c2854fa793af64b-008",
+      "demand_contribution_assessed": false,
+      "eligible_for_market_evidence": true,
+      "evidence_role": "baseline_category",
+      "linkage_id": "linkage-2322c852004f7b216e1f98ee53ae13ed10d7e9a52e1f18f9607c02a57ee42b68",
+      "query_id": "query-ae34116549e82a24f4ed7017d65b22063acc6d80bf83355221d3b8cddbcb9321",
+      "review_basis": "Accepted baseline category representation only; specificity, evidence quality, search volume, and Demand Potential contribution are not established.",
+      "review_history": [
+        {
+          "decision": "reviewed",
+          "previous_state": "reviewed",
+          "rationale": "Accepted baseline category representation only; specificity, evidence quality, search volume, and Demand Potential contribution are not established.",
+          "review_version": "phase-1-human-query-review-v1",
+          "reviewed_at": "2026-09-21T00:00:00+03:00",
+          "reviewer": "human-approved-project-review"
+        }
+      ],
+      "review_state": "reviewed"
+    },
+    {
+      "bundle_id": "bundle-96ed5048175b16ba48053e3933b27d3efe9db5aa01c540d46e8afbdab9a88ba6",
+      "canonical_taxonomy_code": "reviewed_query:c320c4f3091f96071ed5815a16c7dc06cbe8fb4fe47226c95cff73e05c00e2cf",
+      "concept_id": "draft-62985a9b7ad80e4844d1bc1918bcbba8ef064d500f13ef395c2854fa793af64b-008",
+      "demand_contribution_assessed": false,
+      "eligible_for_market_evidence": true,
+      "evidence_role": "concept_attribute",
+      "linkage_id": "linkage-9d39cf74a08a9972761489b1596bd16c4ba987dcbb549b510ef8178de1a2092a",
+      "query_id": "query-c320c4f3091f96071ed5815a16c7dc06cbe8fb4fe47226c95cff73e05c00e2cf",
+      "review_basis": "Human-reviewed as an acceptable representation of the cited persisted Creative Refinement v2 attribute; no market demand or evidence quality is asserted.",
+      "review_history": [
+        {
+          "decision": "reviewed",
+          "previous_state": "candidate",
+          "rationale": "Human-reviewed as an acceptable representation of the cited persisted Creative Refinement v2 attribute; no market demand or evidence quality is asserted.",
+          "review_version": "phase-1-human-query-review-v1",
+          "reviewed_at": "2026-09-21T00:00:00+03:00",
+          "reviewer": "human-approved-project-review"
+        }
+      ],
+      "review_state": "reviewed"
+    },
+    {
+      "bundle_id": "bundle-96ed5048175b16ba48053e3933b27d3efe9db5aa01c540d46e8afbdab9a88ba6",
+      "canonical_taxonomy_code": "reviewed_query:8e9d7a4562bb310da25cf1860ae350ef0886c89fb0a940873509c5eb6cd54135",
+      "concept_id": "draft-62985a9b7ad80e4844d1bc1918bcbba8ef064d500f13ef395c2854fa793af64b-008",
+      "demand_contribution_assessed": false,
+      "eligible_for_market_evidence": true,
+      "evidence_role": "concept_attribute",
+      "linkage_id": "linkage-316f9280e7239bc9280ab77f859b6d01b13b58fde0018dc5a948bfdd54eb3a7e",
+      "query_id": "query-8e9d7a4562bb310da25cf1860ae350ef0886c89fb0a940873509c5eb6cd54135",
+      "review_basis": "Human-reviewed as an acceptable representation of the cited persisted Creative Refinement v2 attribute; no market demand or evidence quality is asserted.",
+      "review_history": [
+        {
+          "decision": "reviewed",
+          "previous_state": "candidate",
+          "rationale": "Human-reviewed as an acceptable representation of the cited persisted Creative Refinement v2 attribute; no market demand or evidence quality is asserted.",
+          "review_version": "phase-1-human-query-review-v1",
+          "reviewed_at": "2026-09-21T00:00:00+03:00",
+          "reviewer": "human-approved-project-review"
+        }
+      ],
+      "review_state": "reviewed"
+    },
+    {
+      "bundle_id": "bundle-96ed5048175b16ba48053e3933b27d3efe9db5aa01c540d46e8afbdab9a88ba6",
+      "canonical_taxonomy_code": "reviewed_query:1a760e1aec684aff86173b98b57b0bae783d1c3bc923daaa1888df12f8889629",
+      "concept_id": "draft-62985a9b7ad80e4844d1bc1918bcbba8ef064d500f13ef395c2854fa793af64b-008",
+      "demand_contribution_assessed": false,
+      "eligible_for_market_evidence": true,
+      "evidence_role": "concept_attribute",
+      "linkage_id": "linkage-375a071e8d5afa7e2a4cb9cad596c4cde5e964bb64a43b9642ee12fee6747530",
+      "query_id": "query-1a760e1aec684aff86173b98b57b0bae783d1c3bc923daaa1888df12f8889629",
+      "review_basis": "Human-reviewed as an acceptable representation of the cited persisted Creative Refinement v2 attribute; no market demand or evidence quality is asserted.",
+      "review_history": [
+        {
+          "decision": "reviewed",
+          "previous_state": "candidate",
+          "rationale": "Human-reviewed as an acceptable representation of the cited persisted Creative Refinement v2 attribute; no market demand or evidence quality is asserted.",
+          "review_version": "phase-1-human-query-review-v1",
+          "reviewed_at": "2026-09-21T00:00:00+03:00",
+          "reviewer": "human-approved-project-review"
+        }
+      ],
+      "review_state": "reviewed"
+    },
+    {
+      "bundle_id": "bundle-96ed5048175b16ba48053e3933b27d3efe9db5aa01c540d46e8afbdab9a88ba6",
+      "canonical_taxonomy_code": "reviewed_query:0a5f1b698739f3ba116b834ded181ca89e59e6763379775b88afe2e574f81770",
+      "concept_id": "draft-62985a9b7ad80e4844d1bc1918bcbba8ef064d500f13ef395c2854fa793af64b-008",
+      "demand_contribution_assessed": false,
+      "eligible_for_market_evidence": true,
+      "evidence_role": "concept_attribute",
+      "linkage_id": "linkage-cf5da956e171dfe0a9b4d2821d911c2cb217e942b2b0cab1d00ac740261a4bbf",
+      "query_id": "query-0a5f1b698739f3ba116b834ded181ca89e59e6763379775b88afe2e574f81770",
+      "review_basis": "Human-reviewed as an acceptable representation of the cited persisted Creative Refinement v2 attribute; no market demand or evidence quality is asserted.",
+      "review_history": [
+        {
+          "decision": "reviewed",
+          "previous_state": "candidate",
+          "rationale": "Human-reviewed as an acceptable representation of the cited persisted Creative Refinement v2 attribute; no market demand or evidence quality is asserted.",
+          "review_version": "phase-1-human-query-review-v1",
+          "reviewed_at": "2026-09-21T00:00:00+03:00",
+          "reviewer": "human-approved-project-review"
+        }
+      ],
+      "review_state": "reviewed"
+    },
+    {
+      "bundle_id": "bundle-96ed5048175b16ba48053e3933b27d3efe9db5aa01c540d46e8afbdab9a88ba6",
+      "canonical_taxonomy_code": "reviewed_query:2e044e35db26c6c769a0bfced9f45d10308d4b0107a27aaa0d915f6d1c01a0e7",
+      "concept_id": "draft-62985a9b7ad80e4844d1bc1918bcbba8ef064d500f13ef395c2854fa793af64b-008",
+      "demand_contribution_assessed": false,
+      "eligible_for_market_evidence": true,
+      "evidence_role": "concept_attribute",
+      "linkage_id": "linkage-263de5d90c6381dd809123dc6c272aec1ac0a361e00fada920a3c7fa20d0d5cc",
+      "query_id": "query-2e044e35db26c6c769a0bfced9f45d10308d4b0107a27aaa0d915f6d1c01a0e7",
+      "review_basis": "Human-reviewed as an acceptable representation of the cited persisted Creative Refinement v2 attribute; no market demand or evidence quality is asserted.",
+      "review_history": [
+        {
+          "decision": "reviewed",
+          "previous_state": "candidate",
+          "rationale": "Human-reviewed as an acceptable representation of the cited persisted Creative Refinement v2 attribute; no market demand or evidence quality is asserted.",
+          "review_version": "phase-1-human-query-review-v1",
+          "reviewed_at": "2026-09-21T00:00:00+03:00",
+          "reviewer": "human-approved-project-review"
+        }
+      ],
+      "review_state": "reviewed"
+    },
+    {
+      "bundle_id": "bundle-96ed5048175b16ba48053e3933b27d3efe9db5aa01c540d46e8afbdab9a88ba6",
+      "canonical_taxonomy_code": null,
+      "concept_id": "draft-62985a9b7ad80e4844d1bc1918bcbba8ef064d500f13ef395c2854fa793af64b-008",
+      "demand_contribution_assessed": false,
+      "eligible_for_market_evidence": false,
+      "evidence_role": "concept_attribute",
+      "linkage_id": "linkage-40820a772e3a4634ba70f047eafd4a107729ec887d5b36e1d266a5f13e3ed6e9",
+      "query_id": "query-ed6edbc665d1749515d8363121c08fe95ce155bc03d92c325de9c45a4d2f1a21",
+      "review_basis": null,
+      "review_history": [
+        {
+          "decision": "ambiguous",
+          "previous_state": "candidate",
+          "rationale": "Meaning or likely search intent is ambiguous; retained for audit history but ineligible for market evidence collection.",
+          "review_version": "phase-1-human-query-review-v1",
+          "reviewed_at": "2026-09-21T00:00:00+03:00",
+          "reviewer": "human-approved-project-review"
+        }
+      ],
+      "review_state": "ambiguous"
+    },
+    {
+      "bundle_id": "bundle-35ec4288cb4f40ff6ff570565d0dd6da248e2a8df4d245a69b8f9bb54f496da1",
+      "canonical_taxonomy_code": "category:ready_to_wear",
+      "concept_id": "draft-62985a9b7ad80e4844d1bc1918bcbba8ef064d500f13ef395c2854fa793af64b-025",
+      "demand_contribution_assessed": false,
+      "eligible_for_market_evidence": true,
+      "evidence_role": "baseline_category",
+      "linkage_id": "linkage-fc6f73a7fafd30ae54da89c43120362722e4d0974055135d2834dce8ee6bcc40",
+      "query_id": "query-51385880b9fb2f40fc99cde4c557da5d5c471872375961f6965f319c640a92f3",
+      "review_basis": "Accepted baseline category representation only; specificity, evidence quality, search volume, and Demand Potential contribution are not established.",
+      "review_history": [
+        {
+          "decision": "reviewed",
+          "previous_state": "reviewed",
+          "rationale": "Accepted baseline category representation only; specificity, evidence quality, search volume, and Demand Potential contribution are not established.",
+          "review_version": "phase-1-human-query-review-v1",
+          "reviewed_at": "2026-09-21T00:00:00+03:00",
+          "reviewer": "human-approved-project-review"
+        }
+      ],
+      "review_state": "reviewed"
+    },
+    {
+      "bundle_id": "bundle-35ec4288cb4f40ff6ff570565d0dd6da248e2a8df4d245a69b8f9bb54f496da1",
+      "canonical_taxonomy_code": "reviewed_query:5881cde15760bc09bd40f47bf3b731d413d1fec0a90e708eb313ef6861f92657",
+      "concept_id": "draft-62985a9b7ad80e4844d1bc1918bcbba8ef064d500f13ef395c2854fa793af64b-025",
+      "demand_contribution_assessed": false,
+      "eligible_for_market_evidence": true,
+      "evidence_role": "concept_attribute",
+      "linkage_id": "linkage-2674afbc5850c49c501bdb39af5743259d7a0bd06cd6070478a934004eb4700a",
+      "query_id": "query-5881cde15760bc09bd40f47bf3b731d413d1fec0a90e708eb313ef6861f92657",
+      "review_basis": "Human-reviewed as an acceptable representation of the cited persisted Creative Refinement v2 attribute; no market demand or evidence quality is asserted.",
+      "review_history": [
+        {
+          "decision": "reviewed",
+          "previous_state": "candidate",
+          "rationale": "Human-reviewed as an acceptable representation of the cited persisted Creative Refinement v2 attribute; no market demand or evidence quality is asserted.",
+          "review_version": "phase-1-human-query-review-v1",
+          "reviewed_at": "2026-09-21T00:00:00+03:00",
+          "reviewer": "human-approved-project-review"
+        }
+      ],
+      "review_state": "reviewed"
+    },
+    {
+      "bundle_id": "bundle-35ec4288cb4f40ff6ff570565d0dd6da248e2a8df4d245a69b8f9bb54f496da1",
+      "canonical_taxonomy_code": "reviewed_query:8cce03fd14e85145ad84b6c6b85f577ca7714bcfd8cbbe50a27d7d68e145412e",
+      "concept_id": "draft-62985a9b7ad80e4844d1bc1918bcbba8ef064d500f13ef395c2854fa793af64b-025",
+      "demand_contribution_assessed": false,
+      "eligible_for_market_evidence": true,
+      "evidence_role": "concept_attribute",
+      "linkage_id": "linkage-09214a3e86867b9e7e8baa84bb635b9b268dcc1990b1160ef5cb67c849749f7e",
+      "query_id": "query-8cce03fd14e85145ad84b6c6b85f577ca7714bcfd8cbbe50a27d7d68e145412e",
+      "review_basis": "Human-reviewed as an acceptable representation of the cited persisted Creative Refinement v2 attribute; no market demand or evidence quality is asserted.",
+      "review_history": [
+        {
+          "decision": "reviewed",
+          "previous_state": "candidate",
+          "rationale": "Human-reviewed as an acceptable representation of the cited persisted Creative Refinement v2 attribute; no market demand or evidence quality is asserted.",
+          "review_version": "phase-1-human-query-review-v1",
+          "reviewed_at": "2026-09-21T00:00:00+03:00",
+          "reviewer": "human-approved-project-review"
+        }
+      ],
+      "review_state": "reviewed"
+    },
+    {
+      "bundle_id": "bundle-35ec4288cb4f40ff6ff570565d0dd6da248e2a8df4d245a69b8f9bb54f496da1",
+      "canonical_taxonomy_code": "reviewed_query:9cbb92416d296de0220848e7ac6debcc770ba5ed798c95caaa2a599d37a939aa",
+      "concept_id": "draft-62985a9b7ad80e4844d1bc1918bcbba8ef064d500f13ef395c2854fa793af64b-025",
+      "demand_contribution_assessed": false,
+      "eligible_for_market_evidence": true,
+      "evidence_role": "concept_attribute",
+      "linkage_id": "linkage-c5083e1740338204a8ba8eee57f3712969116c2da609480c63a761a56991c8f3",
+      "query_id": "query-9cbb92416d296de0220848e7ac6debcc770ba5ed798c95caaa2a599d37a939aa",
+      "review_basis": "Human-reviewed as an acceptable representation of the cited persisted Creative Refinement v2 attribute; no market demand or evidence quality is asserted.",
+      "review_history": [
+        {
+          "decision": "reviewed",
+          "previous_state": "candidate",
+          "rationale": "Human-reviewed as an acceptable representation of the cited persisted Creative Refinement v2 attribute; no market demand or evidence quality is asserted.",
+          "review_version": "phase-1-human-query-review-v1",
+          "reviewed_at": "2026-09-21T00:00:00+03:00",
+          "reviewer": "human-approved-project-review"
+        }
+      ],
+      "review_state": "reviewed"
+    },
+    {
+      "bundle_id": "bundle-35ec4288cb4f40ff6ff570565d0dd6da248e2a8df4d245a69b8f9bb54f496da1",
+      "canonical_taxonomy_code": "reviewed_query:676b4364f618b149202d425dc665777c50371d62f70834a23101c9c9aaa2e8c6",
+      "concept_id": "draft-62985a9b7ad80e4844d1bc1918bcbba8ef064d500f13ef395c2854fa793af64b-025",
+      "demand_contribution_assessed": false,
+      "eligible_for_market_evidence": true,
+      "evidence_role": "concept_attribute",
+      "linkage_id": "linkage-4402dc9f290e3a1435c21099ceda3970ffd320c48912ccbfd5e5a6381e0d5ffd",
+      "query_id": "query-676b4364f618b149202d425dc665777c50371d62f70834a23101c9c9aaa2e8c6",
+      "review_basis": "Human-reviewed as an acceptable representation of the cited persisted Creative Refinement v2 attribute; no market demand or evidence quality is asserted.",
+      "review_history": [
+        {
+          "decision": "reviewed",
+          "previous_state": "candidate",
+          "rationale": "Human-reviewed as an acceptable representation of the cited persisted Creative Refinement v2 attribute; no market demand or evidence quality is asserted.",
+          "review_version": "phase-1-human-query-review-v1",
+          "reviewed_at": "2026-09-21T00:00:00+03:00",
+          "reviewer": "human-approved-project-review"
+        }
+      ],
+      "review_state": "reviewed"
+    },
+    {
+      "bundle_id": "bundle-35ec4288cb4f40ff6ff570565d0dd6da248e2a8df4d245a69b8f9bb54f496da1",
+      "canonical_taxonomy_code": "reviewed_query:ae6a1be4c76dbb8b56e7f0040998a1bbffaff7165d497bbeae737fb5a35e6f66",
+      "concept_id": "draft-62985a9b7ad80e4844d1bc1918bcbba8ef064d500f13ef395c2854fa793af64b-025",
+      "demand_contribution_assessed": false,
+      "eligible_for_market_evidence": true,
+      "evidence_role": "concept_attribute",
+      "linkage_id": "linkage-92cda46f0cdad9f5c7c10b8d38a3a0462dd6b18971e56ee26edcc7cb63c5274b",
+      "query_id": "query-ae6a1be4c76dbb8b56e7f0040998a1bbffaff7165d497bbeae737fb5a35e6f66",
+      "review_basis": "Human-reviewed as an acceptable representation of the cited persisted Creative Refinement v2 attribute; no market demand or evidence quality is asserted.",
+      "review_history": [
+        {
+          "decision": "reviewed",
+          "previous_state": "candidate",
+          "rationale": "Human-reviewed as an acceptable representation of the cited persisted Creative Refinement v2 attribute; no market demand or evidence quality is asserted.",
+          "review_version": "phase-1-human-query-review-v1",
+          "reviewed_at": "2026-09-21T00:00:00+03:00",
+          "reviewer": "human-approved-project-review"
+        }
+      ],
+      "review_state": "reviewed"
+    },
+    {
+      "bundle_id": "bundle-35ec4288cb4f40ff6ff570565d0dd6da248e2a8df4d245a69b8f9bb54f496da1",
+      "canonical_taxonomy_code": "reviewed_query:14ad6d7ecb2e8961e242f1dfa0ab112b475947d74d2c531e49040497290f07eb",
+      "concept_id": "draft-62985a9b7ad80e4844d1bc1918bcbba8ef064d500f13ef395c2854fa793af64b-025",
+      "demand_contribution_assessed": false,
+      "eligible_for_market_evidence": true,
+      "evidence_role": "concept_attribute",
+      "linkage_id": "linkage-2ed264692fa0611cbde89cb77245c8966f6fd6ec70722432b7c8d6daec6eb9bb",
+      "query_id": "query-14ad6d7ecb2e8961e242f1dfa0ab112b475947d74d2c531e49040497290f07eb",
+      "review_basis": "Human-reviewed as an acceptable representation of the cited persisted Creative Refinement v2 attribute; no market demand or evidence quality is asserted.",
+      "review_history": [
+        {
+          "decision": "reviewed",
+          "previous_state": "candidate",
+          "rationale": "Human-reviewed as an acceptable representation of the cited persisted Creative Refinement v2 attribute; no market demand or evidence quality is asserted.",
+          "review_version": "phase-1-human-query-review-v1",
+          "reviewed_at": "2026-09-21T00:00:00+03:00",
+          "reviewer": "human-approved-project-review"
+        }
+      ],
+      "review_state": "reviewed"
+    }
+  ],
+  "previous_linkage_artifact_sha256": "4f1ac218c145912ecc229e858c706ff972ab268631e99aa844797f3803c735d1",
+  "schema_version": "1.0",
+  "source_query_bundle_sha256": "824934b8923a53d107522d088235524adb23b794a6985e0fffc4ac92bb501efb",
+  "source_refinement_artifact_sha256": "d83f1b24ffc559e4bd026d229184813c14a1c9780336a1d84e78a308294cc16f"
+}
