@@ -4,15 +4,21 @@ from __future__ import annotations
 
 import logging
 from contextlib import asynccontextmanager
+from typing import Annotated
 
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, Path
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import Response
 
 from app.collection_service import load_collection
 from app.concept_drafts_preview_service import load_concept_drafts_preview
 from app.config import COLLECTION_PATH, DATASET_PATH, MODEL_PATH, cors_origins
 from app.creative_development_service import load_creative_development
 from app.demand_service import FEATURE_NAMES, predict_demand
+from app.design_visualization_service import (
+    VisualizationNotFoundError,
+    load_design_visualization,
+)
 from app.evaluated_concepts_service import load_evaluated_concepts
 from app.model_loader import ArtifactError, load_model
 from app.schemas import DemandInput
@@ -101,6 +107,28 @@ def creative_development() -> dict:
     except ArtifactError as exc:
         logger.exception("Creative development request failed")
         raise HTTPException(status_code=503, detail=str(exc)) from exc
+
+
+@app.get("/design-visualizations/{asset_sha256}")
+def design_visualization(
+    asset_sha256: Annotated[str, Path(pattern=r"^[0-9a-f]{64}$")],
+) -> Response:
+    try:
+        asset = load_design_visualization(asset_sha256)
+    except VisualizationNotFoundError as exc:
+        raise HTTPException(status_code=404, detail=str(exc)) from exc
+    except ArtifactError as exc:
+        logger.exception("Design visualization request failed")
+        raise HTTPException(status_code=503, detail=str(exc)) from exc
+    return Response(
+        content=asset.content,
+        media_type="image/png",
+        headers={
+            "ETag": f'"{asset.sha256}"',
+            "Cache-Control": "public, max-age=31536000, immutable",
+            "X-Content-SHA256": asset.sha256,
+        },
+    )
 
 
 @app.post("/predict-demand")
