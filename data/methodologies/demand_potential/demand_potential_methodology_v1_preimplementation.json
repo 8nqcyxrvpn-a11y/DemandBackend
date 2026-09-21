@@ -1,0 +1,211 @@
+{
+  "artifact_kind": "private_demand_potential_methodology_specification",
+  "schema_version": "1.0",
+  "methodology_id": "demand-potential-methodology-1.0.0-preimplementation.1",
+  "status": "reviewed_preimplementation_non_executable",
+  "executable": false,
+  "score_calculation_permitted": false,
+  "definition": "A future relative 0-100 indicator of evidence for market interest and opportunity under a declared provider, geography, language, network, and time window. It is not a forecast or validation claim.",
+  "prohibited_interpretations": [
+    "predicted sales",
+    "unit demand",
+    "revenue forecast",
+    "guaranteed commercial success",
+    "inventory recommendation",
+    "safety-stock recommendation",
+    "market or commercial validation",
+    "probability of purchase or success"
+  ],
+  "fixed_principles": [
+    "Only validated Phase 2A real-external-provider observations and provenance-valid upstream artifacts may be inputs.",
+    "Evidence availability and evidence value are distinct; missing evidence never becomes zero demand.",
+    "Evidence breadth affects confidence, not Demand Potential.",
+    "Search attention is an attention proxy, not sales demand.",
+    "Advertiser activity is an advertiser-market signal, not consumer demand.",
+    "Overlapping query volumes are never summed as independent consumers.",
+    "Baseline category queries provide context only and never contribute directly as concept-specific demand evidence.",
+    "Scores, bands, and rankings remain prohibited until pilot calibration is completed and a subsequent executable methodology artifact is approved.",
+    "All contributing queries, observations, transformations, exclusions, and hashes must remain explainable and reproducible.",
+    "No synthetic or fixture observation may be represented as real market evidence."
+  ],
+  "dimensions": [
+    {
+      "dimension_id": "search_attention",
+      "weight_pct": 55,
+      "meaning": "Relative level of observed search attention for reviewed concept attributes within a comparable evidence scope.",
+      "permitted_inputs": [
+        "observed average_monthly_searches",
+        "observed monthly_history",
+        "reviewed eligible concept-attribute query provenance",
+        "baseline category observations for context only"
+      ],
+      "exclusions": [
+        "missing or failed observations",
+        "summed overlapping query volumes",
+        "baseline category volume as a direct score contributor",
+        "invented concept-name searches"
+      ]
+    },
+    {
+      "dimension_id": "search_momentum",
+      "weight_pct": 30,
+      "meaning": "Direction and persistence of comparable monthly search activity for reviewed concept attributes.",
+      "permitted_inputs": [
+        "chronologically valid observed monthly_history",
+        "reviewed eligible concept-attribute query provenance"
+      ],
+      "exclusions": [
+        "missing months treated as zeros",
+        "incomparable time windows",
+        "provider errors or suppressed data",
+        "synthetic trend signals"
+      ]
+    },
+    {
+      "dimension_id": "advertiser_activity",
+      "weight_pct": 15,
+      "meaning": "Observed advertiser competition and bid activity, interpreted only as an advertiser-market signal.",
+      "permitted_inputs": [
+        "observed competition_index",
+        "observed low_top_of_page_bid_micros",
+        "observed high_top_of_page_bid_micros",
+        "provider currency and scope metadata when required"
+      ],
+      "exclusions": [
+        "advertiser activity interpreted as consumer demand",
+        "invented numeric mappings from missing fields",
+        "cross-currency bid comparisons",
+        "missing bid or competition data treated as zero"
+      ]
+    }
+  ],
+  "overlap_hierarchy": [
+    "provider_result_cluster",
+    "persisted_attribute_unit",
+    "signal_type",
+    "concept"
+  ],
+  "baseline_category_treatment": "Baseline category queries are context controls. They may support a pilot-calibrated category-relative interpretation only when provider, geography, language, network, and time window match. They never enter the v1 score as direct concept-specific query contributions and may not dominate through larger volume.",
+  "missing_data_semantics": {
+    "observed_zero": "An explicit numeric zero returned by the provider is observed evidence and may be used as zero.",
+    "no_data": "The provider returned no usable metric; the value is missing and is never converted to zero.",
+    "suppressed": "The provider withheld a metric, including possible privacy or low-volume suppression; the value is missing and is never converted to zero.",
+    "unavailable": "The metric is unavailable for the requested scope; the value is missing and is never converted to zero.",
+    "provider_error": "Collection failed at the provider; no demand value may be inferred.",
+    "permission_denied": "Access was refused; no demand value may be inferred."
+  },
+  "confidence_is_separate": true,
+  "confidence_components": [
+    {
+      "component_id": "attribute_type_coverage",
+      "weight_pct": 30,
+      "rule": "Measure usable non-category signal-type coverage with each type counted once; query count cannot increase credit."
+    },
+    {
+      "component_id": "temporal_completeness",
+      "weight_pct": 25,
+      "rule": "Measure valid comparable monthly coverage; the exact minimum and window remain pilot-calibration-dependent."
+    },
+    {
+      "component_id": "collection_completeness",
+      "weight_pct": 15,
+      "rule": "Distinguish terminal provider outcomes from provider or permission failures without treating no_data as numeric evidence."
+    },
+    {
+      "component_id": "scope_consistency",
+      "weight_pct": 15,
+      "rule": "Require consistent provider methodology, geography, language, network, time window, and collection scope."
+    },
+    {
+      "component_id": "independent_source_breadth",
+      "weight_pct": 10,
+      "rule": "One real provider receives partial rather than full credit. Lack of a second provider alone does not make an otherwise sufficient result unreportable."
+    },
+    {
+      "component_id": "provenance_integrity",
+      "weight_pct": 5,
+      "rule": "All hashes, IDs, query text, evidence states, attribute pointers, and concept/refinement lineage must validate; failure is fail-closed."
+    }
+  ],
+  "single_provider_source_breadth_rule": "A single independently operated real provider receives partial source-breadth credit. Reportability is assessed across all confidence components and must not fail solely because a second provider is absent.",
+  "pilot_calibration_parameters": [
+    {
+      "parameter_id": "attention_percentiles",
+      "status": "pilot_calibration_required",
+      "conceptual_approach": "Evaluate log-transformed search attention and robust cohort normalization, including proposed P10/P90 behavior, only after inspecting real provider distributions.",
+      "frozen_value": null
+    },
+    {
+      "parameter_id": "category_context_adjustment",
+      "status": "pilot_calibration_required",
+      "conceptual_approach": "Test whether category baselines are semantically and statistically stable enough for a bounded context adjustment; never permit direct category contribution.",
+      "frozen_value": null
+    },
+    {
+      "parameter_id": "provider_close_variant_allocation",
+      "status": "pilot_calibration_required",
+      "conceptual_approach": "Inspect provider grouping and close variants before fixing attribution. One provider result cluster must never be duplicated across queries.",
+      "frozen_value": null
+    },
+    {
+      "parameter_id": "minimum_historical_months",
+      "status": "pilot_calibration_required",
+      "conceptual_approach": "Determine the minimum usable month count from actual returned histories; missing months remain missing.",
+      "frozen_value": null
+    },
+    {
+      "parameter_id": "momentum_comparison_window",
+      "status": "pilot_calibration_required",
+      "conceptual_approach": "Evaluate recent-versus-prior windows and persistence behavior against actual provider granularity before selecting constants.",
+      "frozen_value": null
+    },
+    {
+      "parameter_id": "bid_normalization",
+      "status": "pilot_calibration_required",
+      "conceptual_approach": "Inspect returned bid coverage, currency, skew, and missingness before selecting a log or percentile normalization.",
+      "frozen_value": null
+    },
+    {
+      "parameter_id": "reportability_thresholds",
+      "status": "pilot_calibration_required",
+      "conceptual_approach": "Set final coverage, confidence, and comparability gates only after real provider behavior is observed; failures and missing values may not be relaxed into zeros.",
+      "frozen_value": null
+    }
+  ],
+  "provisional_bands": [
+    {"label": "Very Low", "lower_inclusive": 0, "upper_inclusive": 19},
+    {"label": "Low", "lower_inclusive": 20, "upper_inclusive": 39},
+    {"label": "Moderate", "lower_inclusive": 40, "upper_inclusive": 59},
+    {"label": "High", "lower_inclusive": 60, "upper_inclusive": 79},
+    {"label": "Very High", "lower_inclusive": 80, "upper_inclusive": 100}
+  ],
+  "bands_calibrated": false,
+  "bands_may_be_applied_to_current_concepts": false,
+  "future_candidate_dimensions": [
+    "independent_trend_intelligence",
+    "brand_relevance"
+  ],
+  "future_dimensions_in_v1_score": false,
+  "provenance_requirements": [
+    "Every contributing metric must resolve to a validated normalized Phase 2A observation and immutable raw response.",
+    "Every observation must resolve through reviewed query ID, exact query text, attribute reference, concept ID, refinement SHA-256, and Creative Refinement v2 artifact SHA-256.",
+    "Every calculation must record methodology ID, methodology artifact SHA-256, input artifact hashes, normalization cohort hash, scope, timestamp, exclusions, and contributing observation IDs.",
+    "Synthetic, fixture, ambiguous, ineligible, stale, altered, or provenance-invalid inputs are prohibited."
+  ],
+  "versioning_policy": [
+    "This preimplementation artifact is immutable and non-executable.",
+    "Pilot-calibrated constants require a new immutable methodology artifact and identifier before scoring is permitted.",
+    "Changes to dimensions, weights, formulas, overlap handling, missing-data semantics, confidence logic, bands, or reportability gates require a new methodology version.",
+    "Historical result artifacts must retain the exact methodology artifact SHA-256 and must never be silently recalculated."
+  ],
+  "unresolved_questions": [
+    "Whether Google Ads Basic access returns sufficient metrics for the reviewed niche queries.",
+    "How Google Ads groups or omits close variants for these specific queries.",
+    "Whether broad category phrases are stable and meaningful context controls.",
+    "The returned month count, missing-month behavior, and appropriate momentum window.",
+    "Bid coverage, currency consistency, and suitable robust normalization.",
+    "Final confidence and reportability thresholds after observing real suppression and failure rates.",
+    "Which independent second source can add defensible source breadth in a future phase.",
+    "When provenance-backed real trend intelligence and brand relevance become eligible future dimensions."
+  ]
+}
