@@ -20,6 +20,7 @@ WHERE refresh_date = @refresh_date
 ORDER BY week DESC, rank ASC, dma_id ASC
 LIMIT @row_limit
 """
+_DEFAULT_RETRY = object()
 
 
 @dataclass(frozen=True)
@@ -83,6 +84,7 @@ class GoogleTrendsBigQueryAdapter:
     def retrieve(
         self, refresh_date: date, *, row_limit: int = 25,
         retrieved_at: Optional[datetime] = None,
+        retry: Any = _DEFAULT_RETRY,
     ) -> GoogleTrendsIngestionResult:
         if not 1 <= row_limit <= 1000:
             raise ValueError("row_limit must be between 1 and 1000")
@@ -90,8 +92,13 @@ class GoogleTrendsBigQueryAdapter:
         if retrieved_at.tzinfo is None or retrieved_at.utcoffset() is None:
             raise ValueError("retrieved_at must include a timezone")
         config = self._job_config_factory(refresh_date, row_limit, self.maximum_bytes_billed)
-        job = self._client.query(QUERY, job_config=config)
-        raw_rows = [dict(row.items()) for row in job.result()]
+        if retry is _DEFAULT_RETRY:
+            job = self._client.query(QUERY, job_config=config)
+            rows = job.result()
+        else:
+            job = self._client.query(QUERY, job_config=config, retry=retry)
+            rows = job.result(retry=retry)
+        raw_rows = [dict(row.items()) for row in rows]
         observations = [self._to_observation(row, retrieved_at) for row in raw_rows]
         return GoogleTrendsIngestionResult(
             source=self.source,
