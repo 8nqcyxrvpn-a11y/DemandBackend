@@ -7,6 +7,7 @@ A production-shaped FastAPI prototype for exploring fashion trend signals, preco
 - `GET /collection` serves the precomputed five-product concept study at the JSON top level.
 - `POST /predict-demand` dynamically runs a `RandomForestRegressor`, then adds 15% safety stock.
 - `GET /trend-signals` computes transparent percentile-ranked color signals from the synthetic CSV and explicitly returns `is_live_data: false`.
+- `GET /market-intelligence/google-trends` retrieves real factual observations from the official Google Trends BigQuery public dataset. Raw terms remain unresolved unless an explicit reviewed taxonomy rule matches them.
 - `GET /model-info`, `/health`, and `/` expose model metadata and service status.
 - Pydantic contracts reserve a clean shape for future live trend signals and brand profiles.
 
@@ -20,7 +21,25 @@ Synthetic CSV ──> trend_service ──> /trend-signals
       └──> training script ──> demand_model.joblib ──> demand_service ──> /predict-demand
 
 final_ai_collection.json ──> collection_service ──> /collection
+
+Google Trends BigQuery
+        ↓
+GoogleTrendsBigQueryAdapter
+        ↓
+MarketObservation (real factual evidence)
+        ↓
+explicit taxonomy normalization
+        ↓
+derived market metrics only when evidence requirements are satisfied
+
+Synthetic training data
+        ↓
+RandomForest demand model
+        ↓
+/predict-demand
 ```
+
+The real Google Trends evidence path and synthetic demand model are deliberately separate. Google Trends terms are not sent to `/predict-demand`, and public attention is not treated as sales demand. The temporal-metrics layer continues to require at least three periods and two independent real sources before reporting sufficient evidence; Google Trends alone cannot satisfy source breadth.
 
 The intended future system is:
 
@@ -101,6 +120,8 @@ uvicorn server:app --host 0.0.0.0 --port $PORT
 ```
 
 Prototype CORS defaults to all origins with credentials disabled. Tighten it by setting `CORS_ORIGINS` to a comma-separated list of frontend origins.
+
+The live Google Trends endpoint requires `GOOGLE_TRENDS_BIGQUERY_PROJECT_ID` and Application Default Credentials with BigQuery access. `GOOGLE_TRENDS_REFRESH_DATE` is optional for the live endpoint: a valid recent value is preferred, while missing, future, or stale values start a bounded 14-day search from the current UTC date. The temporary protected preflight continues to require an explicit refresh date.
 
 ## Model and data limitations
 

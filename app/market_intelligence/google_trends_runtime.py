@@ -47,7 +47,7 @@ class PreflightAlreadyExecuted(RuntimeError):
     pass
 
 
-def _failure_status(exc: Exception) -> tuple[PreflightStatus, str]:
+def classify_google_trends_failure(exc: Exception) -> tuple[PreflightStatus, str]:
     """Classify without returning provider exception text, which can contain secrets."""
     name = type(exc).__name__.casefold()
     message = str(exc).casefold()
@@ -100,7 +100,7 @@ class GoogleTrendsRuntimePreflight:
                 retry=None,
             )
         except Exception as exc:
-            status, diagnostic = _failure_status(exc)
+            status, diagnostic = classify_google_trends_failure(exc)
             return GoogleTrendsPreflightResult(
                 status=status,
                 query_succeeded=False,

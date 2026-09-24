@@ -24,6 +24,11 @@ from app.model_loader import ArtifactError, load_model
 from app.market_intelligence.google_trends_preflight_http import (
     register_google_trends_preflight_route,
 )
+from app.market_intelligence.google_trends_live import (
+    GoogleTrendsLiveResponse,
+    GoogleTrendsLiveServiceError,
+    load_google_trends_market_evidence,
+)
 from app.schemas import DemandInput
 from app.trend_service import build_trend_signals
 
@@ -155,6 +160,23 @@ def trend_signals() -> dict:
         logger.exception("Trend signal calculation failed")
         raise HTTPException(status_code=503, detail="Synthetic trend data is unavailable.") from exc
     return {"status": "success", "data_source": "synthetic_demo", "is_live_data": False, "signals": signals}
+
+
+@app.get(
+    "/market-intelligence/google-trends",
+    response_model=GoogleTrendsLiveResponse,
+)
+def google_trends_market_evidence() -> GoogleTrendsLiveResponse:
+    try:
+        return load_google_trends_market_evidence()
+    except GoogleTrendsLiveServiceError as exc:
+        raise HTTPException(
+            status_code=503,
+            detail={
+                "message": "Google Trends market evidence is unavailable.",
+                "diagnostic_code": exc.diagnostic_code,
+            },
+        ) from exc
 
 
 @app.get("/model-info")
