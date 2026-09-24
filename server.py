@@ -21,6 +21,9 @@ from app.design_visualization_service import (
 )
 from app.evaluated_concepts_service import load_evaluated_concepts
 from app.model_loader import ArtifactError, load_model
+from app.market_intelligence.google_trends_preflight_http import (
+    register_google_trends_preflight_route,
+)
 from app.schemas import DemandInput
 from app.trend_service import build_trend_signals
 
@@ -46,6 +49,7 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+register_google_trends_preflight_route(app)
 
 
 @app.get("/")
