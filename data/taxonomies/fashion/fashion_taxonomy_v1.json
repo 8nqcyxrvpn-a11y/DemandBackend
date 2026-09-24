@@ -1,0 +1,57 @@
+{
+  "artifact_kind": "production_fashion_taxonomy",
+  "taxonomy_version": "fashion-taxonomy-1.0",
+  "status": "production_approved",
+  "reviewed_at": "2026-09-25T00:00:00Z",
+  "reviewed_by": "fashion-taxonomy-production-review-v1",
+  "matching_method": "casefolded_exact_alias",
+  "entries_sha256": "25cc394507b89f58fd14913d653d7868410cb0d6f7873a737bce57d7cce88800",
+  "categories": [
+    "color",
+    "material",
+    "garment",
+    "footwear",
+    "bags_accessories",
+    "silhouette",
+    "pattern",
+    "aesthetic_style"
+  ],
+  "entries": [
+    {"canonical_code": "color:butter_yellow", "category": "color", "canonical_label": "Butter yellow", "aliases": ["butter yellow", "buttery yellow"], "approval_status": "approved"},
+    {"canonical_code": "color:burgundy", "category": "color", "canonical_label": "Burgundy", "aliases": ["burgundy", "burgundy fashion"], "approval_status": "approved"},
+    {"canonical_code": "color:cherry_red", "category": "color", "canonical_label": "Cherry red", "aliases": ["cherry red", "cherry red fashion"], "approval_status": "approved"},
+    {"canonical_code": "color:chocolate_brown", "category": "color", "canonical_label": "Chocolate brown", "aliases": ["chocolate brown", "chocolate brown fashion"], "approval_status": "approved"},
+    {"canonical_code": "color:electric_blue", "category": "color", "canonical_label": "Electric blue", "aliases": ["electric blue", "electric blue fashion"], "approval_status": "approved"},
+
+    {"canonical_code": "material:suede", "category": "material", "canonical_label": "Suede", "aliases": ["suede", "suede fashion"], "approval_status": "approved"},
+    {"canonical_code": "material:leather", "category": "material", "canonical_label": "Leather", "aliases": ["leather", "leather fashion", "leather clothing"], "approval_status": "approved"},
+    {"canonical_code": "material:silk", "category": "material", "canonical_label": "Silk", "aliases": ["silk", "silk fashion", "silk clothing"], "approval_status": "approved"},
+    {"canonical_code": "material:denim", "category": "material", "canonical_label": "Denim", "aliases": ["denim", "denim fashion"], "approval_status": "approved"},
+
+    {"canonical_code": "garment:wide_leg_trousers", "category": "garment", "canonical_label": "Wide-leg trousers", "aliases": ["wide-leg trousers", "wide leg trousers", "wide leg pants"], "approval_status": "approved"},
+    {"canonical_code": "garment:tailored_blazer", "category": "garment", "canonical_label": "Tailored blazer", "aliases": ["tailored blazer", "tailored blazers"], "approval_status": "approved"},
+    {"canonical_code": "garment:trench_coat", "category": "garment", "canonical_label": "Trench coat", "aliases": ["trench coat", "trench coats"], "approval_status": "approved"},
+    {"canonical_code": "garment:suede_jacket", "category": "garment", "canonical_label": "Suede jacket", "aliases": ["suede jacket", "suede jackets"], "approval_status": "approved"},
+
+    {"canonical_code": "footwear:ballet_flats", "category": "footwear", "canonical_label": "Ballet flats", "aliases": ["ballet flats", "ballet flat shoes"], "approval_status": "approved"},
+    {"canonical_code": "footwear:loafers", "category": "footwear", "canonical_label": "Loafers", "aliases": ["loafers", "loafer shoes"], "approval_status": "approved"},
+
+    {"canonical_code": "bags_accessories:tote_bag", "category": "bags_accessories", "canonical_label": "Tote bag", "aliases": ["tote bag", "tote bags"], "approval_status": "approved"},
+    {"canonical_code": "bags_accessories:shoulder_bag", "category": "bags_accessories", "canonical_label": "Shoulder bag", "aliases": ["shoulder bag", "shoulder bags"], "approval_status": "approved"},
+    {"canonical_code": "bags_accessories:leather_belt", "category": "bags_accessories", "canonical_label": "Leather belt", "aliases": ["leather belt", "leather belts"], "approval_status": "approved"},
+
+    {"canonical_code": "silhouette:oversized", "category": "silhouette", "canonical_label": "Oversized silhouette", "aliases": ["oversized fashion", "oversized silhouette"], "approval_status": "approved"},
+    {"canonical_code": "silhouette:structured", "category": "silhouette", "canonical_label": "Structured silhouette", "aliases": ["structured fashion", "structured silhouette"], "approval_status": "approved"},
+    {"canonical_code": "silhouette:slim_narrow", "category": "silhouette", "canonical_label": "Slim or narrow silhouette", "aliases": ["slim silhouette", "narrow silhouette"], "approval_status": "approved"},
+
+    {"canonical_code": "pattern:stripe", "category": "pattern", "canonical_label": "Stripe", "aliases": ["striped fashion", "stripe clothing"], "approval_status": "approved"},
+    {"canonical_code": "pattern:polka_dot", "category": "pattern", "canonical_label": "Polka dot", "aliases": ["polka dot fashion", "polka dot clothing"], "approval_status": "approved"},
+    {"canonical_code": "pattern:plaid", "category": "pattern", "canonical_label": "Plaid", "aliases": ["plaid fashion", "plaid clothing"], "approval_status": "approved"},
+    {"canonical_code": "pattern:animal_print", "category": "pattern", "canonical_label": "Animal print", "aliases": ["animal print fashion", "animal print clothing"], "approval_status": "approved"},
+
+    {"canonical_code": "aesthetic_style:minimalist", "category": "aesthetic_style", "canonical_label": "Minimalist style", "aliases": ["minimalist fashion", "minimalist style"], "approval_status": "approved"},
+    {"canonical_code": "aesthetic_style:bohemian", "category": "aesthetic_style", "canonical_label": "Bohemian style", "aliases": ["boho fashion", "bohemian fashion"], "approval_status": "approved"},
+    {"canonical_code": "aesthetic_style:quiet_luxury", "category": "aesthetic_style", "canonical_label": "Quiet luxury", "aliases": ["quiet luxury", "quiet luxury fashion"], "approval_status": "approved"},
+    {"canonical_code": "aesthetic_style:preppy", "category": "aesthetic_style", "canonical_label": "Preppy style", "aliases": ["preppy fashion", "preppy style"], "approval_status": "approved"}
+  ]
+}

@@ -41,6 +41,12 @@ RandomForest demand model
 
 The real Google Trends evidence path and synthetic demand model are deliberately separate. Google Trends terms are not sent to `/predict-demand`, and public attention is not treated as sales demand. The temporal-metrics layer continues to require at least three periods and two independent real sources before reporting sufficient evidence; Google Trends alone cannot satisfy source breadth.
 
+### Production fashion taxonomy
+
+Google Trends normalization uses the versioned `fashion-taxonomy-1.0` artifact at `data/taxonomies/fashion/fashion_taxonomy_v1.json`. Its approved categories are colors, materials, garments, footwear, bags/accessories, silhouettes, patterns, and fashion aesthetics/styles. Mapping is limited to case-insensitive, whitespace-normalized exact aliases in that artifact; substring matching, fuzzy matching, and model-generated semantic guesses are not used.
+
+The live endpoint returns all factual observations separately from resolved fashion signals, unresolved observations, and ambiguous observations. It also reports the raw, resolved, unresolved, and ambiguous counts plus the taxonomy artifact SHA-256. A lexical match is only a deterministic classification—it does not by itself establish that the term is a validated trend, a demand signal, or commercially meaningful.
+
 The intended future system is:
 
 ```text

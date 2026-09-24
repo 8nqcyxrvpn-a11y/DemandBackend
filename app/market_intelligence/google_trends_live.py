@@ -12,9 +12,15 @@ from pydantic import BaseModel, ConfigDict, Field
 from app.brand_intelligence.enums import EvidenceStatus
 from app.config import google_trends_bigquery_project_id
 from app.market_intelligence.aggregation import derive_temporal_metrics
+from app.market_intelligence.fashion_taxonomy import (
+    FashionTaxonomyEntry,
+    FashionTaxonomyRegistry,
+    load_production_fashion_taxonomy,
+)
 from app.market_intelligence.google_trends_bigquery import GoogleTrendsBigQueryAdapter
 from app.market_intelligence.google_trends_runtime import classify_google_trends_failure
 from app.market_intelligence.models import (
+    MappingStatus,
     MarketEvidenceBatch,
     MarketObservation,
     MarketSource,
@@ -24,7 +30,6 @@ from app.market_intelligence.models import (
 )
 from app.market_intelligence.normalization import TaxonomyMappingRule, normalize_observation
 
-TAXONOMY_VERSION = "fashion-taxonomy-1.0"
 LIVE_ROW_LIMIT = 25
 MAX_DATE_LOOKBACK_DAYS = 14
 MAX_CONFIGURED_DATE_AGE_DAYS = 14
@@ -47,15 +52,41 @@ class GoogleTrendsLiveResponse(BaseModel):
     is_live_data: bool = True
     batch_id: str
     batch_version: str
+    taxonomy_version: str
+    taxonomy_artifact_sha256: str
     refresh_date_requested: date
     refresh_date_used: date
     attempted_refresh_dates: list[date] = Field(min_length=1)
     source: MarketSource
+    raw_observation_count: int = Field(ge=1)
+    resolved_fashion_signal_count: int = Field(ge=0)
+    unresolved_count: int = Field(ge=0)
+    ambiguous_count: int = Field(ge=0)
     observations: list[MarketObservation] = Field(min_length=1)
     normalized_signals: list[NormalizedMarketSignal] = Field(min_length=1)
+    resolved_fashion_signals: list["ResolvedFashionSignal"] = Field(default_factory=list)
+    unresolved_observations: list[MarketObservation] = Field(default_factory=list)
+    ambiguous_observations: list[MarketObservation] = Field(default_factory=list)
     derived_metrics: list[TrendMetrics] = Field(default_factory=list)
     evidence_sufficient_for_derived_metrics: bool
     limitations: list[str] = Field(min_length=1)
+
+
+class ResolvedFashionSignal(BaseModel):
+    model_config = ConfigDict(extra="forbid", frozen=True)
+
+    observation_id: str
+    source_id: str
+    normalized_signal_id: str
+    raw_signal: str
+    canonical_code: str
+    canonical_label: str
+    taxonomy_category: str
+    taxonomy_version: str
+    taxonomy_artifact_sha256: str
+    mapping_status: MappingStatus
+    mapping_rule_id: str
+    reviewed_by: str | None = None
 
 
 def _utc_now() -> datetime:
@@ -75,24 +106,31 @@ def select_start_date(*, today: date) -> date:
     return configured if 0 <= age <= MAX_CONFIGURED_DATE_AGE_DAYS else today
 
 
-def approved_google_trends_taxonomy_rules() -> tuple[TaxonomyMappingRule, ...]:
-    """No Google Trends terms are approved for automatic fashion mapping yet."""
-    return ()
-
-
 class GoogleTrendsLiveService:
     def __init__(
         self,
         *,
         adapter_factory: Callable[[str], GoogleTrendsBigQueryAdapter] = GoogleTrendsBigQueryAdapter,
         taxonomy_rules: Sequence[TaxonomyMappingRule] | None = None,
+        taxonomy_registry: FashionTaxonomyRegistry | None = None,
         clock: Callable[[], datetime] = _utc_now,
         cache_ttl_seconds: int = CACHE_TTL_SECONDS,
     ) -> None:
         self._adapter_factory = adapter_factory
-        self._rules = tuple(
-            approved_google_trends_taxonomy_rules() if taxonomy_rules is None else taxonomy_rules
-        )
+        if taxonomy_rules is None:
+            registry = taxonomy_registry or load_production_fashion_taxonomy()
+            self._rules = registry.rules
+            self._taxonomy_version = registry.taxonomy.taxonomy_version
+            self._taxonomy_artifact_sha256 = registry.artifact_sha256
+            self._entries_by_code = registry.entries_by_code
+        else:
+            self._rules = tuple(taxonomy_rules)
+            versions = {rule.taxonomy_version for rule in self._rules}
+            if len(versions) != 1:
+                raise ValueError("injected taxonomy rules require one taxonomy version")
+            self._taxonomy_version = versions.pop()
+            self._taxonomy_artifact_sha256 = "injected-rules-not-production"
+            self._entries_by_code = {}
         self._clock = clock
         self._cache_ttl_seconds = cache_ttl_seconds
         self._cached: GoogleTrendsLiveResponse | None = None
@@ -154,8 +192,24 @@ class GoogleTrendsLiveService:
             raise GoogleTrendsLiveServiceError("invalid_observation_classification")
 
         normalized = [
-            normalize_observation(item, list(self._rules), taxonomy_version=TAXONOMY_VERSION)
+            normalize_observation(
+                item, list(self._rules), taxonomy_version=self._taxonomy_version
+            )
             for item in result.observations
+        ]
+        observation_by_id = {item.observation_id: item for item in result.observations}
+        resolved = [
+            self._resolved_signal(item, observation_by_id[item.observation_id])
+            for item in normalized
+            if item.mapping_status in {MappingStatus.EXACT, MappingStatus.REVIEWED}
+        ]
+        unresolved = [
+            observation_by_id[item.observation_id] for item in normalized
+            if item.mapping_status == MappingStatus.UNRESOLVED
+        ]
+        ambiguous = [
+            observation_by_id[item.observation_id] for item in normalized
+            if item.mapping_status == MappingStatus.AMBIGUOUS
         ]
         canonical_codes = sorted({
             item.canonical_code for item in normalized if item.canonical_code is not None
@@ -190,16 +244,60 @@ class GoogleTrendsLiveService:
         return GoogleTrendsLiveResponse(
             batch_id=batch.batch_id,
             batch_version=batch.batch_version,
+            taxonomy_version=self._taxonomy_version,
+            taxonomy_artifact_sha256=self._taxonomy_artifact_sha256,
             refresh_date_requested=requested_date,
             refresh_date_used=used_date,
             attempted_refresh_dates=attempted,
             source=batch.sources[0],
+            raw_observation_count=len(batch.observations),
+            resolved_fashion_signal_count=len(resolved),
+            unresolved_count=len(unresolved),
+            ambiguous_count=len(ambiguous),
             observations=batch.observations,
             normalized_signals=batch.normalized_signals,
+            resolved_fashion_signals=resolved,
+            unresolved_observations=unresolved,
+            ambiguous_observations=ambiguous,
             derived_metrics=batch.derived_metrics,
             evidence_sufficient_for_derived_metrics=sufficient,
             limitations=limitations,
         )
+
+    def _resolved_signal(
+        self,
+        signal: NormalizedMarketSignal,
+        observation: MarketObservation,
+    ) -> ResolvedFashionSignal:
+        if signal.canonical_code is None or signal.mapping_rule_id is None:
+            raise GoogleTrendsLiveServiceError("invalid_resolved_taxonomy_signal")
+        entry = self._entries_by_code.get(signal.canonical_code)
+        if entry is None:
+            entry = _entry_from_canonical_code(signal.canonical_code)
+        return ResolvedFashionSignal(
+            observation_id=observation.observation_id,
+            source_id=observation.source_id,
+            normalized_signal_id=signal.normalized_signal_id,
+            raw_signal=signal.raw_signal,
+            canonical_code=signal.canonical_code,
+            canonical_label=entry.canonical_label,
+            taxonomy_category=entry.category.value,
+            taxonomy_version=signal.taxonomy_version,
+            taxonomy_artifact_sha256=self._taxonomy_artifact_sha256,
+            mapping_status=signal.mapping_status,
+            mapping_rule_id=signal.mapping_rule_id,
+            reviewed_by=signal.reviewed_by,
+        )
+
+
+def _entry_from_canonical_code(canonical_code: str) -> FashionTaxonomyEntry:
+    category, _, code = canonical_code.partition(":")
+    return FashionTaxonomyEntry(
+        canonical_code=canonical_code,
+        category=category,
+        canonical_label=code.replace("_", " ").title(),
+        aliases=[canonical_code],
+    )
 
 
 _service = GoogleTrendsLiveService()

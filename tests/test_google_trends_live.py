@@ -74,7 +74,7 @@ def adapter_factory(client):
     return factory
 
 
-def build_service(monkeypatch, client, *, rules=()):
+def build_service(monkeypatch, client, *, rules=None):
     monkeypatch.setenv("GOOGLE_TRENDS_BIGQUERY_PROJECT_ID", "test-project")
     monkeypatch.setenv("GOOGLE_TRENDS_REFRESH_DATE", "2026-09-24")
     return GoogleTrendsLiveService(
@@ -101,6 +101,11 @@ def test_successful_live_retrieval_preserves_provenance_and_reality(monkeypatch)
     assert observation.verification_status == EvidenceStatus.VERIFIED
     assert observation.is_fixture is False and observation.is_synthetic is False
     assert response.normalized_signals[0].mapping_status == MappingStatus.UNRESOLVED
+    assert response.raw_observation_count == 1
+    assert response.resolved_fashion_signal_count == 0
+    assert response.unresolved_count == 1
+    assert response.ambiguous_count == 0
+    assert response.unresolved_observations == response.observations
     assert response.derived_metrics == []
     assert response.evidence_sufficient_for_derived_metrics is False
     assert client.calls[0][1][1:] == (LIVE_ROW_LIMIT, 109_051_904)
@@ -126,22 +131,40 @@ def test_stale_configuration_uses_current_date_and_invalid_fails(monkeypatch):
     assert error.value.diagnostic_code == "invalid_refresh_date_configuration"
 
 
-def test_explicit_rule_maps_but_one_source_metrics_stay_insufficient(monkeypatch):
-    rule = TaxonomyMappingRule(
-        rule_id="reviewed-silk-search", signal_type="search_interest",
-        source_term="silk", canonical_code="material:silk",
-        taxonomy_version="fashion-taxonomy-1.0", review_status="reviewed",
-        reviewed_by="taxonomy-reviewer",
-    )
-    client = FakeClient({date(2026, 9, 24): [FakeRow("silk")]})
-    response = build_service(monkeypatch, client, rules=[rule]).load()
+def test_production_rule_is_case_insensitive_but_exact_and_stays_insufficient(monkeypatch):
+    client = FakeClient({date(2026, 9, 24): [FakeRow("SILK")]})
+    response = build_service(monkeypatch, client).load()
     normalized = response.normalized_signals[0]
     assert normalized.mapping_status == MappingStatus.REVIEWED
     assert normalized.canonical_code == "material:silk"
+    assert response.resolved_fashion_signal_count == 1
+    assert response.unresolved_count == 0
+    assert response.resolved_fashion_signals[0].taxonomy_category == "material"
+    assert response.resolved_fashion_signals[0].observation_id == normalized.observation_id
+    assert response.resolved_fashion_signals[0].source_id == response.source.source_id
+    assert response.taxonomy_artifact_sha256 == (
+        response.resolved_fashion_signals[0].taxonomy_artifact_sha256
+    )
     assert response.derived_metrics[0].status == TrendMetricStatus.INSUFFICIENT_EVIDENCE
     assert response.derived_metrics[0].source_breadth == 1
     assert response.derived_metrics[0].is_live_data is False
     assert response.evidence_sufficient_for_derived_metrics is False
+
+
+def test_no_fuzzy_inference_and_nonfashion_terms_remain_unresolved(monkeypatch):
+    rows = [
+        FakeRow("best silk dresses 2026"),
+        FakeRow("Taylor Swift"),
+        FakeRow("weather tomorrow"),
+    ]
+    client = FakeClient({date(2026, 9, 24): rows})
+    response = build_service(monkeypatch, client).load()
+    assert response.raw_observation_count == 3
+    assert response.resolved_fashion_signal_count == 0
+    assert response.unresolved_count == 3
+    assert {item.raw_signal for item in response.unresolved_observations} == {
+        "best silk dresses 2026", "Taylor Swift", "weather tomorrow"
+    }
 
 
 def test_conflicting_explicit_rules_remain_ambiguous(monkeypatch):
@@ -162,6 +185,8 @@ def test_conflicting_explicit_rules_remain_ambiguous(monkeypatch):
     assert response.normalized_signals[0].mapping_status == MappingStatus.AMBIGUOUS
     assert response.normalized_signals[0].canonical_code is None
     assert response.derived_metrics == []
+    assert response.ambiguous_count == 1
+    assert response.unresolved_count == 0
 
 
 class PermissionDenied(Exception):
@@ -198,6 +223,9 @@ def test_api_response_and_failures_do_not_leak_secrets(monkeypatch):
     assert "secret" not in result.text.casefold()
     assert "credential" not in result.text.casefold()
     assert result.json()["normalized_signals"][0]["mapping_status"] == "unresolved"
+    assert result.json()["raw_observation_count"] == 1
+    assert result.json()["resolved_fashion_signal_count"] == 0
+    assert result.json()["unresolved_count"] == 1
 
     def fail():
         raise GoogleTrendsLiveServiceError("bigquery_permission_denied")
