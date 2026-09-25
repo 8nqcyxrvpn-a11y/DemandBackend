@@ -12,6 +12,7 @@ from app.market_intelligence.models import (
     NormalizedMarketSignal,
     TrendMetrics,
     TrendMetricStatus,
+    MarketSignalType,
 )
 
 METHODOLOGY_VERSION = "temporal-trend-1.0"
@@ -38,9 +39,16 @@ def derive_temporal_metrics(
     )
     if not facts:
         raise ValueError("no resolved factual observations for canonical code")
-    signal_type = mapped[0].signal_type
-    if any(item.signal_type != signal_type for item in mapped):
-        raise ValueError("canonical code cannot aggregate mixed signal types")
+    signal_types = {item.signal_type for item in mapped}
+    if len(signal_types) == 1:
+        signal_type = mapped[0].signal_type
+    elif signal_types == {
+        MarketSignalType.SEARCH_INTEREST,
+        MarketSignalType.EDITORIAL_MEDIA_ATTENTION,
+    }:
+        signal_type = MarketSignalType.MARKET_ATTENTION
+    else:
+        raise ValueError("canonical code cannot aggregate incompatible signal types")
 
     verified_numeric = [
         item for item in facts
@@ -58,6 +66,11 @@ def derive_temporal_metrics(
         limitations.append("At least two independent sources are required for source breadth.")
     if has_non_real:
         limitations.append("Fixture or synthetic observations cannot produce live sufficient evidence.")
+    if signal_type == MarketSignalType.MARKET_ATTENTION:
+        limitations.append(
+            "Search-interest and editorial-attention levels use provider-specific scales; "
+            "source breadth is corroborative and does not make their raw magnitudes equivalent."
+        )
 
     current = baseline = growth = acceleration = None
     if verified_numeric:

@@ -41,6 +41,26 @@ RandomForest demand model
 
 The real Google Trends evidence path and synthetic demand model are deliberately separate. Google Trends terms are not sent to `/predict-demand`, and public attention is not treated as sales demand. The temporal-metrics layer continues to require at least three periods and two independent real sources before reporting sufficient evidence; Google Trends alone cannot satisfy source breadth.
 
+### Experimental GDELT source
+
+An experimental GDELT DOC 2.0 adapter is implemented for exact-phrase
+`TimelineVolRaw` editorial/media-attention observations. It is covered by local
+mocked tests and preserves provider request parameters, raw-response hashing,
+retrieval time, article counts, monitored-article counts, methodology, and
+sanitized failure diagnostics.
+
+GDELT is **not live-provider validated**: the private connectivity preflight
+ended in `connect_timeout` before an HTTP response was received. It is not
+registered with or used by any public endpoint, and no production observation
+or source-breadth claim currently relies on it. In particular, it does not feed
+`/trend-signals`, `/predict-demand`, demand forecasts, inventory outputs, or the
+public Google Trends endpoint.
+
+GDELT measurements represent monitored editorial/news attention. They are not
+consumer demand, sales, market validation, or a substitute for brand commercial
+data. Mocked cross-source tests demonstrate the source-breadth safeguards only;
+they are not evidence that Google Trends and GDELT agree in production.
+
 ### Production fashion taxonomy
 
 Google Trends normalization uses the versioned `fashion-taxonomy-1.0` artifact at `data/taxonomies/fashion/fashion_taxonomy_v1.json`. Its approved categories are colors, materials, garments, footwear, bags/accessories, silhouettes, patterns, and fashion aesthetics/styles. Mapping is limited to case-insensitive, whitespace-normalized exact aliases in that artifact; substring matching, fuzzy matching, and model-generated semantic guesses are not used.

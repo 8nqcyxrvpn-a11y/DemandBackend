@@ -21,6 +21,8 @@ class MarketSignalType(str, Enum):
     AESTHETIC = "aesthetic"
     CONSUMER_BEHAVIOR = "consumer_behavior"
     SEARCH_INTEREST = "search_interest"
+    EDITORIAL_MEDIA_ATTENTION = "editorial_media_attention"
+    MARKET_ATTENTION = "market_attention"
 
 
 class MappingStatus(str, Enum):
