@@ -9,6 +9,7 @@ import server
 from app.brand_intelligence.enums import EvidenceStatus
 from app.market_intelligence.google_trends_bigquery import GoogleTrendsBigQueryAdapter
 from app.market_intelligence.google_trends_live import (
+    LIVE_DMA_SAMPLE_LIMIT,
     LIVE_ROW_LIMIT,
     GoogleTrendsLiveService,
     GoogleTrendsLiveServiceError,
@@ -70,6 +71,9 @@ def adapter_factory(client):
             project_id, client=client, job_config_factory=lambda refresh, limit, cap: (
                 refresh, limit, cap
             ),
+            priority_job_config_factory=lambda refresh, limit, cap, terms, dma_limit: (
+                refresh, limit, cap, terms, dma_limit
+            ),
         )
     return factory
 
@@ -108,7 +112,9 @@ def test_successful_live_retrieval_preserves_provenance_and_reality(monkeypatch)
     assert response.unresolved_observations == response.observations
     assert response.derived_metrics == []
     assert response.evidence_sufficient_for_derived_metrics is False
-    assert client.calls[0][1][1:] == (LIVE_ROW_LIMIT, 109_051_904)
+    assert client.calls[0][1][1:3] == (LIVE_ROW_LIMIT, 109_051_904)
+    assert "silk" in client.calls[0][1][3]
+    assert client.calls[0][1][4] == LIVE_DMA_SAMPLE_LIMIT
 
 
 def test_recent_date_fallback_is_bounded_and_explicit(monkeypatch):
@@ -165,6 +171,18 @@ def test_no_fuzzy_inference_and_nonfashion_terms_remain_unresolved(monkeypatch):
     assert {item.raw_signal for item in response.unresolved_observations} == {
         "best silk dresses 2026", "Taylor Swift", "weather tomorrow"
     }
+
+
+def test_prioritized_retrieval_maps_exact_fashion_and_keeps_general_unresolved(monkeypatch):
+    rows = [FakeRow("suede jacket"), FakeRow("general election results")]
+    client = FakeClient({date(2026, 9, 24): rows})
+    response = build_service(monkeypatch, client).load()
+    assert response.raw_observation_count == 2
+    assert response.resolved_fashion_signal_count == 1
+    assert response.unresolved_count == 1
+    assert response.resolved_fashion_signals[0].canonical_code == "garment:suede_jacket"
+    assert response.unresolved_observations[0].raw_signal == "general election results"
+    assert response.evidence_sufficient_for_derived_metrics is False
 
 
 def test_conflicting_explicit_rules_remain_ambiguous(monkeypatch):

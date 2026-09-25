@@ -31,6 +31,7 @@ from app.market_intelligence.models import (
 from app.market_intelligence.normalization import TaxonomyMappingRule, normalize_observation
 
 LIVE_ROW_LIMIT = 25
+LIVE_DMA_SAMPLE_LIMIT = 3
 MAX_DATE_LOOKBACK_DAYS = 14
 MAX_CONFIGURED_DATE_AGE_DAYS = 14
 CACHE_TTL_SECONDS = 900
@@ -170,9 +171,11 @@ class GoogleTrendsLiveService:
             candidate = requested_date - timedelta(days=offset)
             attempted.append(candidate)
             try:
-                candidate_result = adapter.retrieve(
+                candidate_result = adapter.retrieve_prioritizing_terms(
                     candidate,
+                    exact_terms=[rule.source_term for rule in self._rules],
                     row_limit=LIVE_ROW_LIMIT,
+                    dma_sample_limit=LIVE_DMA_SAMPLE_LIMIT,
                     retrieved_at=now,
                 )
             except Exception as exc:
@@ -223,6 +226,8 @@ class GoogleTrendsLiveService:
         )
         limitations = [
             "Google Trends top-rising values are relative attention signals, not absolute search volume or sales demand.",
+            "Retrieval prioritizes exact approved taxonomy aliases across the partition's rolling historical weeks; it does not broaden or infer taxonomy matches.",
+            "At most three representative DMA rows per matched term-week are returned so one repeated term cannot consume the bounded result.",
             "Raw terms are not fashion signals unless an explicit reviewed taxonomy rule resolves them.",
             "Google Trends is one source; it cannot satisfy the two-source breadth requirement by itself.",
         ]

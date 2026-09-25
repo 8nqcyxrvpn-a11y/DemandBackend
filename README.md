@@ -47,6 +47,10 @@ Google Trends normalization uses the versioned `fashion-taxonomy-1.0` artifact a
 
 The live endpoint returns all factual observations separately from resolved fashion signals, unresolved observations, and ambiguous observations. It also reports the raw, resolved, unresolved, and ambiguous counts plus the taxonomy artifact SHA-256. A lexical match is only a deterministic classification—it does not by itself establish that the term is a validated trend, a demand signal, or commercially meaningful.
 
+The BigQuery retrieval query prioritizes exact approved taxonomy aliases across the selected refresh partition's rolling historical weeks before general top-rising terms. It returns at most three representative DMA rows for each matched term/week so a nationally repeated query cannot consume the entire bounded result. Remaining capacity is filled with ordinary top-rising observations, which retain `unresolved` status unless they independently match an approved exact alias. This changes retrieval order, not taxonomy semantics.
+
+The public dataset contains only the top 25 and top 25 rising queries rather than arbitrary keyword histories. Consequently, niche fashion phrases may never appear, absence is not evidence of no interest, and sampled DMA rows are not comprehensive geographic coverage. Google Trends remains a supporting attention/discovery source rather than a complete fashion-market measurement source.
+
 The intended future system is:
 
 ```text
